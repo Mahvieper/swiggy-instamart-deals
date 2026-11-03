@@ -290,3 +290,19 @@ If you want to run or test the bot on your local machine:
 ## ⚖️ License & Disclaimer
 
 This project is built for personal productivity and deals scouting. It is not affiliated with, endorsed by, or sponsored by Bundl Technologies Private Limited (Swiggy). All brand names and trademarks belong to their respective owners.
+
+---
+
+## 🔄 Automatic Catalog Discovery
+
+The Telegram bot now includes a separate daily catalog-discovery workflow:
+
+- Runs daily at **02:00 IST** and can also be started manually from **Actions → Daily Instamart Catalog Discovery → Run workflow**.
+- Reads the live Instamart storefront navigation and category-listing API responses, then discovers each category's current subcategory filter IDs and taxonomy type.
+- Writes the result to `swiggy-telegram-bot/discovered-catalog.json`; it does not rewrite `config.json`.
+- Existing manually curated aisles take precedence when IDs overlap. Newly discovered aisles are merged into their matching campaign at scan time.
+- A newly discovered category that cannot be mapped to an existing campaign is placed in a separate `discovered` worker and uses the global `minDiscount` default (70% unless changed). Existing campaign thresholds and Telegram duplicate suppression are not changed.
+- The catalog is replaced only after a minimum completeness check passes. If discovery is blocked or returns an unexpectedly small catalog, the previous catalog is kept.
+- The workflow commits the catalog only when its contents change.
+
+The workflow uses the existing `SWIGGY_STORE_ID`, `SWIGGY_PRIMARY_STORE_ID`, and optional `SWIGGY_SECONDARY_STORE_ID` repository secrets. Ensure Actions are enabled for the fork and the workflow has permission to write repository contents.
