@@ -1,14 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T06:04:59.523Z",
+  "updatedAt": "2026-11-03T06:10:53.217Z",
   "storeId": "1400978",
   "source": "Instamart category-listing/v2 navigationTabs",
   "stats": {
     "attemptedCategories": 32,
     "successfulCategories": 32,
+    "categoriesWithSubcategories": 28,
+    "categoriesWithoutSubcategories": 4,
     "failedCategories": 0,
     "discoveredCategories": 32,
-    "discoveredSubcategories": 175,
+    "discoveredSubcategories": 372,
     "configuredSubcategories": 446
   },
   "categories": [
@@ -1716,6 +1718,1857 @@
       "campaigns": [
         "munchies"
       ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Veg Frozen Snacks",
+      "id": "693d82725485ff0001d3ec2e",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Non Veg Frozen Snacks",
+      "id": "693d82725485ff0001d3ec29",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Cold Cuts",
+      "id": "693d82725485ff0001d3ec23",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Frozen Vegetables",
+      "id": "693d82725485ff0001d3ec24",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Momos & Baos",
+      "id": "693d82725485ff0001d3ec27",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Kebabs",
+      "id": "693d82725485ff0001d3ec26",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Roti, Paranthas & Sheets",
+      "id": "693d82725485ff0001d3ec2c",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Seafood",
+      "id": "693d82725485ff0001d3ec2d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Raw Frozen",
+      "id": "693d82725485ff0001d3ec2a",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Regional Favourites",
+      "id": "693d82725485ff0001d3ec2b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Dryfruits Gift Boxes",
+      "id": "6a8ff3fb479ae600017590a6",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Cashews",
+      "id": "69492e33cfaac00001f0780f",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Mixed Dry Fruits",
+      "id": "6949160474f4c20001b6bdff",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Almonds",
+      "id": "6949160474f4c20001b6be00",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Dates",
+      "id": "69492e33cfaac00001f07810",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Top Deals",
+      "id": "6a22540b25164200017a8659",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Pista & Walnuts",
+      "id": "69492e33cfaac00001f07812",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Makhana and Seeds",
+      "id": "69492e33cfaac00001f07813",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Nuts and Seeds Mix",
+      "id": "69492e33cfaac00001f07815",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Dried Fruits and Berries",
+      "id": "69492e33cfaac00001f07814",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Premium dry Fruits",
+      "id": "6970b51fb9ed3d00010081ee",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Soft Drinks",
+      "id": "6903b0c295d8230001064c75",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Juices and Fruit Drinks",
+      "id": "6903b0c295d8230001064c76",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Caffeinated Beverages",
+      "id": "6903b0c295d8230001064c77",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Hydration Drinks",
+      "id": "6a6b063ad570db00013754da",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Mango Drinks",
+      "id": "6903b0c295d8230001064c7f",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Coconut Water",
+      "id": "6903b0c295d8230001064c80",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Water and Ice Cubes",
+      "id": "6903b0c295d8230001064c7d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Soda and Mixers",
+      "id": "6903b0c295d8230001064c78",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Ice Tea & Kombucha",
+      "id": "6903b0c295d8230001064c7c",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Diet Soft Drinks",
+      "id": "6903b0c295d8230001064c7e",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Non Alcoholic Beverages",
+      "id": "6903b0c295d8230001064c7b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Chilled",
+      "id": "692eadd0910d9f000100c2c0",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Party Packs",
+      "id": "69a17c7d5011b80001ede83c",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Hydration",
+      "id": "6903b0c295d8230001064c82",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Fresh Juices",
+      "id": "6903b0c295d8230001064c81",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Instant Drink Mixes",
+      "id": "6903b0c295d8230001064c83",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Regional Favourites",
+      "id": "6903b0c295d8230001064c79",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Cold Coffee",
+      "id": "6903b0c295d8230001064c85",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Milk Based Drinks",
+      "id": "6903b0c295d8230001064c84",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Tea",
+      "id": "6903b0c295d8230001064cfa",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Instant Coffee",
+      "id": "6903b0c295d8230001064cfb",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Filter & Ground Coffee",
+      "id": "6903b0c295d8230001064cfc",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Drink Mixes",
+      "id": "6903b0c295d8230001064d01",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Green & Herbal Tea",
+      "id": "6903b0c295d8230001064cfd",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Cold Coffee",
+      "id": "6903b0c295d8230001064d00",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Regional Favourites",
+      "id": "6903b0c295d8230001064cfe",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Syrups & Mixes",
+      "id": "69b17a805011b80001ede85d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Milkshake & Smoothie",
+      "id": "6903b0c295d8230001064d04",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Cookies and Rusks",
+      "id": "6903b0c295d8230001064d07",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Premixes",
+      "id": "6903b0c295d8230001064d06",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Adult Nutrition",
+      "id": "6903b0c295d8230001064d03",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Top Deals",
+      "id": "69662b2901da4f00010080db",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "name": "Imported",
+      "id": "696e372795eb7700017f9a2b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Chocolate Spreads",
+      "id": "6903b0c295d8230001064ced",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Tomato Ketchup",
+      "id": "6903b0c295d8230001064cf0",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Peanut Butters",
+      "id": "6903b0c295d8230001064cec",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Jams",
+      "id": "6903b0c295d8230001064cf7",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Mayo & Spreads",
+      "id": "6903b0c295d8230001064cef",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Dips & Dressing",
+      "id": "6903b0c295d8230001064cf6",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Cooking Sauces",
+      "id": "6903b0c295d8230001064cf4",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Asian Sauces",
+      "id": "6903b0c295d8230001064cf3",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Honey and Cider Vineger",
+      "id": "6903b0c295d8230001064cee",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Sauces and Spreads",
+      "name": "Regional Favourites",
+      "id": "6903b0c295d8230001064cf1",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Masks & Sanitizers",
+      "id": "6a57570521b41f0001ef459d",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Protein & Sports Nutrition",
+      "id": "6a574e8421b41f0001ef459a",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Skin & Hair Care",
+      "id": "6a5528b584303b00011edd80",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Infections & First Aid",
+      "id": "6903b10bd2c61b000112badc",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Immunity & Energy Boosters",
+      "id": "6a57570521b41f0001ef459c",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Gummies",
+      "id": "6a57570521b41f0001ef459e",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Weight Management",
+      "id": "6a57570521b41f0001ef459b",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Superfoods",
+      "id": "6a57570521b41f0001ef459f",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Moisturizing Creams",
+      "id": "6aabb3142c4bff0001cd84cd",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Soaps",
+      "id": "6903b10bd2c61b000112ba93",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Shower gel",
+      "id": "6903b10bd2c61b000112baa4",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Body Lotion & Oils",
+      "id": "6903b10bd2c61b000112ba9b",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Shampoo",
+      "id": "6903b10bd2c61b000112ba96",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Oral Care",
+      "id": "6aba135aa6fa090001aaa4dd",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Conditioner",
+      "id": "6903b10bd2c61b000112ba97",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Face Care",
+      "id": "6903b10bd2c61b000112ba95",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Sunscreen",
+      "id": "6aabb3142c4bff0001cd84cc",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Hand wash",
+      "id": "6aba135aa6fa090001aaa4de",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Fragrance & Talc",
+      "id": "6903b10bd2c61b000112ba9c",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Value Pack",
+      "id": "6aa954d1114a1800015f6063",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Mens Perfume",
+      "id": "6903b10bd2c61b000112ba9e",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Womens Perfume",
+      "id": "6903b10bd2c61b000112baa7",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Shaving brush and Kit",
+      "id": "6903b10bd2c61b000112baa2",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Shaving Foam and Cartridges",
+      "id": "6903b10bd2c61b000112baa3",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Bath Accessories",
+      "id": "6903b10bd2c61b000112ba98",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Bath & Beauty gifts",
+      "id": "6903b10bd2c61b000112ba9a",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Men Trimmers & Razors",
+      "id": "6903b10bd2c61b000112baa9",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Womens Deos",
+      "id": "6903b10bd2c61b000112baa6",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Mens Deos",
+      "id": "6903b10bd2c61b000112ba9d",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Women Trimmers & Razors",
+      "id": "6903b10bd2c61b000112baa8",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Multi groomers",
+      "id": "6903b10bd2c61b000112ba9f",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "After Shave",
+      "id": "6903b10bd2c61b000112ba99",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Women Hair Removal cream",
+      "id": "6903b10bd2c61b000112baa5",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Hair Care",
+      "name": "Hair Oils and Serums",
+      "id": "6903b10bd2c61b000112baad",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Hair Care",
+      "name": "Shampoo",
+      "id": "6903b10bd2c61b000112baae",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Hair Care",
+      "name": "Conditioners & Masks",
+      "id": "6903b10bd2c61b000112baaf",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Hair Care",
+      "name": "Hair Colour",
+      "id": "6903b10bd2c61b000112bab0",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Hair Care",
+      "name": "Premium Brands",
+      "id": "6903b10bd2c61b000112bab1",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Hair Care",
+      "name": "Hair Styling Gels & Creams",
+      "id": "6903b10bd2c61b000112bab3",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Hair Care",
+      "name": "Combs & Brushes",
+      "id": "6903b10bd2c61b000112bab4",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Hair Care",
+      "name": "Hair Dryers and Stylers",
+      "id": "6903b10bd2c61b000112bab5",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Hair Care",
+      "name": "Hair Supplements",
+      "id": "6903b10bd2c61b000112bab6",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Skincare",
+      "name": "Face wash and scrubs",
+      "id": "6903b10bd2c61b000112bab8",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Skincare",
+      "name": "Masks & Cleansers",
+      "id": "6903b10bd2c61b000112bab9",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Skincare",
+      "name": "Serums, Toners",
+      "id": "6903b10bd2c61b000112baba",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Skincare",
+      "name": "Creams & Moisturizers",
+      "id": "6903b10bd2c61b000112babb",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Skincare",
+      "name": "Sunscreen",
+      "id": "6903b10bd2c61b000112babc",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Skincare",
+      "name": "Body Lotions",
+      "id": "6903b10bd2c61b000112babe",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Skincare",
+      "name": "Beauty Supplements",
+      "id": "6903b10bd2c61b000112babf",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Feminine Hygiene",
+      "name": "Sanitary Pads",
+      "id": "6903b10bd2c61b000112bacc",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Feminine Hygiene",
+      "name": "Period Panties and Liners",
+      "id": "6903b10bd2c61b000112bacd",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Feminine Hygiene",
+      "name": "Hair Removal",
+      "id": "6903b10bd2c61b000112bace",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Feminine Hygiene",
+      "name": "Menstrual Cups and Tampons",
+      "id": "6903b10bd2c61b000112bacf",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Feminine Hygiene",
+      "name": "Intimate Wipes and Wash",
+      "id": "6903b10bd2c61b000112bad1",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Feminine Hygiene",
+      "name": "Disposal Bags and Cramp Relief",
+      "id": "6903b10bd2c61b000112bad2",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Baby Diapers",
+      "id": "6903b10bd2c61b000112baef",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Baby Food and Formula",
+      "id": "6903b10bd2c61b000112baf0",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Baby Bathing",
+      "id": "6903b10bd2c61b000112baf1",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Baby Wipes",
+      "id": "6903b10bd2c61b000112baf2",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Baby Cream & Lotions",
+      "id": "6903b10bd2c61b000112baf4",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Gifts & More",
+      "id": "6903b10bd2c61b000112bafc",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Feeding and Teething Needs",
+      "id": "6903b10bd2c61b000112baf8",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Baby Oil and Talc",
+      "id": "6903b10bd2c61b000112baf6",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Baby Hygiene",
+      "id": "6903b10bd2c61b000112bafa",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Books and Toys",
+      "id": "6903b10bd2c61b000112baf9",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Baby Oral Care",
+      "id": "6903b10bd2c61b000112baf5",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Travel Needs & Baby Gears",
+      "id": "6903b10bd2c61b000112bafe",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Baby Pharma",
+      "id": "6903b10bd2c61b000112baf7",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Clothes & Accessories",
+      "id": "6903b10bd2c61b000112bafb",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Mom Care",
+      "id": "6903b10bd2c61b000112bafd",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Baby Care",
+      "name": "Switch",
+      "id": "6ad86af4aa276200012dadce",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Non Toxic Cookware",
+      "id": "69a6853c8ec23b0001d51dcb",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Premium Storage Brands",
+      "id": "6a107175f653f400014e56af",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Home decor",
+      "id": "6903b179fe6d7500013a0d13",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "304 Stainless Steel",
+      "id": "6a107175f653f400014e56ae",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Linen & Furnishing",
+      "id": "6903b179fe6d7500013a0d14",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Kitchen Tools",
+      "id": "6903b179fe6d7500013a0d0c",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Jars & Containers",
+      "id": "6903b179fe6d7500013a0d09",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Bottles, Flask and Tumblers",
+      "id": "6903b179fe6d7500013a0d0a",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Tiffins & Lunch Bag",
+      "id": "6a27ff73600211000131660a",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Bath and laundry",
+      "id": "6903b179fe6d7500013a0d0e",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Serveware & Crockery",
+      "id": "6903b179fe6d7500013a0d16",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Cookware",
+      "id": "6903b179fe6d7500013a0d07",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Tissues & Disposables",
+      "id": "6903b179fe6d7500013a0d18",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Home Utility",
+      "id": "6a27ff73600211000131660b",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Storage Organizers & Utility",
+      "id": "6903b179fe6d7500013a0d17",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "cups and mugs",
+      "id": "6903b179fe6d7500013a0d10",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Gardening",
+      "id": "6903b179fe6d7500013a0d11",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Glasses & Barware",
+      "id": "6903b179fe6d7500013a0d12",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Air Freshners",
+      "id": "6903b179fe6d7500013a0d0d",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Bakeware & BBQ",
+      "id": "6903b179fe6d7500013a0d0b",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Vehicale care & Accessories",
+      "id": "6903b179fe6d7500013a0d19",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Party Planning",
+      "id": "6903b179fe6d7500013a0d15",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Home and Kitchen",
+      "name": "Cleaning tools",
+      "id": "6903b179fe6d7500013a0d0f",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Earphones & headsets",
+      "id": "6903b179fe6d7500013a0d61",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Mobiles",
+      "id": "6903b179fe6d7500013a0d67",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Kitchen Appliances",
+      "id": "6903b179fe6d7500013a0d64",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Speakers & Soundbars",
+      "id": "6903b179fe6d7500013a0d6b",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Laptops, Tablets and Monitors",
+      "id": "6903b179fe6d7500013a0d65",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Personal Care Appliances",
+      "id": "69b7c133958236000180ec1d",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Home Appliances",
+      "id": "6903b179fe6d7500013a0d63",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Powerbanks Chargers Cables",
+      "id": "6903b179fe6d7500013a0d68",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Smartwatches",
+      "id": "6903b179fe6d7500013a0d6a",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Health Care Appliances",
+      "id": "6903b179fe6d7500013a0d62",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Lights & Bulbs",
+      "id": "6903b179fe6d7500013a0d66",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Smart & Streaming Devices",
+      "id": "6903b179fe6d7500013a0d69",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Batteries & Extensions",
+      "id": "6903b179fe6d7500013a0d5f",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Computer Accessories",
+      "id": "6903b179fe6d7500013a0d60",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Top Deals",
+      "id": "69706f26a176a40001054616",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Electronics and Appliances",
+      "name": "Electric Kettles",
+      "id": "6903b179fe6d7500013a0d5c",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "household"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Die-cast cars",
+      "id": "69bcff6db56c7a0001b3e7a8",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Cute Stationery",
+      "id": "6a181a584ad6960001549a58",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Safe play toys",
+      "id": "69bcff6db56c7a0001b3e7a7",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Screen Time Replacement",
+      "id": "6a181a584ad6960001549a59",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Pen,Pencils and markers",
+      "id": "6903b179fe6d7500013a0d54",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Toy cars and guns",
+      "id": "6903b179fe6d7500013a0d47",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Notebooks and Diaries",
+      "id": "6903b179fe6d7500013a0d52",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Card and Board Games",
+      "id": "6903b179fe6d7500013a0d45",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "School supplies",
+      "id": "6903b179fe6d7500013a0d55",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Soft Toys",
+      "id": "6903b179fe6d7500013a0d56",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Office stationery",
+      "id": "6903b179fe6d7500013a0d53",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Dolls & pretend kits",
+      "id": "6903b179fe6d7500013a0d51",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Colouring Supplies",
+      "id": "6903b179fe6d7500013a0d50",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Action Figurines",
+      "id": "6903b179fe6d7500013a0d4a",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Building Blocks, Puzzles & More",
+      "id": "6903b179fe6d7500013a0d48",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Art & Craft",
+      "id": "6903b179fe6d7500013a0d49",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Baby & Musical toys",
+      "id": "6903b179fe6d7500013a0d4d",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Outdoor Toys",
+      "id": "6903b179fe6d7500013a0d4b",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Tiffin & Lunch boxes",
+      "id": "6903b179fe6d7500013a0d57",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "STEM & Learning",
+      "id": "6903b179fe6d7500013a0d46",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Scooters and Ride ons",
+      "id": "6903b179fe6d7500013a0d4c",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Bags",
+      "id": "6903b179fe6d7500013a0d4e",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
+    },
+    {
+      "category": "Toys and Stationery",
+      "name": "Books",
+      "id": "6903b179fe6d7500013a0d4f",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "lifestyle",
+        "clearance"
+      ]
     }
   ],
   "campaigns": {
@@ -3300,8 +5153,2769 @@
         "campaigns": [
           "munchies"
         ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Veg Frozen Snacks",
+        "id": "693d82725485ff0001d3ec2e",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Non Veg Frozen Snacks",
+        "id": "693d82725485ff0001d3ec29",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Cold Cuts",
+        "id": "693d82725485ff0001d3ec23",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Frozen Vegetables",
+        "id": "693d82725485ff0001d3ec24",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Momos & Baos",
+        "id": "693d82725485ff0001d3ec27",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Kebabs",
+        "id": "693d82725485ff0001d3ec26",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Roti, Paranthas & Sheets",
+        "id": "693d82725485ff0001d3ec2c",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Seafood",
+        "id": "693d82725485ff0001d3ec2d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Raw Frozen",
+        "id": "693d82725485ff0001d3ec2a",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Regional Favourites",
+        "id": "693d82725485ff0001d3ec2b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Dryfruits Gift Boxes",
+        "id": "6a8ff3fb479ae600017590a6",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Cashews",
+        "id": "69492e33cfaac00001f0780f",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Mixed Dry Fruits",
+        "id": "6949160474f4c20001b6bdff",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Almonds",
+        "id": "6949160474f4c20001b6be00",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Dates",
+        "id": "69492e33cfaac00001f07810",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Top Deals",
+        "id": "6a22540b25164200017a8659",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Pista & Walnuts",
+        "id": "69492e33cfaac00001f07812",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Makhana and Seeds",
+        "id": "69492e33cfaac00001f07813",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Nuts and Seeds Mix",
+        "id": "69492e33cfaac00001f07815",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Dried Fruits and Berries",
+        "id": "69492e33cfaac00001f07814",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Premium dry Fruits",
+        "id": "6970b51fb9ed3d00010081ee",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      }
+    ],
+    "beverages": [
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Soft Drinks",
+        "id": "6903b0c295d8230001064c75",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Juices and Fruit Drinks",
+        "id": "6903b0c295d8230001064c76",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Caffeinated Beverages",
+        "id": "6903b0c295d8230001064c77",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Hydration Drinks",
+        "id": "6a6b063ad570db00013754da",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Mango Drinks",
+        "id": "6903b0c295d8230001064c7f",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Coconut Water",
+        "id": "6903b0c295d8230001064c80",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Water and Ice Cubes",
+        "id": "6903b0c295d8230001064c7d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Soda and Mixers",
+        "id": "6903b0c295d8230001064c78",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Ice Tea & Kombucha",
+        "id": "6903b0c295d8230001064c7c",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Diet Soft Drinks",
+        "id": "6903b0c295d8230001064c7e",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Non Alcoholic Beverages",
+        "id": "6903b0c295d8230001064c7b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Chilled",
+        "id": "692eadd0910d9f000100c2c0",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Party Packs",
+        "id": "69a17c7d5011b80001ede83c",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Hydration",
+        "id": "6903b0c295d8230001064c82",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Fresh Juices",
+        "id": "6903b0c295d8230001064c81",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Instant Drink Mixes",
+        "id": "6903b0c295d8230001064c83",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Regional Favourites",
+        "id": "6903b0c295d8230001064c79",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Cold Coffee",
+        "id": "6903b0c295d8230001064c85",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Milk Based Drinks",
+        "id": "6903b0c295d8230001064c84",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Tea",
+        "id": "6903b0c295d8230001064cfa",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Instant Coffee",
+        "id": "6903b0c295d8230001064cfb",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Filter & Ground Coffee",
+        "id": "6903b0c295d8230001064cfc",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Drink Mixes",
+        "id": "6903b0c295d8230001064d01",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Green & Herbal Tea",
+        "id": "6903b0c295d8230001064cfd",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Cold Coffee",
+        "id": "6903b0c295d8230001064d00",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Regional Favourites",
+        "id": "6903b0c295d8230001064cfe",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Syrups & Mixes",
+        "id": "69b17a805011b80001ede85d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Milkshake & Smoothie",
+        "id": "6903b0c295d8230001064d04",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Cookies and Rusks",
+        "id": "6903b0c295d8230001064d07",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Premixes",
+        "id": "6903b0c295d8230001064d06",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Adult Nutrition",
+        "id": "6903b0c295d8230001064d03",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Top Deals",
+        "id": "69662b2901da4f00010080db",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Tea, Coffee and Milk drinks",
+        "name": "Imported",
+        "id": "696e372795eb7700017f9a2b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Chocolate Spreads",
+        "id": "6903b0c295d8230001064ced",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Tomato Ketchup",
+        "id": "6903b0c295d8230001064cf0",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Peanut Butters",
+        "id": "6903b0c295d8230001064cec",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Jams",
+        "id": "6903b0c295d8230001064cf7",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Mayo & Spreads",
+        "id": "6903b0c295d8230001064cef",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Dips & Dressing",
+        "id": "6903b0c295d8230001064cf6",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Cooking Sauces",
+        "id": "6903b0c295d8230001064cf4",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Asian Sauces",
+        "id": "6903b0c295d8230001064cf3",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Honey and Cider Vineger",
+        "id": "6903b0c295d8230001064cee",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Sauces and Spreads",
+        "name": "Regional Favourites",
+        "id": "6903b0c295d8230001064cf1",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Masks & Sanitizers",
+        "id": "6a57570521b41f0001ef459d",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Protein & Sports Nutrition",
+        "id": "6a574e8421b41f0001ef459a",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Skin & Hair Care",
+        "id": "6a5528b584303b00011edd80",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Infections & First Aid",
+        "id": "6903b10bd2c61b000112badc",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Immunity & Energy Boosters",
+        "id": "6a57570521b41f0001ef459c",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Gummies",
+        "id": "6a57570521b41f0001ef459e",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Weight Management",
+        "id": "6a57570521b41f0001ef459b",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Superfoods",
+        "id": "6a57570521b41f0001ef459f",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      }
+    ],
+    "personalCare": [
+      {
+        "category": "Bath and Body",
+        "name": "Moisturizing Creams",
+        "id": "6aabb3142c4bff0001cd84cd",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Soaps",
+        "id": "6903b10bd2c61b000112ba93",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Shower gel",
+        "id": "6903b10bd2c61b000112baa4",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Body Lotion & Oils",
+        "id": "6903b10bd2c61b000112ba9b",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Shampoo",
+        "id": "6903b10bd2c61b000112ba96",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Oral Care",
+        "id": "6aba135aa6fa090001aaa4dd",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Conditioner",
+        "id": "6903b10bd2c61b000112ba97",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Face Care",
+        "id": "6903b10bd2c61b000112ba95",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Sunscreen",
+        "id": "6aabb3142c4bff0001cd84cc",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Hand wash",
+        "id": "6aba135aa6fa090001aaa4de",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Fragrance & Talc",
+        "id": "6903b10bd2c61b000112ba9c",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Value Pack",
+        "id": "6aa954d1114a1800015f6063",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Mens Perfume",
+        "id": "6903b10bd2c61b000112ba9e",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Womens Perfume",
+        "id": "6903b10bd2c61b000112baa7",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Shaving brush and Kit",
+        "id": "6903b10bd2c61b000112baa2",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Shaving Foam and Cartridges",
+        "id": "6903b10bd2c61b000112baa3",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Bath Accessories",
+        "id": "6903b10bd2c61b000112ba98",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Bath & Beauty gifts",
+        "id": "6903b10bd2c61b000112ba9a",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Men Trimmers & Razors",
+        "id": "6903b10bd2c61b000112baa9",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Womens Deos",
+        "id": "6903b10bd2c61b000112baa6",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Mens Deos",
+        "id": "6903b10bd2c61b000112ba9d",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Women Trimmers & Razors",
+        "id": "6903b10bd2c61b000112baa8",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Multi groomers",
+        "id": "6903b10bd2c61b000112ba9f",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "After Shave",
+        "id": "6903b10bd2c61b000112ba99",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Women Hair Removal cream",
+        "id": "6903b10bd2c61b000112baa5",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Hair Care",
+        "name": "Hair Oils and Serums",
+        "id": "6903b10bd2c61b000112baad",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Hair Care",
+        "name": "Shampoo",
+        "id": "6903b10bd2c61b000112baae",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Hair Care",
+        "name": "Conditioners & Masks",
+        "id": "6903b10bd2c61b000112baaf",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Hair Care",
+        "name": "Hair Colour",
+        "id": "6903b10bd2c61b000112bab0",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Hair Care",
+        "name": "Premium Brands",
+        "id": "6903b10bd2c61b000112bab1",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Hair Care",
+        "name": "Hair Styling Gels & Creams",
+        "id": "6903b10bd2c61b000112bab3",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Hair Care",
+        "name": "Combs & Brushes",
+        "id": "6903b10bd2c61b000112bab4",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Hair Care",
+        "name": "Hair Dryers and Stylers",
+        "id": "6903b10bd2c61b000112bab5",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Hair Care",
+        "name": "Hair Supplements",
+        "id": "6903b10bd2c61b000112bab6",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Skincare",
+        "name": "Face wash and scrubs",
+        "id": "6903b10bd2c61b000112bab8",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Skincare",
+        "name": "Masks & Cleansers",
+        "id": "6903b10bd2c61b000112bab9",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Skincare",
+        "name": "Serums, Toners",
+        "id": "6903b10bd2c61b000112baba",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Skincare",
+        "name": "Creams & Moisturizers",
+        "id": "6903b10bd2c61b000112babb",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Skincare",
+        "name": "Sunscreen",
+        "id": "6903b10bd2c61b000112babc",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Skincare",
+        "name": "Body Lotions",
+        "id": "6903b10bd2c61b000112babe",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Skincare",
+        "name": "Beauty Supplements",
+        "id": "6903b10bd2c61b000112babf",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Feminine Hygiene",
+        "name": "Sanitary Pads",
+        "id": "6903b10bd2c61b000112bacc",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Feminine Hygiene",
+        "name": "Period Panties and Liners",
+        "id": "6903b10bd2c61b000112bacd",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Feminine Hygiene",
+        "name": "Hair Removal",
+        "id": "6903b10bd2c61b000112bace",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Feminine Hygiene",
+        "name": "Menstrual Cups and Tampons",
+        "id": "6903b10bd2c61b000112bacf",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Feminine Hygiene",
+        "name": "Intimate Wipes and Wash",
+        "id": "6903b10bd2c61b000112bad1",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Feminine Hygiene",
+        "name": "Disposal Bags and Cramp Relief",
+        "id": "6903b10bd2c61b000112bad2",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      }
+    ],
+    "lifestyle": [
+      {
+        "category": "Baby Care",
+        "name": "Baby Diapers",
+        "id": "6903b10bd2c61b000112baef",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Food and Formula",
+        "id": "6903b10bd2c61b000112baf0",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Bathing",
+        "id": "6903b10bd2c61b000112baf1",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Wipes",
+        "id": "6903b10bd2c61b000112baf2",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Cream & Lotions",
+        "id": "6903b10bd2c61b000112baf4",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Gifts & More",
+        "id": "6903b10bd2c61b000112bafc",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Feeding and Teething Needs",
+        "id": "6903b10bd2c61b000112baf8",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Oil and Talc",
+        "id": "6903b10bd2c61b000112baf6",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Hygiene",
+        "id": "6903b10bd2c61b000112bafa",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Books and Toys",
+        "id": "6903b10bd2c61b000112baf9",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Oral Care",
+        "id": "6903b10bd2c61b000112baf5",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Travel Needs & Baby Gears",
+        "id": "6903b10bd2c61b000112bafe",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Pharma",
+        "id": "6903b10bd2c61b000112baf7",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Clothes & Accessories",
+        "id": "6903b10bd2c61b000112bafb",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Mom Care",
+        "id": "6903b10bd2c61b000112bafd",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Switch",
+        "id": "6ad86af4aa276200012dadce",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Non Toxic Cookware",
+        "id": "69a6853c8ec23b0001d51dcb",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Premium Storage Brands",
+        "id": "6a107175f653f400014e56af",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Home decor",
+        "id": "6903b179fe6d7500013a0d13",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "304 Stainless Steel",
+        "id": "6a107175f653f400014e56ae",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Linen & Furnishing",
+        "id": "6903b179fe6d7500013a0d14",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Kitchen Tools",
+        "id": "6903b179fe6d7500013a0d0c",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Jars & Containers",
+        "id": "6903b179fe6d7500013a0d09",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Bottles, Flask and Tumblers",
+        "id": "6903b179fe6d7500013a0d0a",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Tiffins & Lunch Bag",
+        "id": "6a27ff73600211000131660a",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Bath and laundry",
+        "id": "6903b179fe6d7500013a0d0e",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Serveware & Crockery",
+        "id": "6903b179fe6d7500013a0d16",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Cookware",
+        "id": "6903b179fe6d7500013a0d07",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Tissues & Disposables",
+        "id": "6903b179fe6d7500013a0d18",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Home Utility",
+        "id": "6a27ff73600211000131660b",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Storage Organizers & Utility",
+        "id": "6903b179fe6d7500013a0d17",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "cups and mugs",
+        "id": "6903b179fe6d7500013a0d10",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Gardening",
+        "id": "6903b179fe6d7500013a0d11",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Glasses & Barware",
+        "id": "6903b179fe6d7500013a0d12",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Air Freshners",
+        "id": "6903b179fe6d7500013a0d0d",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Bakeware & BBQ",
+        "id": "6903b179fe6d7500013a0d0b",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Vehicale care & Accessories",
+        "id": "6903b179fe6d7500013a0d19",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Party Planning",
+        "id": "6903b179fe6d7500013a0d15",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Cleaning tools",
+        "id": "6903b179fe6d7500013a0d0f",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Earphones & headsets",
+        "id": "6903b179fe6d7500013a0d61",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Mobiles",
+        "id": "6903b179fe6d7500013a0d67",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Kitchen Appliances",
+        "id": "6903b179fe6d7500013a0d64",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Speakers & Soundbars",
+        "id": "6903b179fe6d7500013a0d6b",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Laptops, Tablets and Monitors",
+        "id": "6903b179fe6d7500013a0d65",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Personal Care Appliances",
+        "id": "69b7c133958236000180ec1d",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Home Appliances",
+        "id": "6903b179fe6d7500013a0d63",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Powerbanks Chargers Cables",
+        "id": "6903b179fe6d7500013a0d68",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Smartwatches",
+        "id": "6903b179fe6d7500013a0d6a",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Health Care Appliances",
+        "id": "6903b179fe6d7500013a0d62",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Lights & Bulbs",
+        "id": "6903b179fe6d7500013a0d66",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Smart & Streaming Devices",
+        "id": "6903b179fe6d7500013a0d69",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Batteries & Extensions",
+        "id": "6903b179fe6d7500013a0d5f",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Computer Accessories",
+        "id": "6903b179fe6d7500013a0d60",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Top Deals",
+        "id": "69706f26a176a40001054616",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Electric Kettles",
+        "id": "6903b179fe6d7500013a0d5c",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Die-cast cars",
+        "id": "69bcff6db56c7a0001b3e7a8",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Cute Stationery",
+        "id": "6a181a584ad6960001549a58",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Safe play toys",
+        "id": "69bcff6db56c7a0001b3e7a7",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Screen Time Replacement",
+        "id": "6a181a584ad6960001549a59",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Pen,Pencils and markers",
+        "id": "6903b179fe6d7500013a0d54",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Toy cars and guns",
+        "id": "6903b179fe6d7500013a0d47",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Notebooks and Diaries",
+        "id": "6903b179fe6d7500013a0d52",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Card and Board Games",
+        "id": "6903b179fe6d7500013a0d45",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "School supplies",
+        "id": "6903b179fe6d7500013a0d55",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Soft Toys",
+        "id": "6903b179fe6d7500013a0d56",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Office stationery",
+        "id": "6903b179fe6d7500013a0d53",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Dolls & pretend kits",
+        "id": "6903b179fe6d7500013a0d51",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Colouring Supplies",
+        "id": "6903b179fe6d7500013a0d50",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Action Figurines",
+        "id": "6903b179fe6d7500013a0d4a",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Building Blocks, Puzzles & More",
+        "id": "6903b179fe6d7500013a0d48",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Art & Craft",
+        "id": "6903b179fe6d7500013a0d49",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Baby & Musical toys",
+        "id": "6903b179fe6d7500013a0d4d",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Outdoor Toys",
+        "id": "6903b179fe6d7500013a0d4b",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Tiffin & Lunch boxes",
+        "id": "6903b179fe6d7500013a0d57",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "STEM & Learning",
+        "id": "6903b179fe6d7500013a0d46",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Scooters and Ride ons",
+        "id": "6903b179fe6d7500013a0d4c",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Bags",
+        "id": "6903b179fe6d7500013a0d4e",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Books",
+        "id": "6903b179fe6d7500013a0d4f",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      }
+    ],
+    "clearance": [
+      {
+        "category": "Baby Care",
+        "name": "Baby Diapers",
+        "id": "6903b10bd2c61b000112baef",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Food and Formula",
+        "id": "6903b10bd2c61b000112baf0",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Bathing",
+        "id": "6903b10bd2c61b000112baf1",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Wipes",
+        "id": "6903b10bd2c61b000112baf2",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Cream & Lotions",
+        "id": "6903b10bd2c61b000112baf4",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Gifts & More",
+        "id": "6903b10bd2c61b000112bafc",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Feeding and Teething Needs",
+        "id": "6903b10bd2c61b000112baf8",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Oil and Talc",
+        "id": "6903b10bd2c61b000112baf6",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Hygiene",
+        "id": "6903b10bd2c61b000112bafa",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Books and Toys",
+        "id": "6903b10bd2c61b000112baf9",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Oral Care",
+        "id": "6903b10bd2c61b000112baf5",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Travel Needs & Baby Gears",
+        "id": "6903b10bd2c61b000112bafe",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Baby Pharma",
+        "id": "6903b10bd2c61b000112baf7",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Clothes & Accessories",
+        "id": "6903b10bd2c61b000112bafb",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Mom Care",
+        "id": "6903b10bd2c61b000112bafd",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Baby Care",
+        "name": "Switch",
+        "id": "6ad86af4aa276200012dadce",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Die-cast cars",
+        "id": "69bcff6db56c7a0001b3e7a8",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Cute Stationery",
+        "id": "6a181a584ad6960001549a58",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Safe play toys",
+        "id": "69bcff6db56c7a0001b3e7a7",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Screen Time Replacement",
+        "id": "6a181a584ad6960001549a59",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Pen,Pencils and markers",
+        "id": "6903b179fe6d7500013a0d54",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Toy cars and guns",
+        "id": "6903b179fe6d7500013a0d47",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Notebooks and Diaries",
+        "id": "6903b179fe6d7500013a0d52",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Card and Board Games",
+        "id": "6903b179fe6d7500013a0d45",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "School supplies",
+        "id": "6903b179fe6d7500013a0d55",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Soft Toys",
+        "id": "6903b179fe6d7500013a0d56",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Office stationery",
+        "id": "6903b179fe6d7500013a0d53",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Dolls & pretend kits",
+        "id": "6903b179fe6d7500013a0d51",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Colouring Supplies",
+        "id": "6903b179fe6d7500013a0d50",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Action Figurines",
+        "id": "6903b179fe6d7500013a0d4a",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Building Blocks, Puzzles & More",
+        "id": "6903b179fe6d7500013a0d48",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Art & Craft",
+        "id": "6903b179fe6d7500013a0d49",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Baby & Musical toys",
+        "id": "6903b179fe6d7500013a0d4d",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Outdoor Toys",
+        "id": "6903b179fe6d7500013a0d4b",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Tiffin & Lunch boxes",
+        "id": "6903b179fe6d7500013a0d57",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "STEM & Learning",
+        "id": "6903b179fe6d7500013a0d46",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Scooters and Ride ons",
+        "id": "6903b179fe6d7500013a0d4c",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Bags",
+        "id": "6903b179fe6d7500013a0d4e",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      },
+      {
+        "category": "Toys and Stationery",
+        "name": "Books",
+        "id": "6903b179fe6d7500013a0d4f",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "clearance"
+        ]
+      }
+    ],
+    "household": [
+      {
+        "category": "Home and Kitchen",
+        "name": "Non Toxic Cookware",
+        "id": "69a6853c8ec23b0001d51dcb",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Premium Storage Brands",
+        "id": "6a107175f653f400014e56af",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Home decor",
+        "id": "6903b179fe6d7500013a0d13",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "304 Stainless Steel",
+        "id": "6a107175f653f400014e56ae",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Linen & Furnishing",
+        "id": "6903b179fe6d7500013a0d14",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Kitchen Tools",
+        "id": "6903b179fe6d7500013a0d0c",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Jars & Containers",
+        "id": "6903b179fe6d7500013a0d09",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Bottles, Flask and Tumblers",
+        "id": "6903b179fe6d7500013a0d0a",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Tiffins & Lunch Bag",
+        "id": "6a27ff73600211000131660a",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Bath and laundry",
+        "id": "6903b179fe6d7500013a0d0e",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Serveware & Crockery",
+        "id": "6903b179fe6d7500013a0d16",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Cookware",
+        "id": "6903b179fe6d7500013a0d07",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Tissues & Disposables",
+        "id": "6903b179fe6d7500013a0d18",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Home Utility",
+        "id": "6a27ff73600211000131660b",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Storage Organizers & Utility",
+        "id": "6903b179fe6d7500013a0d17",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "cups and mugs",
+        "id": "6903b179fe6d7500013a0d10",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Gardening",
+        "id": "6903b179fe6d7500013a0d11",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Glasses & Barware",
+        "id": "6903b179fe6d7500013a0d12",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Air Freshners",
+        "id": "6903b179fe6d7500013a0d0d",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Bakeware & BBQ",
+        "id": "6903b179fe6d7500013a0d0b",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Vehicale care & Accessories",
+        "id": "6903b179fe6d7500013a0d19",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Party Planning",
+        "id": "6903b179fe6d7500013a0d15",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Home and Kitchen",
+        "name": "Cleaning tools",
+        "id": "6903b179fe6d7500013a0d0f",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Earphones & headsets",
+        "id": "6903b179fe6d7500013a0d61",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Mobiles",
+        "id": "6903b179fe6d7500013a0d67",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Kitchen Appliances",
+        "id": "6903b179fe6d7500013a0d64",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Speakers & Soundbars",
+        "id": "6903b179fe6d7500013a0d6b",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Laptops, Tablets and Monitors",
+        "id": "6903b179fe6d7500013a0d65",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Personal Care Appliances",
+        "id": "69b7c133958236000180ec1d",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Home Appliances",
+        "id": "6903b179fe6d7500013a0d63",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Powerbanks Chargers Cables",
+        "id": "6903b179fe6d7500013a0d68",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Smartwatches",
+        "id": "6903b179fe6d7500013a0d6a",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Health Care Appliances",
+        "id": "6903b179fe6d7500013a0d62",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Lights & Bulbs",
+        "id": "6903b179fe6d7500013a0d66",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Smart & Streaming Devices",
+        "id": "6903b179fe6d7500013a0d69",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Batteries & Extensions",
+        "id": "6903b179fe6d7500013a0d5f",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Computer Accessories",
+        "id": "6903b179fe6d7500013a0d60",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Top Deals",
+        "id": "69706f26a176a40001054616",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
+      },
+      {
+        "category": "Electronics and Appliances",
+        "name": "Electric Kettles",
+        "id": "6903b179fe6d7500013a0d5c",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "lifestyle",
+          "household"
+        ]
       }
     ]
   },
+  "categoriesWithSubcategories": [
+    {
+      "category": "Fresh Vegetables",
+      "count": 10
+    },
+    {
+      "category": "Fresh Fruits",
+      "count": 11
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "count": 14
+    },
+    {
+      "category": "Meat and Seafood",
+      "count": 8
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "count": 14
+    },
+    {
+      "category": "Oils and Ghee",
+      "count": 12
+    },
+    {
+      "category": "Masalas",
+      "count": 12
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "count": 19
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "count": 15
+    },
+    {
+      "category": "Chocolates",
+      "count": 11
+    },
+    {
+      "category": "Sweet Corner",
+      "count": 15
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "count": 13
+    },
+    {
+      "category": "Chips and Namkeens",
+      "count": 12
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "count": 9
+    },
+    {
+      "category": "Frozen Food",
+      "count": 10
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "count": 11
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "count": 19
+    },
+    {
+      "category": "Tea, Coffee and Milk drinks",
+      "count": 14
+    },
+    {
+      "category": "Sauces and Spreads",
+      "count": 10
+    },
+    {
+      "category": "Health and Pharma",
+      "count": 8
+    },
+    {
+      "category": "Bath and Body",
+      "count": 25
+    },
+    {
+      "category": "Hair Care",
+      "count": 9
+    },
+    {
+      "category": "Skincare",
+      "count": 7
+    },
+    {
+      "category": "Feminine Hygiene",
+      "count": 6
+    },
+    {
+      "category": "Baby Care",
+      "count": 16
+    },
+    {
+      "category": "Home and Kitchen",
+      "count": 23
+    },
+    {
+      "category": "Electronics and Appliances",
+      "count": 16
+    },
+    {
+      "category": "Toys and Stationery",
+      "count": 23
+    }
+  ],
+  "categoriesWithoutSubcategories": [
+    "Fashion",
+    "Cleaners and Repellents",
+    "Makeup",
+    "Sexual Wellness"
+  ],
   "failures": []
 }
