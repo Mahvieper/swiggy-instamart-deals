@@ -210,6 +210,7 @@ async function main() {
   let runHousehold = false;
   let runClearance = false;
   let runNoice = false;
+  let runDiscovered = false;
 
   if (mode === 'fresh' || mode === 'produce') {
     runFresh = true;
@@ -234,6 +235,8 @@ async function main() {
     runPersonal = true;
   } else if (mode === 'noice') {
     runNoice = true;
+  } else if (mode === 'discovered') {
+    runDiscovered = true;
   } else {
     // Auto Mode:
     // Scheduled window: 9:01 AM to 12:01 AM IST
@@ -382,6 +385,20 @@ async function main() {
     const cfg = campaigns.household || campaigns.cleaning || {};
     const threshold = parseInt(process.env.HOUSEHOLD_MIN_DISCOUNT || process.env.CLEANING_MIN_DISCOUNT, 10) || cfg.minDiscount || 70;
     await runSubcategoryCampaign('household', cfg, {
+      bot,
+      chatId,
+      storeConfig,
+      threshold,
+      timeString
+    });
+  }
+
+  // 10. Newly discovered aisles use the global default threshold only.
+  // Existing campaign thresholds and per-item overrides remain unchanged.
+  if (runDiscovered) {
+    const cfg = campaigns.discovered || {};
+    const threshold = cfg.minDiscount || config.minDiscount || 70;
+    await runSubcategoryCampaign('discovered', cfg, {
       bot,
       chatId,
       storeConfig,
