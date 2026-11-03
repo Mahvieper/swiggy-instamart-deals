@@ -299,6 +299,29 @@ async function discoverInBrowser(storeConfig, seedCategories) {
       };
       const pause = function (ms) { return new Promise(function (resolve) { setTimeout(resolve, ms); }); };
 
+      // Keep a compact, value-free shape summary for categories whose response
+      // is HTTP 200 but does not expose navigationTabs. This helps distinguish
+      // a different API schema from a genuinely empty category.
+      function summarizeResponseShape(root) {
+        const arrays = [];
+        const visited = new WeakSet();
+        function walk(node, path, depth) {
+          if (!node || typeof node !== 'object' || depth > 10 || visited.has(node) || arrays.length >= 20) return;
+          visited.add(node);
+          if (Array.isArray(node)) {
+            if (node.length) {
+              const first = node.find((item) => item && typeof item === 'object');
+              arrays.push({ path: path, length: node.length, firstItemKeys: first && !Array.isArray(first) ? Object.keys(first).slice(0, 20) : [] });
+            }
+            for (let index = 0; index < Math.min(node.length, 3); index++) walk(node[index], path + '[' + index + ']', depth + 1);
+            return;
+          }
+          for (const [key, value] of Object.entries(node)) walk(value, path ? path + '.' + key : key, depth + 1);
+        }
+        walk(root, 'data', 0);
+        return { topLevelKeys: root && typeof root === 'object' ? Object.keys(root).slice(0, 30) : [], arrays: arrays };
+      }
+
       function collectTabs(node, output, visited) {
         if (!node || typeof node !== 'object' || visited.has(node)) return;
         visited.add(node);
@@ -320,6 +343,7 @@ async function discoverInBrowser(storeConfig, seedCategories) {
       let successfulCategories = 0;
       const categoriesWithSubcategories = [];
       const categoriesWithoutSubcategories = [];
+      const emptyCategoryDiagnostics = [];
       for (let index = 0; index < categoryList.length; index++) {
         const category = categoryList[index];
         const url = 'https://instamart.in/api/instamart/category-listing/v2?categoryName=' +
@@ -341,7 +365,14 @@ async function discoverInBrowser(storeConfig, seedCategories) {
             collectTabs(json && json.data, tabs, new WeakSet());
             successfulCategories++;
             if (tabs.length) categoriesWithSubcategories.push({ category: category.name, count: tabs.length });
-            else categoriesWithoutSubcategories.push(category.name);
+            else {
+              categoriesWithoutSubcategories.push(category.name);
+              emptyCategoryDiagnostics.push({
+                category: category.name,
+                taxonomyType: category.taxonomyType,
+                responseShape: summarizeResponseShape(json && json.data)
+              });
+            }
             for (const tab of tabs) {
               const key = String(tab.id) + '||' + category.taxonomyType;
               const record = {
@@ -369,6 +400,7 @@ async function discoverInBrowser(storeConfig, seedCategories) {
         successfulCategories: successfulCategories,
         categoriesWithSubcategories: categoriesWithSubcategories,
         categoriesWithoutSubcategories: categoriesWithoutSubcategories,
+        emptyCategoryDiagnostics: emptyCategoryDiagnostics,
         failedCategories: failures,
         attemptedCategories: categoryList.length
       };
@@ -433,6 +465,7 @@ async function main() {
     campaigns: campaigns,
     categoriesWithSubcategories: result.categoriesWithSubcategories,
     categoriesWithoutSubcategories: result.categoriesWithoutSubcategories,
+    emptyCategoryDiagnostics: result.emptyCategoryDiagnostics,
     failures: result.failedCategories
   };
 
@@ -444,6 +477,9 @@ async function main() {
     Object.keys(campaigns).length + ' campaign buckets.');
   console.log('[CatalogDiscovery] Categories with subcategories: ' + result.categoriesWithSubcategories.length +
     '; categories with no navigation tabs: ' + result.categoriesWithoutSubcategories.length + '.');
+  if (result.emptyCategoryDiagnostics.length) {
+    console.log('[CatalogDiscovery] Empty-category response diagnostics: ' + JSON.stringify(result.emptyCategoryDiagnostics));
+  }
   console.log('[CatalogDiscovery] Campaign counts: ' + Object.keys(campaigns).map(function (key) {
     return key + '=' + campaigns[key].length;
   }).join(', '));
