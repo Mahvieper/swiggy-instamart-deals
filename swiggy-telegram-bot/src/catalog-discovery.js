@@ -127,6 +127,23 @@ async function discoverInBrowser(storeConfig, seedCategories) {
     const page = await browser.newPage();
     page.setDefaultNavigationTimeout(45000);
 
+    // Use the optional session cookie supplied by GitHub Actions. Store it only
+    // for the Instamart origin rather than attaching it to every outbound request.
+    const cookieHeader = process.env.SWIGGY_COOKIE || '';
+    if (cookieHeader.trim()) {
+      const cookies = cookieHeader.split(';').map((part) => part.trim()).filter(Boolean).map((part) => {
+        const separator = part.indexOf('=');
+        if (separator <= 0) return null;
+        return {
+          name: part.slice(0, separator).trim(),
+          value: part.slice(separator + 1).trim(),
+          url: 'https://instamart.in/',
+          secure: true
+        };
+      }).filter(Boolean);
+      if (cookies.length) await browser.defaultBrowserContext().setCookie(...cookies);
+    }
+
     // Capture catalog/navigation JSON fetched by the live storefront. This can
     // reveal newly introduced top-level categories beyond the current config seeds.
     const pendingResponses = [];
@@ -173,6 +190,16 @@ async function discoverInBrowser(storeConfig, seedCategories) {
 
     await page.goto('https://instamart.in', { waitUntil: 'domcontentloaded', timeout: 45000 }).catch(() => {});
     await sleep(6000);
+
+    // Instamart lazy-loads some navigation and category metadata as the page is
+    // scrolled. A bounded sweep triggers those requests without clicking or
+    // changing the selected store/category.
+    for (let step = 0; step < 12; step++) {
+      await page.evaluate(() => window.scrollBy(0, Math.max(window.innerHeight * 0.8, 600)));
+      await sleep(450);
+    }
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await sleep(1200);
     await Promise.allSettled(pendingResponses);
 
     return await page.evaluate(async function (input) {
@@ -291,6 +318,8 @@ async function discoverInBrowser(storeConfig, seedCategories) {
       }
 
       let successfulCategories = 0;
+      const categoriesWithSubcategories = [];
+      const categoriesWithoutSubcategories = [];
       for (let index = 0; index < categoryList.length; index++) {
         const category = categoryList[index];
         const url = 'https://instamart.in/api/instamart/category-listing/v2?categoryName=' +
@@ -311,6 +340,8 @@ async function discoverInBrowser(storeConfig, seedCategories) {
             const tabs = [];
             collectTabs(json && json.data, tabs, new WeakSet());
             successfulCategories++;
+            if (tabs.length) categoriesWithSubcategories.push({ category: category.name, count: tabs.length });
+            else categoriesWithoutSubcategories.push(category.name);
             for (const tab of tabs) {
               const key = String(tab.id) + '||' + category.taxonomyType;
               const record = {
@@ -336,6 +367,8 @@ async function discoverInBrowser(storeConfig, seedCategories) {
         categories: categoryList,
         subcategories: Array.from(subcategories.values()),
         successfulCategories: successfulCategories,
+        categoriesWithSubcategories: categoriesWithSubcategories,
+        categoriesWithoutSubcategories: categoriesWithoutSubcategories,
         failedCategories: failures,
         attemptedCategories: categoryList.length
       };
@@ -388,6 +421,8 @@ async function main() {
     stats: {
       attemptedCategories: result.attemptedCategories,
       successfulCategories: result.successfulCategories,
+      categoriesWithSubcategories: result.categoriesWithSubcategories.length,
+      categoriesWithoutSubcategories: result.categoriesWithoutSubcategories.length,
       failedCategories: result.failedCategories.length,
       discoveredCategories: result.categories.length,
       discoveredSubcategories: result.subcategories.length,
@@ -396,6 +431,8 @@ async function main() {
     categories: result.categories,
     subcategories: result.subcategories,
     campaigns: campaigns,
+    categoriesWithSubcategories: result.categoriesWithSubcategories,
+    categoriesWithoutSubcategories: result.categoriesWithoutSubcategories,
     failures: result.failedCategories
   };
 
@@ -405,6 +442,8 @@ async function main() {
 
   console.log('[CatalogDiscovery] Saved ' + result.subcategories.length + ' discovered subcategories across ' +
     Object.keys(campaigns).length + ' campaign buckets.');
+  console.log('[CatalogDiscovery] Categories with subcategories: ' + result.categoriesWithSubcategories.length +
+    '; categories with no navigation tabs: ' + result.categoriesWithoutSubcategories.length + '.');
   console.log('[CatalogDiscovery] Campaign counts: ' + Object.keys(campaigns).map(function (key) {
     return key + '=' + campaigns[key].length;
   }).join(', '));
