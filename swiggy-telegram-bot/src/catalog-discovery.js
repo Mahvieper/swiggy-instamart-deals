@@ -370,7 +370,11 @@ async function discoverInBrowser(storeConfig, seedCategories) {
               emptyCategoryDiagnostics.push({
                 category: category.name,
                 taxonomyType: category.taxonomyType,
-                responseShape: summarizeResponseShape(json && json.data)
+                httpStatus: response.status,
+                contentType: response.headers.get('content-type') || '',
+                responseType: Array.isArray(json) ? 'array' : (json === null ? 'null' : typeof json),
+                responseShape: summarizeResponseShape(json),
+                dataShape: summarizeResponseShape(json && json.data)
               });
             }
             for (const tab of tabs) {
