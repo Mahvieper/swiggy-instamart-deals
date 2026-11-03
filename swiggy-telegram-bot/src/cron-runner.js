@@ -210,6 +210,7 @@ async function main() {
   let runHousehold = false;
   let runClearance = false;
   let runNoice = false;
+  let runDiscovered = false;
 
   if (mode === 'fresh' || mode === 'produce') {
     runFresh = true;
@@ -234,6 +235,8 @@ async function main() {
     runPersonal = true;
   } else if (mode === 'noice') {
     runNoice = true;
+  } else if (mode === 'discovered') {
+    runDiscovered = true;
   } else {
     // Auto Mode:
     // Scheduled window: 9:01 AM to 12:01 AM IST
@@ -251,6 +254,40 @@ async function main() {
   }
 
   const campaigns = config.campaigns || {};
+
+  // Merge the latest automatically discovered catalog without mutating config.json.
+  // Existing configured entries win on duplicate IDs, preserving manual metadata.
+  const discoveredCatalogPath = require('path').join(__dirname, '..', 'discovered-catalog.json');
+  try {
+    if (require('fs').existsSync(discoveredCatalogPath)) {
+      const discoveredCatalog = JSON.parse(require('fs').readFileSync(discoveredCatalogPath, 'utf8'));
+      for (const [campaignKey, discoveredItems] of Object.entries(discoveredCatalog.campaigns || {})) {
+        if (!Array.isArray(discoveredItems) || !discoveredItems.length) continue;
+        if (!campaigns[campaignKey]) {
+          campaigns[campaignKey] = {
+            name: 'Newly Discovered Instamart Aisles',
+            tag: '🧭',
+            type: 'subcategory',
+            enabled: true,
+            minDiscount: config.minDiscount || 70,
+            refreshCycle: 'daily',
+            subcategories: [],
+            searchKeywords: []
+          };
+        }
+        const existingIds = new Set((campaigns[campaignKey].subcategories || []).map((item) => String(item.id)));
+        const additions = discoveredItems.filter((item) => item && item.id && !existingIds.has(String(item.id)));
+        campaigns[campaignKey].subcategories = [...(campaigns[campaignKey].subcategories || []), ...additions];
+        if (additions.length) {
+          console.log(`[Catalog] Merged ${additions.length} discovered aisles into ${campaignKey}.`);
+        }
+      }
+    } else {
+      console.log('[Catalog] No discovered-catalog.json yet; using configured aisles only.');
+    }
+  } catch (error) {
+    console.warn('[Catalog] Could not load discovered catalog; using configured aisles only:', error.message);
+  }
 
   // 1. Worker 1: Daily Fresh Produce & Meats
   if (runFresh) {
@@ -348,6 +385,20 @@ async function main() {
     const cfg = campaigns.household || campaigns.cleaning || {};
     const threshold = parseInt(process.env.HOUSEHOLD_MIN_DISCOUNT || process.env.CLEANING_MIN_DISCOUNT, 10) || cfg.minDiscount || 70;
     await runSubcategoryCampaign('household', cfg, {
+      bot,
+      chatId,
+      storeConfig,
+      threshold,
+      timeString
+    });
+  }
+
+  // 10. Newly discovered aisles use the global default threshold only.
+  // Existing campaign thresholds and per-item overrides remain unchanged.
+  if (runDiscovered) {
+    const cfg = campaigns.discovered || {};
+    const threshold = cfg.minDiscount || config.minDiscount || 70;
+    await runSubcategoryCampaign('discovered', cfg, {
       bot,
       chatId,
       storeConfig,
