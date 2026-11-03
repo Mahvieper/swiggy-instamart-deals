@@ -126,8 +126,54 @@ async function discoverInBrowser(storeConfig, seedCategories) {
   try {
     const page = await browser.newPage();
     page.setDefaultNavigationTimeout(45000);
+
+    // Capture catalog/navigation JSON fetched by the live storefront. This can
+    // reveal newly introduced top-level categories beyond the current config seeds.
+    const pendingResponses = [];
+    const networkCategories = new Map();
+    page.on('response', (response) => {
+      const responseUrl = response.url();
+      if (!responseUrl.includes('/api/instamart/')) return;
+      const task = (async () => {
+        try {
+          const headers = response.headers();
+          if (!(headers['content-type'] || '').includes('json')) return;
+          const payload = await response.json();
+          const visited = new WeakSet();
+          const walk = (node, depth = 0) => {
+            if (!node || typeof node !== 'object' || depth > 16 || visited.has(node)) return;
+            visited.add(node);
+            if (Array.isArray(node)) {
+              for (const child of node) walk(child, depth + 1);
+              return;
+            }
+            if (node.categoryName && node.taxonomyType) {
+              const name = String(node.categoryName).trim();
+              const taxonomyType = String(node.taxonomyType).trim();
+              if (name && taxonomyType) networkCategories.set(name.toLowerCase() + '||' + taxonomyType.toLowerCase(), { name, taxonomyType });
+            }
+            for (const field of ['deepLink', 'url', 'link']) {
+              const value = node[field];
+              if (typeof value === 'string') {
+                try {
+                  const parsed = new URL(value, 'https://instamart.in');
+                  const name = parsed.searchParams.get('categoryName');
+                  const taxonomyType = parsed.searchParams.get('taxonomyType');
+                  if (name && taxonomyType) networkCategories.set(name.toLowerCase() + '||' + taxonomyType.toLowerCase(), { name, taxonomyType });
+                } catch (error) {}
+              }
+            }
+            for (const child of Object.values(node)) walk(child, depth + 1);
+          };
+          walk(payload);
+        } catch (error) {}
+      })();
+      pendingResponses.push(task);
+    });
+
     await page.goto('https://instamart.in', { waitUntil: 'domcontentloaded', timeout: 45000 }).catch(() => {});
-    await sleep(5000);
+    await sleep(6000);
+    await Promise.allSettled(pendingResponses);
 
     return await page.evaluate(async function (input) {
       const sid = input.sid;
@@ -214,6 +260,7 @@ async function discoverInBrowser(storeConfig, seedCategories) {
       }
 
       for (const seed of input.seeds || []) addCategory(seed.name, seed.taxonomyType);
+      for (const discovered of input.networkCategories || []) addCategory(discovered.name, discovered.taxonomyType);
 
       const categoryList = Array.from(candidates.values());
       const makeMatcher = function () {
@@ -296,7 +343,8 @@ async function discoverInBrowser(storeConfig, seedCategories) {
       sid: storeConfig.sid,
       pid: storeConfig.pid,
       secid: storeConfig.secid,
-      seeds: seedCategories
+      seeds: seedCategories,
+      networkCategories: Array.from(networkCategories.values())
     });
   } finally {
     await browser.close().catch(() => {});
