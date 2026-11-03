@@ -2,8 +2,8 @@ name: Swiggy Instamart Keyword Deal Hunter
 
 on:
   schedule:
-    # Run every hour (UTC)
-    - cron: '0 * * * *'
+    # Run every hour at 17 minutes past (UTC)
+    - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       skip_sync:
