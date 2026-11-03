@@ -1,0 +1,3307 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-03T06:04:59.523Z",
+  "storeId": "1400978",
+  "source": "Instamart category-listing/v2 navigationTabs",
+  "stats": {
+    "attemptedCategories": 32,
+    "successfulCategories": 32,
+    "failedCategories": 0,
+    "discoveredCategories": 32,
+    "discoveredSubcategories": 175,
+    "configuredSubcategories": 446
+  },
+  "categories": [
+    {
+      "name": "Fresh Vegetables",
+      "taxonomyType": "Speciality taxonomy 1"
+    },
+    {
+      "name": "Fresh Fruits",
+      "taxonomyType": "Speciality taxonomy 1"
+    },
+    {
+      "name": "Dairy, Bread and Eggs",
+      "taxonomyType": "Speciality taxonomy 1"
+    },
+    {
+      "name": "Meat and Seafood",
+      "taxonomyType": "Speciality taxonomy 1"
+    },
+    {
+      "name": "Atta, Rice and Dal",
+      "taxonomyType": "taxonomy 5"
+    },
+    {
+      "name": "Oils and Ghee",
+      "taxonomyType": "taxonomy 5"
+    },
+    {
+      "name": "Masalas",
+      "taxonomyType": "taxonomy 5"
+    },
+    {
+      "name": "Cereals and Breakfast",
+      "taxonomyType": "taxonomy 5"
+    },
+    {
+      "name": "Ice Creams and Frozen Desserts",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Chocolates",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Sweet Corner",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Biscuits and Cakes",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Chips and Namkeens",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Noodles, Pasta, Vermicelli",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Frozen Food",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Dry Fruits and Seeds Mix",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Cold Drinks and Juices",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Tea, Coffee and Milk drinks",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Sauces and Spreads",
+      "taxonomyType": "taxonomy 10"
+    },
+    {
+      "name": "Health and Pharma",
+      "taxonomyType": "taxonomy 14"
+    },
+    {
+      "name": "Bath and Body",
+      "taxonomyType": "taxonomy 14"
+    },
+    {
+      "name": "Hair Care",
+      "taxonomyType": "taxonomy 14"
+    },
+    {
+      "name": "Skincare",
+      "taxonomyType": "taxonomy 14"
+    },
+    {
+      "name": "Feminine Hygiene",
+      "taxonomyType": "taxonomy 14"
+    },
+    {
+      "name": "Baby Care",
+      "taxonomyType": "taxonomy 14"
+    },
+    {
+      "name": "Home and Kitchen",
+      "taxonomyType": "IM Meatsy"
+    },
+    {
+      "name": "Electronics and Appliances",
+      "taxonomyType": "IM Meatsy"
+    },
+    {
+      "name": "Toys and Stationery",
+      "taxonomyType": "IM Meatsy"
+    },
+    {
+      "name": "Fashion",
+      "taxonomyType": "IM Meatsy"
+    },
+    {
+      "name": "Cleaners and Repellents",
+      "taxonomyType": "IM Meatsy"
+    },
+    {
+      "name": "Makeup",
+      "taxonomyType": "taxonomy 14"
+    },
+    {
+      "name": "Sexual Wellness",
+      "taxonomyType": "taxonomy 14"
+    }
+  ],
+  "subcategories": [
+    {
+      "category": "Fresh Vegetables",
+      "name": "Fresh Vegetables",
+      "id": "6822eeeded32000001e25aa2",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Leafy and Seasonings",
+      "id": "6822eeeded32000001e25aa3",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Exotic Vegetables",
+      "id": "6822eeeded32000001e25aa4",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Premium Produce",
+      "id": "6a950ffd114a1800015f6042",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Pooja & Festive",
+      "id": "6822eeeded32000001e25aa7",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Certified Organics",
+      "id": "6822eeeded32000001e25aa8",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Frozen Vegetables",
+      "id": "68243edc0c0f930001b2188d",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Bouquet & Plants",
+      "id": "6822eeeded32000001e25aaa",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Cuts and sprouts",
+      "id": "6822eeeded32000001e25aa6",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Fresh Fruits",
+      "id": "6822eeeded32000001e25aad",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Fresh Fruits",
+      "id": "6822eeeded32000001e25aaf",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Seasonal Fruits",
+      "id": "6822eeeded32000001e25ab0",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Premium Produce",
+      "id": "6a950ffd114a1800015f6043",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Exotic Fruits",
+      "id": "6822eeeded32000001e25ab1",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Cut Fruits and Juices",
+      "id": "6822eeeded32000001e25ab2",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Pooja & Festive",
+      "id": "6822eeeded32000001e25ab3",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Certified Organics",
+      "id": "6822eeeded32000001e25ab6",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Frozen Fruits",
+      "id": "68b689ee4dd82b0001d869d1",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Fresh Vegetables",
+      "id": "6822eeeded32000001e25ab8",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Bouquet & Plants",
+      "id": "6822eeeded32000001e25ab4",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Cuts and sprouts",
+      "id": "6822eeeded32000001e25aba",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Top Deals",
+      "id": "6966028b4f11730001f480a2",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Milk",
+      "id": "6822eeeded32000001e25abe",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Bread and Buns",
+      "id": "6822eeeded32000001e25abd",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Paneer and Tofu",
+      "id": "6822eeeded32000001e25ac2",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Cheese",
+      "id": "6822eeeded32000001e25ac3",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Eggs",
+      "id": "6822eeeded32000001e25abf",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Curd and Yogurts",
+      "id": "6822eeeded32000001e25ac0",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Butter",
+      "id": "6822eeeded32000001e25ac4",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Batters and Chutneys",
+      "id": "6822eeeded32000001e25ac5",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Lassi and Buttermilk",
+      "id": "6822eeeded32000001e25ac8",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Indian Breads",
+      "id": "6822eeeded32000001e25ac6",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Cream and Condensed Milk",
+      "id": "6970b6e9b6373a00010b3a9e",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Dairy Alternatives",
+      "id": "6822eeeded32000001e25ac7",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Dairy, Bread and Eggs",
+      "name": "Milkshakes and More",
+      "id": "6822eeeded32000001e25ac9",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Meat and Seafood",
+      "name": "Fresh Chicken",
+      "id": "6822eeeded32000001e25b3d",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Meat and Seafood",
+      "name": "Fresh Seafood",
+      "id": "6822eeeded32000001e25b3e",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Meat and Seafood",
+      "name": "Fresh Mutton",
+      "id": "6822eeeded32000001e25b3f",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Meat and Seafood",
+      "name": "Ready to Cook",
+      "id": "692951068ff2590001fe7c7a",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Meat and Seafood",
+      "name": "Meat Combos",
+      "id": "6948edde195bc000019a3b03",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Meat and Seafood",
+      "name": "Eggs",
+      "id": "6822eeeded32000001e25b44",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Meat and Seafood",
+      "name": "Frozen Food",
+      "id": "6822eeeded32000001e25b42",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Meat and Seafood",
+      "name": "Plant Based Meat",
+      "id": "6822eeeded32000001e25b49",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Atta",
+      "id": "6903b01ed2c61b000112ba2c",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Rice",
+      "id": "6903b01ed2c61b000112ba2d",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Toor, Moong and Urad",
+      "id": "6903b01ed2c61b000112ba31",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "High Protein Atta",
+      "id": "6a105aa35f9ab700014de9e2",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Top Deals",
+      "id": "6a225b6a3c3eb20001d0f54f",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Basmati Rice",
+      "id": "6903b01ed2c61b000112ba2b",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Besan, Sooji and Maida",
+      "id": "6903b01ed2c61b000112ba2e",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Rajma, Chola and Others",
+      "id": "6903b01ed2c61b000112ba32",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Poha & Puffed Rice",
+      "id": "6903b01ed2c61b000112ba33",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Premium Brands",
+      "id": "6903b01ed2c61b000112ba2f",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Soya Chunk & Badi",
+      "id": "6903b01ed2c61b000112ba37",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Other Flours",
+      "id": "6903b01ed2c61b000112ba36",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Millets & Daliya",
+      "id": "6903b01ed2c61b000112ba35",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Atta, Rice and Dal",
+      "name": "Ready to Cook Flour Mix",
+      "id": "6903b01ed2c61b000112ba34",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Sunflower & Other Oils",
+      "id": "69394956ed899c0001b1aed8",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Mustard Oils",
+      "id": "69392fc99bd17b000135e3bd",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Cold Pressed",
+      "id": "6a105aa35f9ab700014de9e4",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Ghee",
+      "id": "69392fc99bd17b000135e3bb",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Top Deals",
+      "id": "6a225b6a3c3eb20001d0f551",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Soyabean Oils",
+      "id": "69394956ed899c0001b1aed7",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Rice Bran Oils",
+      "id": "69394956ed899c0001b1aed6",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Sunflower Oils",
+      "id": "69394956ed899c0001b1aed9",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Blended Oils",
+      "id": "69392fc99bd17b000135e3b9",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Cold-pressed Oils",
+      "id": "69392fc99bd17b000135e3ba",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Olive Oils",
+      "id": "69394956ed899c0001b1aed4",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Oils and Ghee",
+      "name": "Premium Brands",
+      "id": "69394956ed899c0001b1aed5",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Powdered Spices",
+      "id": "693ad23e53de7a00011ff894",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Whole Spices",
+      "id": "693ad23e53de7a00011ff898",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Cold Grind",
+      "id": "6a105aa35f9ab700014de9e3",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Sugar and Jaggery",
+      "id": "693ad23e53de7a00011ff897",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Papad & Fryums",
+      "id": "693a7ac953de7a00011ff892",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Ready Masala",
+      "id": "693ad23e53de7a00011ff895",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Salt",
+      "id": "693ad23e53de7a00011ff896",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Paste and Puree",
+      "id": "693a9dc1eb607300012621a5",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Pickles & Chutney",
+      "id": "693ad23e53de7a00011ff893",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Herbs & Seasoning",
+      "id": "693a7ac953de7a00011ff890",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Coconut Milk & Powder",
+      "id": "693981bf64f19a0001f8a5b3",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Masalas",
+      "name": "Top Deals",
+      "id": "6a225b6a3c3eb20001d0f550",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Oats",
+      "id": "69492faa195bc000019a3b0b",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Energy Bars",
+      "id": "69492faa195bc000019a3b10",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Muesli & Granola",
+      "id": "69492faa195bc000019a3b0a",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "High protein oats & museli",
+      "id": "698d7038c63f8300011b530c",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Regional Favourites",
+      "id": "69492faa195bc000019a3b0e",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Ready Mixes",
+      "id": "69492faa195bc000019a3b11",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Kids Cereals",
+      "id": "69492faa195bc000019a3b0c",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Flakes",
+      "id": "69492faa195bc000019a3b0d",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Batters",
+      "id": "69492faa195bc000019a3b1c",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Pancake Mixes",
+      "id": "69492faa195bc000019a3b13",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Peanut Butters",
+      "id": "69492faa195bc000019a3b14",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Chocolate Spreads",
+      "id": "69492faa195bc000019a3b15",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Masala Oats",
+      "id": "698499a8e171b800015b5d68",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Jams",
+      "id": "69492faa195bc000019a3b1b",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Juices & Fruit Drinks",
+      "id": "69492faa195bc000019a3b1a",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Mayo & Spreads",
+      "id": "69492faa195bc000019a3b16",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Hot Beverages",
+      "id": "69492faa195bc000019a3b19",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Seeds and trail Mixes",
+      "id": "69492faa195bc000019a3b18",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Cereals and Breakfast",
+      "name": "Crazy Deals",
+      "id": "69492faa195bc000019a3b09",
+      "taxonomyType": "taxonomy 5",
+      "campaigns": [
+        "grocery"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Tubs & Party Packs",
+      "id": "6903b0c295d8230001064c89",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Cones",
+      "id": "6903b0c295d8230001064c8a",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Sticks",
+      "id": "6903b0c295d8230001064c8b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Top Deals",
+      "id": "6a5638416009fa0001dce711",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Cups",
+      "id": "6903b0c295d8230001064c91",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Guiltfree",
+      "id": "6903b0c295d8230001064c8d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Real Fruit",
+      "id": "69b94cf4b6373a00010b3b3b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Gourmet",
+      "id": "6903b0c295d8230001064c8c",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Kulfi",
+      "id": "6903b0c295d8230001064c8f",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Cakes & Sandwiches",
+      "id": "6903b0c295d8230001064c92",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Rare Finds",
+      "id": "6903b0c295d8230001064c88",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Premium",
+      "id": "6903b0c295d8230001064c90",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Regional Favorites",
+      "id": "6903b0c295d8230001064c93",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Brownies & Cakes",
+      "id": "6903b0c295d8230001064c94",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Ice Creams and Frozen Desserts",
+      "name": "Syrups",
+      "id": "6903b0c295d8230001064c95",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Milk Chocolates",
+      "id": "693d17b2c0e8870001d2d8fd",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Dark Chocolates",
+      "id": "693d17b2c0e8870001d2d8f8",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Premium",
+      "id": "693d1c2031a0de00019cd18b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Gift Boxes",
+      "id": "693d17b2c0e8870001d2d8f9",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Top Deals",
+      "id": "6a5638416009fa0001dce712",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Shared Packs",
+      "id": "693d448b31a0de00019cd18c",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Wafers",
+      "id": "693d82725485ff0001d3ec20",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Kunafa Chocolate",
+      "id": "69c2674fb2f6170001b1dd3e",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Gourmet collection",
+      "id": "693d17b2c0e8870001d2d8fa",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Candies & More",
+      "id": "693d17b2c0e8870001d2d8f7",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chocolates",
+      "name": "Gums & Mint",
+      "id": "693d17b2c0e8870001d2d8fb",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Kaju Katli & Barfi",
+      "id": "693f772b01a77200013e2a09",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Pedhas",
+      "id": "693f772b01a77200013e2a12",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Gulab Jamun",
+      "id": "693f772b01a77200013e2a0c",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Ladoos",
+      "id": "693f772b01a77200013e2a11",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Mysore Pak",
+      "id": "693f772b01a77200013e2a10",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Dry Fruit Sweets",
+      "id": "693f772b01a77200013e2a0a",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Rasgulla",
+      "id": "693f772b01a77200013e2a0b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Chikki",
+      "id": "693fab2c01a77200013e2a13",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Rasmalai",
+      "id": "693fab2c01a77200013e2a14",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Dessert Mixes",
+      "id": "693f772b01a77200013e2a0d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Top Deals",
+      "id": "6a5638416009fa0001dce713",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Cakes and Pies",
+      "id": "693f772b01a77200013e2a0e",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Cream Biscuits",
+      "id": "69eb43c5a51c5400018ac258",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Chocofills",
+      "id": "69eb43c5a51c5400018ac259",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Sweet Corner",
+      "name": "Gulkand & Paan",
+      "id": "693fab2c01a77200013e2a15",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Cakes & Pies",
+      "id": "693c23bd4df316000117b882",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Cream Biscuits",
+      "id": "693c23bd4df316000117b885",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Cookies",
+      "id": "693c23bd4df316000117b884",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Marie & Digestive",
+      "id": "693c23bd4df316000117b88b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Regular & Glucose",
+      "id": "6ab22eea5aa7b80001720e62",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Salted & Plain",
+      "id": "693c23bd4df316000117b890",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Wafers, rusk & crackers",
+      "id": "6ab22eea5aa7b80001720e64",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Regional Favourites",
+      "id": "693c23bd4df316000117b88e",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Healthy Snacking",
+      "id": "693c23bd4df316000117b88a",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Gift Boxes",
+      "id": "693c23bd4df316000117b888",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Baking ingredients",
+      "id": "6ab22eea5aa7b80001720e63",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Gourmet collection",
+      "id": "693c23bd4df316000117b889",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Biscuits and Cakes",
+      "name": "Pancake Mixes",
+      "id": "693c23bd4df316000117b88d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "treats"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Chips and Crisps",
+      "id": "6903b0c295d8230001064c99",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Bhujia and Namkeens",
+      "id": "6903b0c295d8230001064c9d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Puffs and Crunchies",
+      "id": "6903b0c295d8230001064c9b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Indian Snacks",
+      "id": "6903b0c295d8230001064c9e",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Makhana & Dry Fruits",
+      "id": "6903b0c295d8230001064c9f",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Nachos",
+      "id": "6903b0c295d8230001064c9a",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Popcorn",
+      "id": "6903b0c295d8230001064ca1",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Diwali Gift Hampers",
+      "id": "6903b0c295d8230001064ca2",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Healthy Snacking",
+      "id": "6903b0c295d8230001064ca3",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Party Packs",
+      "id": "6903b0c295d8230001064ca6",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Sweet Treats",
+      "id": "6903b0c295d8230001064ca7",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Fasting Snacks",
+      "id": "699428c05011b80001ede81d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Instant Noodles",
+      "id": "693f772b01a77200013e29fc",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Korean Noodles",
+      "id": "693f772b01a77200013e29fe",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Cup Noodles",
+      "id": "693f772b01a77200013e29fd",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Instant Pasta",
+      "id": "693f772b01a77200013e2a02",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Vermicelli",
+      "id": "693f772b01a77200013e2a03",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Cooking Pasta",
+      "id": "693f772b01a77200013e2a01",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Hakka Noodles",
+      "id": "693f772b01a77200013e29ff",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Ready to eat",
+      "id": "693f772b01a77200013e2a05",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Soups",
+      "id": "693f772b01a77200013e2a04",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    }
+  ],
+  "campaigns": {
+    "fresh": [
+      {
+        "category": "Fresh Vegetables",
+        "name": "Fresh Vegetables",
+        "id": "6822eeeded32000001e25aa2",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Leafy and Seasonings",
+        "id": "6822eeeded32000001e25aa3",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Exotic Vegetables",
+        "id": "6822eeeded32000001e25aa4",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Premium Produce",
+        "id": "6a950ffd114a1800015f6042",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Pooja & Festive",
+        "id": "6822eeeded32000001e25aa7",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Certified Organics",
+        "id": "6822eeeded32000001e25aa8",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Frozen Vegetables",
+        "id": "68243edc0c0f930001b2188d",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Bouquet & Plants",
+        "id": "6822eeeded32000001e25aaa",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Cuts and sprouts",
+        "id": "6822eeeded32000001e25aa6",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Fresh Fruits",
+        "id": "6822eeeded32000001e25aad",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Fresh Fruits",
+        "id": "6822eeeded32000001e25aaf",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Seasonal Fruits",
+        "id": "6822eeeded32000001e25ab0",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Premium Produce",
+        "id": "6a950ffd114a1800015f6043",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Exotic Fruits",
+        "id": "6822eeeded32000001e25ab1",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Cut Fruits and Juices",
+        "id": "6822eeeded32000001e25ab2",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Pooja & Festive",
+        "id": "6822eeeded32000001e25ab3",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Certified Organics",
+        "id": "6822eeeded32000001e25ab6",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Frozen Fruits",
+        "id": "68b689ee4dd82b0001d869d1",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Fresh Vegetables",
+        "id": "6822eeeded32000001e25ab8",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Bouquet & Plants",
+        "id": "6822eeeded32000001e25ab4",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Cuts and sprouts",
+        "id": "6822eeeded32000001e25aba",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Top Deals",
+        "id": "6966028b4f11730001f480a2",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Milk",
+        "id": "6822eeeded32000001e25abe",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Bread and Buns",
+        "id": "6822eeeded32000001e25abd",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Paneer and Tofu",
+        "id": "6822eeeded32000001e25ac2",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Cheese",
+        "id": "6822eeeded32000001e25ac3",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Eggs",
+        "id": "6822eeeded32000001e25abf",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Curd and Yogurts",
+        "id": "6822eeeded32000001e25ac0",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Butter",
+        "id": "6822eeeded32000001e25ac4",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Batters and Chutneys",
+        "id": "6822eeeded32000001e25ac5",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Lassi and Buttermilk",
+        "id": "6822eeeded32000001e25ac8",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Indian Breads",
+        "id": "6822eeeded32000001e25ac6",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Cream and Condensed Milk",
+        "id": "6970b6e9b6373a00010b3a9e",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Dairy Alternatives",
+        "id": "6822eeeded32000001e25ac7",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Dairy, Bread and Eggs",
+        "name": "Milkshakes and More",
+        "id": "6822eeeded32000001e25ac9",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Meat and Seafood",
+        "name": "Fresh Chicken",
+        "id": "6822eeeded32000001e25b3d",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Meat and Seafood",
+        "name": "Fresh Seafood",
+        "id": "6822eeeded32000001e25b3e",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Meat and Seafood",
+        "name": "Fresh Mutton",
+        "id": "6822eeeded32000001e25b3f",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Meat and Seafood",
+        "name": "Ready to Cook",
+        "id": "692951068ff2590001fe7c7a",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Meat and Seafood",
+        "name": "Meat Combos",
+        "id": "6948edde195bc000019a3b03",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Meat and Seafood",
+        "name": "Eggs",
+        "id": "6822eeeded32000001e25b44",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Meat and Seafood",
+        "name": "Frozen Food",
+        "id": "6822eeeded32000001e25b42",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Meat and Seafood",
+        "name": "Plant Based Meat",
+        "id": "6822eeeded32000001e25b49",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      }
+    ],
+    "grocery": [
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Atta",
+        "id": "6903b01ed2c61b000112ba2c",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Rice",
+        "id": "6903b01ed2c61b000112ba2d",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Toor, Moong and Urad",
+        "id": "6903b01ed2c61b000112ba31",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "High Protein Atta",
+        "id": "6a105aa35f9ab700014de9e2",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Top Deals",
+        "id": "6a225b6a3c3eb20001d0f54f",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Basmati Rice",
+        "id": "6903b01ed2c61b000112ba2b",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Besan, Sooji and Maida",
+        "id": "6903b01ed2c61b000112ba2e",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Rajma, Chola and Others",
+        "id": "6903b01ed2c61b000112ba32",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Poha & Puffed Rice",
+        "id": "6903b01ed2c61b000112ba33",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Premium Brands",
+        "id": "6903b01ed2c61b000112ba2f",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Soya Chunk & Badi",
+        "id": "6903b01ed2c61b000112ba37",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Other Flours",
+        "id": "6903b01ed2c61b000112ba36",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Millets & Daliya",
+        "id": "6903b01ed2c61b000112ba35",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Atta, Rice and Dal",
+        "name": "Ready to Cook Flour Mix",
+        "id": "6903b01ed2c61b000112ba34",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Sunflower & Other Oils",
+        "id": "69394956ed899c0001b1aed8",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Mustard Oils",
+        "id": "69392fc99bd17b000135e3bd",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Cold Pressed",
+        "id": "6a105aa35f9ab700014de9e4",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Ghee",
+        "id": "69392fc99bd17b000135e3bb",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Top Deals",
+        "id": "6a225b6a3c3eb20001d0f551",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Soyabean Oils",
+        "id": "69394956ed899c0001b1aed7",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Rice Bran Oils",
+        "id": "69394956ed899c0001b1aed6",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Sunflower Oils",
+        "id": "69394956ed899c0001b1aed9",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Blended Oils",
+        "id": "69392fc99bd17b000135e3b9",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Cold-pressed Oils",
+        "id": "69392fc99bd17b000135e3ba",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Olive Oils",
+        "id": "69394956ed899c0001b1aed4",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Oils and Ghee",
+        "name": "Premium Brands",
+        "id": "69394956ed899c0001b1aed5",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Powdered Spices",
+        "id": "693ad23e53de7a00011ff894",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Whole Spices",
+        "id": "693ad23e53de7a00011ff898",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Cold Grind",
+        "id": "6a105aa35f9ab700014de9e3",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Sugar and Jaggery",
+        "id": "693ad23e53de7a00011ff897",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Papad & Fryums",
+        "id": "693a7ac953de7a00011ff892",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Ready Masala",
+        "id": "693ad23e53de7a00011ff895",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Salt",
+        "id": "693ad23e53de7a00011ff896",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Paste and Puree",
+        "id": "693a9dc1eb607300012621a5",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Pickles & Chutney",
+        "id": "693ad23e53de7a00011ff893",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Herbs & Seasoning",
+        "id": "693a7ac953de7a00011ff890",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Coconut Milk & Powder",
+        "id": "693981bf64f19a0001f8a5b3",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Masalas",
+        "name": "Top Deals",
+        "id": "6a225b6a3c3eb20001d0f550",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Oats",
+        "id": "69492faa195bc000019a3b0b",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Energy Bars",
+        "id": "69492faa195bc000019a3b10",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Muesli & Granola",
+        "id": "69492faa195bc000019a3b0a",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "High protein oats & museli",
+        "id": "698d7038c63f8300011b530c",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Regional Favourites",
+        "id": "69492faa195bc000019a3b0e",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Ready Mixes",
+        "id": "69492faa195bc000019a3b11",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Kids Cereals",
+        "id": "69492faa195bc000019a3b0c",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Flakes",
+        "id": "69492faa195bc000019a3b0d",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Batters",
+        "id": "69492faa195bc000019a3b1c",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Pancake Mixes",
+        "id": "69492faa195bc000019a3b13",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Peanut Butters",
+        "id": "69492faa195bc000019a3b14",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Chocolate Spreads",
+        "id": "69492faa195bc000019a3b15",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Masala Oats",
+        "id": "698499a8e171b800015b5d68",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Jams",
+        "id": "69492faa195bc000019a3b1b",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Juices & Fruit Drinks",
+        "id": "69492faa195bc000019a3b1a",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Mayo & Spreads",
+        "id": "69492faa195bc000019a3b16",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Hot Beverages",
+        "id": "69492faa195bc000019a3b19",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Seeds and trail Mixes",
+        "id": "69492faa195bc000019a3b18",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      },
+      {
+        "category": "Cereals and Breakfast",
+        "name": "Crazy Deals",
+        "id": "69492faa195bc000019a3b09",
+        "taxonomyType": "taxonomy 5",
+        "campaigns": [
+          "grocery"
+        ]
+      }
+    ],
+    "treats": [
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Tubs & Party Packs",
+        "id": "6903b0c295d8230001064c89",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Cones",
+        "id": "6903b0c295d8230001064c8a",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Sticks",
+        "id": "6903b0c295d8230001064c8b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Top Deals",
+        "id": "6a5638416009fa0001dce711",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Cups",
+        "id": "6903b0c295d8230001064c91",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Guiltfree",
+        "id": "6903b0c295d8230001064c8d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Real Fruit",
+        "id": "69b94cf4b6373a00010b3b3b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Gourmet",
+        "id": "6903b0c295d8230001064c8c",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Kulfi",
+        "id": "6903b0c295d8230001064c8f",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Cakes & Sandwiches",
+        "id": "6903b0c295d8230001064c92",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Rare Finds",
+        "id": "6903b0c295d8230001064c88",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Premium",
+        "id": "6903b0c295d8230001064c90",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Regional Favorites",
+        "id": "6903b0c295d8230001064c93",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Brownies & Cakes",
+        "id": "6903b0c295d8230001064c94",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Ice Creams and Frozen Desserts",
+        "name": "Syrups",
+        "id": "6903b0c295d8230001064c95",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Milk Chocolates",
+        "id": "693d17b2c0e8870001d2d8fd",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Dark Chocolates",
+        "id": "693d17b2c0e8870001d2d8f8",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Premium",
+        "id": "693d1c2031a0de00019cd18b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Gift Boxes",
+        "id": "693d17b2c0e8870001d2d8f9",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Top Deals",
+        "id": "6a5638416009fa0001dce712",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Shared Packs",
+        "id": "693d448b31a0de00019cd18c",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Wafers",
+        "id": "693d82725485ff0001d3ec20",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Kunafa Chocolate",
+        "id": "69c2674fb2f6170001b1dd3e",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Gourmet collection",
+        "id": "693d17b2c0e8870001d2d8fa",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Candies & More",
+        "id": "693d17b2c0e8870001d2d8f7",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Chocolates",
+        "name": "Gums & Mint",
+        "id": "693d17b2c0e8870001d2d8fb",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Kaju Katli & Barfi",
+        "id": "693f772b01a77200013e2a09",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Pedhas",
+        "id": "693f772b01a77200013e2a12",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Gulab Jamun",
+        "id": "693f772b01a77200013e2a0c",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Ladoos",
+        "id": "693f772b01a77200013e2a11",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Mysore Pak",
+        "id": "693f772b01a77200013e2a10",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Dry Fruit Sweets",
+        "id": "693f772b01a77200013e2a0a",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Rasgulla",
+        "id": "693f772b01a77200013e2a0b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Chikki",
+        "id": "693fab2c01a77200013e2a13",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Rasmalai",
+        "id": "693fab2c01a77200013e2a14",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Dessert Mixes",
+        "id": "693f772b01a77200013e2a0d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Top Deals",
+        "id": "6a5638416009fa0001dce713",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Cakes and Pies",
+        "id": "693f772b01a77200013e2a0e",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Cream Biscuits",
+        "id": "69eb43c5a51c5400018ac258",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Chocofills",
+        "id": "69eb43c5a51c5400018ac259",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Sweet Corner",
+        "name": "Gulkand & Paan",
+        "id": "693fab2c01a77200013e2a15",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Cakes & Pies",
+        "id": "693c23bd4df316000117b882",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Cream Biscuits",
+        "id": "693c23bd4df316000117b885",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Cookies",
+        "id": "693c23bd4df316000117b884",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Marie & Digestive",
+        "id": "693c23bd4df316000117b88b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Regular & Glucose",
+        "id": "6ab22eea5aa7b80001720e62",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Salted & Plain",
+        "id": "693c23bd4df316000117b890",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Wafers, rusk & crackers",
+        "id": "6ab22eea5aa7b80001720e64",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Regional Favourites",
+        "id": "693c23bd4df316000117b88e",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Healthy Snacking",
+        "id": "693c23bd4df316000117b88a",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Gift Boxes",
+        "id": "693c23bd4df316000117b888",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Baking ingredients",
+        "id": "6ab22eea5aa7b80001720e63",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Gourmet collection",
+        "id": "693c23bd4df316000117b889",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      },
+      {
+        "category": "Biscuits and Cakes",
+        "name": "Pancake Mixes",
+        "id": "693c23bd4df316000117b88d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "treats"
+        ]
+      }
+    ],
+    "munchies": [
+      {
+        "category": "Chips and Namkeens",
+        "name": "Chips and Crisps",
+        "id": "6903b0c295d8230001064c99",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Bhujia and Namkeens",
+        "id": "6903b0c295d8230001064c9d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Puffs and Crunchies",
+        "id": "6903b0c295d8230001064c9b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Indian Snacks",
+        "id": "6903b0c295d8230001064c9e",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Makhana & Dry Fruits",
+        "id": "6903b0c295d8230001064c9f",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Nachos",
+        "id": "6903b0c295d8230001064c9a",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Popcorn",
+        "id": "6903b0c295d8230001064ca1",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Diwali Gift Hampers",
+        "id": "6903b0c295d8230001064ca2",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Healthy Snacking",
+        "id": "6903b0c295d8230001064ca3",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Party Packs",
+        "id": "6903b0c295d8230001064ca6",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Sweet Treats",
+        "id": "6903b0c295d8230001064ca7",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Fasting Snacks",
+        "id": "699428c05011b80001ede81d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Instant Noodles",
+        "id": "693f772b01a77200013e29fc",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Korean Noodles",
+        "id": "693f772b01a77200013e29fe",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Cup Noodles",
+        "id": "693f772b01a77200013e29fd",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Instant Pasta",
+        "id": "693f772b01a77200013e2a02",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Vermicelli",
+        "id": "693f772b01a77200013e2a03",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Cooking Pasta",
+        "id": "693f772b01a77200013e2a01",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Hakka Noodles",
+        "id": "693f772b01a77200013e29ff",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Ready to eat",
+        "id": "693f772b01a77200013e2a05",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Soups",
+        "id": "693f772b01a77200013e2a04",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      }
+    ]
+  },
+  "failures": []
+}
