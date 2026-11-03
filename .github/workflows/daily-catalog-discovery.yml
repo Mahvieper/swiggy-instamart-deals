@@ -1,0 +1,58 @@
+name: Daily Instamart Catalog Discovery
+
+on:
+  schedule:
+    # 02:00 IST daily (20:30 UTC previous day)
+    - cron: '30 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instamart-catalog-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    name: Discover and update Instamart catalog
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: swiggy-telegram-bot/package-lock.json
+
+      - name: Install dependencies
+        working-directory: swiggy-telegram-bot
+        run: npm ci
+
+      - name: Discover current Instamart categories and subcategories
+        working-directory: swiggy-telegram-bot
+        env:
+          SWIGGY_STORE_ID: ${{ secrets.SWIGGY_STORE_ID }}
+          SWIGGY_PRIMARY_STORE_ID: ${{ secrets.SWIGGY_PRIMARY_STORE_ID }}
+          SWIGGY_SECONDARY_STORE_ID: ${{ secrets.SWIGGY_SECONDARY_STORE_ID }}
+          SWIGGY_COOKIE: ${{ secrets.SWIGGY_COOKIE }}
+        run: node src/catalog-discovery.js
+
+      - name: Commit catalog only when it changed
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add swiggy-telegram-bot/discovered-catalog.json
+          if git diff --cached --quiet; then
+            echo "Catalog is unchanged; no commit needed."
+            exit 0
+          fi
+          git commit -m "chore: refresh Instamart discovered catalog"
+          git push origin HEAD:main
