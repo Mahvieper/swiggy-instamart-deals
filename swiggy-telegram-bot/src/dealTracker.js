@@ -43,6 +43,55 @@ function saveCache(cache, campaignKey = 'default') {
   }
 }
 
+/**
+ * All campaign workers share one product history. On first use, merge the
+ * existing per-campaign caches so previously alerted products stay suppressed.
+ */
+function loadSharedCache() {
+  const cache = loadCache('global');
+  if (cache.sharedMigrationComplete) return cache;
+
+  const dataDir = path.dirname(getCacheFilePath('global'));
+  ensureDataDir(getCacheFilePath('global'));
+  const legacyFiles = fs.readdirSync(dataDir)
+    .filter((file) => /^deals_cache_(?!global\\.json$).+\\.json$/.test(file));
+
+  let importedItems = 0;
+  for (const file of legacyFiles) {
+    try {
+      const legacy = JSON.parse(fs.readFileSync(path.join(dataDir, file), 'utf8'));
+      for (const [itemKey, item] of Object.entries(legacy.items || {})) {
+        if (!item || typeof item !== 'object') continue;
+        const existing = cache.items[itemKey];
+        const itemAlertTime = Number(item.lastAlertedTimestamp)
+          || (item.lastAlertedDate ? new Date(item.lastAlertedDate).getTime() : 0);
+        const existingAlertTime = existing
+          ? Number(existing.lastAlertedTimestamp)
+            || (existing.lastAlertedDate ? new Date(existing.lastAlertedDate).getTime() : 0)
+          : -1;
+
+        // Prefer the most recent alert record; retain a prior alert price even
+        // when a later campaign only observed the product without alerting it.
+        if (!existing || itemAlertTime > existingAlertTime) {
+          cache.items[itemKey] = { ...item };
+          importedItems++;
+        } else if (existing && item.lastSeen && (!existing.lastSeen || item.lastSeen > existing.lastSeen)) {
+          existing.lastSeen = item.lastSeen;
+          existing.lastSeenRunId = item.lastSeenRunId || existing.lastSeenRunId;
+        }
+      }
+    } catch (error) {
+      console.warn(`[DealTracker] Could not migrate legacy cache ${file}:`, error.message);
+    }
+  }
+
+  cache.sharedMigrationComplete = true;
+  cache.sharedMigrationAt = Date.now();
+  console.log(`[DealTracker] Shared cache migration complete. Imported/updated ${importedItems} product records from ${legacyFiles.length} legacy campaign caches.`);
+  saveCache(cache, 'global');
+  return cache;
+}
+
 function getIstWeekStart(istDate, resetDay = 1) {
   const day = istDate.getUTCDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
   const diffDays = (day - resetDay + 7) % 7;
@@ -154,7 +203,7 @@ function isStaticCooldownCandidate(item) {
  * 3. Existing 15-day static-product cooldown remains an additional safeguard.
  */
 function findAlertWorthyDeals(items, minDiscount = 70, campaignKey = 'default', options = {}) {
-  const cache = loadCache(campaignKey);
+  const cache = loadSharedCache();
   const alertList = [];
   const refreshCycle = options.refreshCycle || 'daily';
   const resetDay = options.weeklyResetDay !== undefined ? options.weeklyResetDay : 1;
@@ -346,12 +395,12 @@ function findAlertWorthyDeals(items, minDiscount = 70, campaignKey = 'default', 
     suppressedCount
   };
 
-  saveCache(cache, campaignKey);
+  saveCache(cache, 'global');
   return alertList;
 }
 
 function getCachedDeals(campaignKey = 'default', minDiscount = 0) {
-  const cache = loadCache(campaignKey);
+  const cache = loadSharedCache();
   const result = [];
   for (const [key, val] of Object.entries(cache.items || {})) {
     if (val.discount >= minDiscount) {
