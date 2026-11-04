@@ -54,7 +54,7 @@ function loadSharedCache() {
   const dataDir = path.dirname(getCacheFilePath('global'));
   ensureDataDir(getCacheFilePath('global'));
   const legacyFiles = fs.readdirSync(dataDir)
-    .filter((file) => /^deals_cache_(?!global\\.json$).+\\.json$/.test(file));
+    .filter((file) => /^deals_cache_(?!global\.json$).+\.json$/.test(file));
 
   let importedItems = 0;
   for (const file of legacyFiles) {
