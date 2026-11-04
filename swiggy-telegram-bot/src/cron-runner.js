@@ -250,6 +250,7 @@ async function main() {
       runLifestyle = true;
       runHousehold = true;
       runClearance = true;
+      runDiscovered = true;
     }
   }
 
