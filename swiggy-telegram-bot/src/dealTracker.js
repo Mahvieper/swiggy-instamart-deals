@@ -143,21 +143,15 @@ function isStaticCooldownCandidate(item) {
  * Evaluates a list of fetched items against the minimum discount threshold.
  * 
  * Deal Suppression Logic:
- * 1. Cycle Start (Morning Reset / Weekly Reset):
- *    - Daily items: At 10:00 AM IST (the first run of the day), or when calendar date changes,
- *      deals meeting threshold are alerted to present the day's deals catalog (DAILY_DROP / NEW_DEAL).
- *    - Weekly items (e.g. Electronics / Lifestyle): On weeklyResetDay (Monday) at cycle rollover,
- *      weekly deals refresh (WEEKLY_REFRESH / NEW_DEAL).
- * 2. Subsequent runs (Intra-day 11 AM to 10 PM IST):
- *    - Once an item is alerted during the cycle, it is SUPPRESSED as long as its discount stays the SAME.
- *    - An item is re-alerted on the SAME day ONLY if:
- *        a) It is a NEW deal (never seen before in this cycle), OR
- *        b) Its DISCOUNT PERCENTAGE HAS CHANGED (e.g. 70% -> 80% or 80% -> 75%) while still meeting threshold.
- *    - If an item goes out of stock or dips out of discount and returns later at the SAME discount,
- *      it is NOT re-alerted (suppresses redundant come-and-go spam).
- * 3. 15-Day Static Price Cooldown:
- *    - Decor items, Cables, Smartwatches, and inflated-MRP brands (Dubstep, Hammer, boAt, Noise)
- *      are suppressed for 15 days if their price does not drop below their last alerted price.
+ * 1. First qualifying sighting:
+ *    - A product that has never been alerted is sent once when it meets its discount threshold.
+ * 2. Continuous price-based suppression (across days and weekly cycles):
+ *    - Once alerted, a product stays suppressed indefinitely while its price is equal to or
+ *      higher than its last alerted price. Daily/weekly cycle resets never resend it unchanged.
+ *    - A product is re-alerted only when its actual selling price drops below its last
+ *      alerted price. MRP/discount-percentage fluctuations alone do not trigger alerts.
+ *    - Out-of-stock or below-threshold periods do not clear the last alerted price.
+ * 3. Existing 15-day static-product cooldown remains an additional safeguard.
  */
 function findAlertWorthyDeals(items, minDiscount = 70, campaignKey = 'default', options = {}) {
   const cache = loadCache(campaignKey);
@@ -239,47 +233,31 @@ function findAlertWorthyDeals(items, minDiscount = 70, campaignKey = 'default', 
     const prevAlertedDisc = prev ? (prev.lastAlertedDiscount !== undefined ? prev.lastAlertedDiscount : prev.discount) : null;
     const prevAlertedPrice = prev ? (prev.lastAlertedPrice !== undefined ? prev.lastAlertedPrice : prev.price) : null;
 
-    // Has discount percentage changed from the last alerted discount?
-    const isDiscountChange = prev && prevAlertedDisc !== null && (item.discount !== prevAlertedDisc);
-    const isPriceDrop = isDiscountChange && (item.discount > prevAlertedDisc);
+    // Suppression is continuous across calendar days and weekly cycles.
+    // Only a genuinely lower selling price can re-alert an already-alerted product.
+    // Changes to MRP/discount percentage alone must not generate repeat notifications.
+    const hasPreviousAlert = prev && prevAlertedPrice !== null;
+    const isActualPriceImprovement = hasPreviousAlert && Number(item.price) < Number(prevAlertedPrice);
 
-    const alreadyAlertedInCycle = prev && (
-      (prev.lastAlertedCycle && prev.lastAlertedCycle === itemCycleId) ||
-      (!prev.lastAlertedCycle && itemCycle === 'daily' && prev.lastAlertedDate === dateStr)
-    );
-
-    let shouldAlert = false;
+    let shouldAlert = !prev || !hasPreviousAlert;
     let alertType = 'NEW_DEAL';
 
-    if (isFirstRunOfItemCycle) {
-      // First run of the cycle (daily morning reset at 10:00 AM IST or weekly reset on resetDay)
-      shouldAlert = true;
-      alertType = prev ? (itemCycle === 'weekly' ? 'WEEKLY_REFRESH' : 'DAILY_DROP') : 'NEW_DEAL';
-    } else if (!prev || !alreadyAlertedInCycle) {
-      // Brand new item or first time meeting criteria in this cycle
-      shouldAlert = true;
-      alertType = 'NEW_DEAL';
-    } else if (isDiscountChange) {
-      // Discount percentage changed while still meeting threshold (e.g., 70% -> 80% or 80% -> 75%)
-      shouldAlert = true;
-      alertType = isPriceDrop ? 'PRICE_DROP' : 'DISCOUNT_CHANGE';
-    } else {
-      // Already alerted in this cycle at the SAME discount:
-      // Suppress duplicate alert (even if item flickered out of stock or below threshold and returned at same discount).
-      shouldAlert = false;
+    if (hasPreviousAlert) {
+      shouldAlert = isActualPriceImprovement;
+      if (shouldAlert) {
+        alertType = 'PRICE_DROP';
+      }
     }
 
-    // 15-Day Static Price Cooldown:
-    // If item is a candidate (Decor, Cables, Smartwatches, Hammer/boAt/Noise/Dubstep),
-    // and was previously alerted, suppress if its price hasn't dropped within 15 days.
+    // Keep the static-product cooldown as a defensive safeguard.
+    // A real price improvement is allowed through; unchanged/higher prices are already suppressed.
     const isCooldownCandidate = isStaticCooldownCandidate(item);
-    if (shouldAlert && isCooldownCandidate && prev && (prev.lastAlertedPrice !== undefined && prev.lastAlertedPrice !== null)) {
-      const isPriceSameOrHigher = item.price >= prev.lastAlertedPrice;
+    if (shouldAlert && isCooldownCandidate && prev && prev.lastAlertedPrice !== undefined && prev.lastAlertedPrice !== null) {
+      const isPriceSameOrHigher = Number(item.price) >= Number(prev.lastAlertedPrice);
       const lastAlertTime = prev.lastAlertedTimestamp || (prev.lastAlertedDate ? new Date(prev.lastAlertedDate).getTime() : 0);
       const daysSinceAlert = (now - lastAlertTime) / (24 * 60 * 60 * 1000);
 
       if (isPriceSameOrHigher && daysSinceAlert < 15) {
-        // Price has not dropped and 15-day cooldown has not expired: suppress alert
         shouldAlert = false;
       }
     }
