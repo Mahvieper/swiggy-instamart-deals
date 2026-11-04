@@ -12,16 +12,16 @@ on:
         required: false
         default: false
 
+# A single shared cache must never be updated by overlapping workflow runs.
+concurrency:
+  group: instamart-deal-hunter
+  cancel-in-progress: false
+
 jobs:
   hunt:
-    name: Worker (${{ matrix.worker }})
+    name: Unified Deal Hunter
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    strategy:
-      fail-fast: false
-      max-parallel: 6
-      matrix:
-        worker: [fresh, grocery, treats, munchies, beverages, personal, lifestyle, household, clearance, discovered]
+    timeout-minutes: 60
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -37,15 +37,97 @@ jobs:
         working-directory: swiggy-telegram-bot
         run: npm ci || npm install
 
-      - name: Restore Deal Cache
+      # Import each previous campaign cache once. These are restored into the
+      # same data directory so dealTracker can merge their product histories.
+      - name: Restore legacy fresh cache
         uses: actions/cache/restore@v4
         with:
           path: swiggy-telegram-bot/data
-          key: deal-cache-${{ matrix.worker }}-${{ github.run_id }}
+          key: legacy-fresh-${{ github.run_id }}
           restore-keys: |
-            deal-cache-${{ matrix.worker }}-
+            deal-cache-fresh-
 
-      - name: Run ${{ matrix.worker }} Deal Hunter
+      - name: Restore legacy grocery cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: legacy-grocery-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-grocery-
+
+      - name: Restore legacy treats cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: legacy-treats-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-treats-
+
+      - name: Restore legacy munchies cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: legacy-munchies-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-munchies-
+
+      - name: Restore legacy beverages cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: legacy-beverages-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-beverages-
+
+      - name: Restore legacy personal cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: legacy-personal-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-personal-
+
+      - name: Restore legacy lifestyle cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: legacy-lifestyle-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-lifestyle-
+
+      - name: Restore legacy household cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: legacy-household-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-household-
+
+      - name: Restore legacy clearance cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: legacy-clearance-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-clearance-
+
+      - name: Restore legacy discovered cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: legacy-discovered-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-discovered-
+
+      - name: Restore shared deal cache
+        uses: actions/cache/restore@v4
+        with:
+          path: swiggy-telegram-bot/data
+          key: deal-cache-global-${{ github.run_id }}
+          restore-keys: |
+            deal-cache-global-
+
+      - name: Run all campaigns with shared deduplication
         working-directory: swiggy-telegram-bot
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -72,12 +154,12 @@ jobs:
           if [ "$SKIP_SYNC" = "true" ]; then
             EXTRA_FLAGS="--skip-sync"
           fi
-          echo "Executing Deal Hunter Worker: ${{ matrix.worker }}..."
-          node src/cron-runner.js ${{ matrix.worker }} $EXTRA_FLAGS
+          echo "Executing all deal-hunter campaigns in one shared-cache process..."
+          node src/cron-runner.js auto $EXTRA_FLAGS
 
-      - name: Save Deal Cache
+      - name: Save shared deal cache
         uses: actions/cache/save@v4
         if: always()
         with:
           path: swiggy-telegram-bot/data
-          key: deal-cache-${{ matrix.worker }}-${{ github.run_id }}
+          key: deal-cache-global-${{ github.run_id }}
