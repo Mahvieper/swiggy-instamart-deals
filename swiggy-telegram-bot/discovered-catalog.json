@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T00:59:30.653Z",
+  "updatedAt": "2026-11-06T01:01:27.271Z",
   "storeId": "1400978",
   "source": "Instamart category-listing/v2 navigationTabs",
   "stats": {
     "attemptedCategories": 32,
     "successfulCategories": 32,
-    "categoriesWithSubcategories": 32,
-    "categoriesWithoutSubcategories": 0,
+    "categoriesWithSubcategories": 31,
+    "categoriesWithoutSubcategories": 1,
     "failedCategories": 0,
     "discoveredCategories": 32,
-    "discoveredSubcategories": 422,
+    "discoveredSubcategories": 409,
     "configuredSubcategories": 446
   },
   "categories": [
@@ -1414,123 +1414,6 @@
       ]
     },
     {
-      "category": "Biscuits and Cakes",
-      "name": "Cakes & Pies",
-      "id": "693c23bd4df316000117b882",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Cream Biscuits",
-      "id": "693c23bd4df316000117b885",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Cookies",
-      "id": "693c23bd4df316000117b884",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Marie & Digestive",
-      "id": "693c23bd4df316000117b88b",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Regular & Glucose",
-      "id": "6ab22eea5aa7b80001720e62",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Salted & Plain",
-      "id": "693c23bd4df316000117b890",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Wafers, rusk & crackers",
-      "id": "6ab22eea5aa7b80001720e64",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Regional Favourites",
-      "id": "693c23bd4df316000117b88e",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Healthy Snacking",
-      "id": "693c23bd4df316000117b88a",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Gift Boxes",
-      "id": "693c23bd4df316000117b888",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Baking ingredients",
-      "id": "6ab22eea5aa7b80001720e63",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Gourmet collection",
-      "id": "693c23bd4df316000117b889",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Pancake Mixes",
-      "id": "693c23bd4df316000117b88d",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
       "category": "Chips and Namkeens",
       "name": "Chips and Crisps",
       "id": "6903b0c295d8230001064c99",
@@ -1577,6 +1460,15 @@
     },
     {
       "category": "Chips and Namkeens",
+      "name": "Diwali Gift Hampers",
+      "id": "6903b0c295d8230001064ca2",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
       "name": "Nachos",
       "id": "6903b0c295d8230001064c9a",
       "taxonomyType": "taxonomy 10",
@@ -1588,15 +1480,6 @@
       "category": "Chips and Namkeens",
       "name": "Popcorn",
       "id": "6903b0c295d8230001064ca1",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Chips and Namkeens",
-      "name": "Diwali Gift Hampers",
-      "id": "6903b0c295d8230001064ca2",
       "taxonomyType": "taxonomy 10",
       "campaigns": [
         "munchies"
@@ -5314,123 +5197,6 @@
         "campaigns": [
           "treats"
         ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Cakes & Pies",
-        "id": "693c23bd4df316000117b882",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Cream Biscuits",
-        "id": "693c23bd4df316000117b885",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Cookies",
-        "id": "693c23bd4df316000117b884",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Marie & Digestive",
-        "id": "693c23bd4df316000117b88b",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Regular & Glucose",
-        "id": "6ab22eea5aa7b80001720e62",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Salted & Plain",
-        "id": "693c23bd4df316000117b890",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Wafers, rusk & crackers",
-        "id": "6ab22eea5aa7b80001720e64",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Regional Favourites",
-        "id": "693c23bd4df316000117b88e",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Healthy Snacking",
-        "id": "693c23bd4df316000117b88a",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Gift Boxes",
-        "id": "693c23bd4df316000117b888",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Baking ingredients",
-        "id": "6ab22eea5aa7b80001720e63",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Gourmet collection",
-        "id": "693c23bd4df316000117b889",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Pancake Mixes",
-        "id": "693c23bd4df316000117b88d",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
       }
     ],
     "munchies": [
@@ -5481,6 +5247,15 @@
       },
       {
         "category": "Chips and Namkeens",
+        "name": "Diwali Gift Hampers",
+        "id": "6903b0c295d8230001064ca2",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
         "name": "Nachos",
         "id": "6903b0c295d8230001064c9a",
         "taxonomyType": "taxonomy 10",
@@ -5492,15 +5267,6 @@
         "category": "Chips and Namkeens",
         "name": "Popcorn",
         "id": "6903b0c295d8230001064ca1",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Chips and Namkeens",
-        "name": "Diwali Gift Hampers",
-        "id": "6903b0c295d8230001064ca2",
         "taxonomyType": "taxonomy 10",
         "campaigns": [
           "munchies"
@@ -8971,10 +8737,6 @@
       "count": 15
     },
     {
-      "category": "Biscuits and Cakes",
-      "count": 13
-    },
-    {
       "category": "Chips and Namkeens",
       "count": 12
     },
@@ -9055,7 +8817,28 @@
       "count": 4
     }
   ],
-  "categoriesWithoutSubcategories": [],
-  "emptyCategoryDiagnostics": [],
+  "categoriesWithoutSubcategories": [
+    "Biscuits and Cakes"
+  ],
+  "emptyCategoryDiagnostics": [
+    {
+      "category": "Biscuits and Cakes",
+      "taxonomyType": "taxonomy 10",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseType": "object",
+      "responseShape": {
+        "topLevelKeys": [
+          "stack",
+          "statusCode"
+        ],
+        "arrays": []
+      },
+      "dataShape": {
+        "topLevelKeys": [],
+        "arrays": []
+      }
+    }
+  ],
   "failures": []
 }
