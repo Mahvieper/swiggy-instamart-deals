@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-07T00:11:55.181Z",
+  "updatedAt": "2026-11-07T23:45:44.047Z",
   "storeId": "1400978",
   "source": "Instamart category-listing/v2 navigationTabs",
   "stats": {
     "attemptedCategories": 32,
     "successfulCategories": 32,
-    "categoriesWithSubcategories": 12,
-    "categoriesWithoutSubcategories": 20,
+    "categoriesWithSubcategories": 17,
+    "categoriesWithoutSubcategories": 15,
     "failedCategories": 0,
     "discoveredCategories": 32,
-    "discoveredSubcategories": 154,
+    "discoveredSubcategories": 215,
     "configuredSubcategories": 446
   },
   "categories": [
@@ -1529,6 +1529,555 @@
       "campaigns": [
         "treats"
       ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Chips and Crisps",
+      "id": "6903b0c295d8230001064c99",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Bhujia and Namkeens",
+      "id": "6903b0c295d8230001064c9d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Puffs and Crunchies",
+      "id": "6903b0c295d8230001064c9b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Indian Snacks",
+      "id": "6903b0c295d8230001064c9e",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Makhana & Dry Fruits",
+      "id": "6903b0c295d8230001064c9f",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Diwali Gift Hampers",
+      "id": "6903b0c295d8230001064ca2",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Nachos",
+      "id": "6903b0c295d8230001064c9a",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Popcorn",
+      "id": "6903b0c295d8230001064ca1",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Healthy Snacking",
+      "id": "6903b0c295d8230001064ca3",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Party Packs",
+      "id": "6903b0c295d8230001064ca6",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Sweet Treats",
+      "id": "6903b0c295d8230001064ca7",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Chips and Namkeens",
+      "name": "Fasting Snacks",
+      "id": "699428c05011b80001ede81d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Instant Noodles",
+      "id": "693f772b01a77200013e29fc",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Korean Noodles",
+      "id": "693f772b01a77200013e29fe",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Cup Noodles",
+      "id": "693f772b01a77200013e29fd",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Instant Pasta",
+      "id": "693f772b01a77200013e2a02",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Vermicelli",
+      "id": "693f772b01a77200013e2a03",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Cooking Pasta",
+      "id": "693f772b01a77200013e2a01",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Hakka Noodles",
+      "id": "693f772b01a77200013e29ff",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Ready to eat",
+      "id": "693f772b01a77200013e2a05",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "name": "Soups",
+      "id": "693f772b01a77200013e2a04",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Veg Frozen Snacks",
+      "id": "693d82725485ff0001d3ec2e",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Non Veg Frozen Snacks",
+      "id": "693d82725485ff0001d3ec29",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Cold Cuts",
+      "id": "693d82725485ff0001d3ec23",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Frozen Vegetables",
+      "id": "693d82725485ff0001d3ec24",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Momos & Baos",
+      "id": "693d82725485ff0001d3ec27",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Kebabs",
+      "id": "693d82725485ff0001d3ec26",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Roti, Paranthas & Sheets",
+      "id": "693d82725485ff0001d3ec2c",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Seafood",
+      "id": "693d82725485ff0001d3ec2d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Raw Frozen",
+      "id": "693d82725485ff0001d3ec2a",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Frozen Food",
+      "name": "Regional Favourites",
+      "id": "693d82725485ff0001d3ec2b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Dryfruits Gift Boxes",
+      "id": "6a8ff3fb479ae600017590a6",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Cashews",
+      "id": "69492e33cfaac00001f0780f",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Mixed Dry Fruits",
+      "id": "6949160474f4c20001b6bdff",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Almonds",
+      "id": "6949160474f4c20001b6be00",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Dates",
+      "id": "69492e33cfaac00001f07810",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Top Deals",
+      "id": "6a22540b25164200017a8659",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Pista & Walnuts",
+      "id": "69492e33cfaac00001f07812",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Makhana and Seeds",
+      "id": "69492e33cfaac00001f07813",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Nuts and Seeds Mix",
+      "id": "69492e33cfaac00001f07815",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Dried Fruits and Berries",
+      "id": "69492e33cfaac00001f07814",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "name": "Premium dry Fruits",
+      "id": "6970b51fb9ed3d00010081ee",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "munchies"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Soft Drinks",
+      "id": "6903b0c295d8230001064c75",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Juices and Fruit Drinks",
+      "id": "6903b0c295d8230001064c76",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Caffeinated Beverages",
+      "id": "6903b0c295d8230001064c77",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Hydration Drinks",
+      "id": "6a6b063ad570db00013754da",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Mango Drinks",
+      "id": "6903b0c295d8230001064c7f",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Coconut Water",
+      "id": "6903b0c295d8230001064c80",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Water and Ice Cubes",
+      "id": "6903b0c295d8230001064c7d",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Soda and Mixers",
+      "id": "6903b0c295d8230001064c78",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Ice Tea & Kombucha",
+      "id": "6903b0c295d8230001064c7c",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Diet Soft Drinks",
+      "id": "6903b0c295d8230001064c7e",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Non Alcoholic Beverages",
+      "id": "6903b0c295d8230001064c7b",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Chilled",
+      "id": "692eadd0910d9f000100c2c0",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Party Packs",
+      "id": "69a17c7d5011b80001ede83c",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Hydration",
+      "id": "6903b0c295d8230001064c82",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Fresh Juices",
+      "id": "6903b0c295d8230001064c81",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Instant Drink Mixes",
+      "id": "6903b0c295d8230001064c83",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Regional Favourites",
+      "id": "6903b0c295d8230001064c79",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Cold Coffee",
+      "id": "6903b0c295d8230001064c85",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "name": "Milk Based Drinks",
+      "id": "6903b0c295d8230001064c84",
+      "taxonomyType": "taxonomy 10",
+      "campaigns": [
+        "beverages"
+      ]
     }
   ],
   "campaigns": {
@@ -2923,6 +3472,559 @@
           "treats"
         ]
       }
+    ],
+    "munchies": [
+      {
+        "category": "Chips and Namkeens",
+        "name": "Chips and Crisps",
+        "id": "6903b0c295d8230001064c99",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Bhujia and Namkeens",
+        "id": "6903b0c295d8230001064c9d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Puffs and Crunchies",
+        "id": "6903b0c295d8230001064c9b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Indian Snacks",
+        "id": "6903b0c295d8230001064c9e",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Makhana & Dry Fruits",
+        "id": "6903b0c295d8230001064c9f",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Diwali Gift Hampers",
+        "id": "6903b0c295d8230001064ca2",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Nachos",
+        "id": "6903b0c295d8230001064c9a",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Popcorn",
+        "id": "6903b0c295d8230001064ca1",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Healthy Snacking",
+        "id": "6903b0c295d8230001064ca3",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Party Packs",
+        "id": "6903b0c295d8230001064ca6",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Sweet Treats",
+        "id": "6903b0c295d8230001064ca7",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Chips and Namkeens",
+        "name": "Fasting Snacks",
+        "id": "699428c05011b80001ede81d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Instant Noodles",
+        "id": "693f772b01a77200013e29fc",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Korean Noodles",
+        "id": "693f772b01a77200013e29fe",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Cup Noodles",
+        "id": "693f772b01a77200013e29fd",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Instant Pasta",
+        "id": "693f772b01a77200013e2a02",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Vermicelli",
+        "id": "693f772b01a77200013e2a03",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Cooking Pasta",
+        "id": "693f772b01a77200013e2a01",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Hakka Noodles",
+        "id": "693f772b01a77200013e29ff",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Ready to eat",
+        "id": "693f772b01a77200013e2a05",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Noodles, Pasta, Vermicelli",
+        "name": "Soups",
+        "id": "693f772b01a77200013e2a04",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Veg Frozen Snacks",
+        "id": "693d82725485ff0001d3ec2e",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Non Veg Frozen Snacks",
+        "id": "693d82725485ff0001d3ec29",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Cold Cuts",
+        "id": "693d82725485ff0001d3ec23",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Frozen Vegetables",
+        "id": "693d82725485ff0001d3ec24",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Momos & Baos",
+        "id": "693d82725485ff0001d3ec27",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Kebabs",
+        "id": "693d82725485ff0001d3ec26",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Roti, Paranthas & Sheets",
+        "id": "693d82725485ff0001d3ec2c",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Seafood",
+        "id": "693d82725485ff0001d3ec2d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Raw Frozen",
+        "id": "693d82725485ff0001d3ec2a",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Frozen Food",
+        "name": "Regional Favourites",
+        "id": "693d82725485ff0001d3ec2b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Dryfruits Gift Boxes",
+        "id": "6a8ff3fb479ae600017590a6",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Cashews",
+        "id": "69492e33cfaac00001f0780f",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Mixed Dry Fruits",
+        "id": "6949160474f4c20001b6bdff",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Almonds",
+        "id": "6949160474f4c20001b6be00",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Dates",
+        "id": "69492e33cfaac00001f07810",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Top Deals",
+        "id": "6a22540b25164200017a8659",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Pista & Walnuts",
+        "id": "69492e33cfaac00001f07812",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Makhana and Seeds",
+        "id": "69492e33cfaac00001f07813",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Nuts and Seeds Mix",
+        "id": "69492e33cfaac00001f07815",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Dried Fruits and Berries",
+        "id": "69492e33cfaac00001f07814",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      },
+      {
+        "category": "Dry Fruits and Seeds Mix",
+        "name": "Premium dry Fruits",
+        "id": "6970b51fb9ed3d00010081ee",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "munchies"
+        ]
+      }
+    ],
+    "beverages": [
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Soft Drinks",
+        "id": "6903b0c295d8230001064c75",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Juices and Fruit Drinks",
+        "id": "6903b0c295d8230001064c76",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Caffeinated Beverages",
+        "id": "6903b0c295d8230001064c77",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Hydration Drinks",
+        "id": "6a6b063ad570db00013754da",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Mango Drinks",
+        "id": "6903b0c295d8230001064c7f",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Coconut Water",
+        "id": "6903b0c295d8230001064c80",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Water and Ice Cubes",
+        "id": "6903b0c295d8230001064c7d",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Soda and Mixers",
+        "id": "6903b0c295d8230001064c78",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Ice Tea & Kombucha",
+        "id": "6903b0c295d8230001064c7c",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Diet Soft Drinks",
+        "id": "6903b0c295d8230001064c7e",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Non Alcoholic Beverages",
+        "id": "6903b0c295d8230001064c7b",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Chilled",
+        "id": "692eadd0910d9f000100c2c0",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Party Packs",
+        "id": "69a17c7d5011b80001ede83c",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Hydration",
+        "id": "6903b0c295d8230001064c82",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Fresh Juices",
+        "id": "6903b0c295d8230001064c81",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Instant Drink Mixes",
+        "id": "6903b0c295d8230001064c83",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Regional Favourites",
+        "id": "6903b0c295d8230001064c79",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Cold Coffee",
+        "id": "6903b0c295d8230001064c85",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Cold Drinks and Juices",
+        "name": "Milk Based Drinks",
+        "id": "6903b0c295d8230001064c84",
+        "taxonomyType": "taxonomy 10",
+        "campaigns": [
+          "beverages"
+        ]
+      }
     ]
   },
   "categoriesWithSubcategories": [
@@ -2973,14 +4075,29 @@
     {
       "category": "Biscuits and Cakes",
       "count": 13
+    },
+    {
+      "category": "Chips and Namkeens",
+      "count": 12
+    },
+    {
+      "category": "Noodles, Pasta, Vermicelli",
+      "count": 9
+    },
+    {
+      "category": "Frozen Food",
+      "count": 10
+    },
+    {
+      "category": "Dry Fruits and Seeds Mix",
+      "count": 11
+    },
+    {
+      "category": "Cold Drinks and Juices",
+      "count": 19
     }
   ],
   "categoriesWithoutSubcategories": [
-    "Chips and Namkeens",
-    "Noodles, Pasta, Vermicelli",
-    "Frozen Food",
-    "Dry Fruits and Seeds Mix",
-    "Cold Drinks and Juices",
     "Tea, Coffee and Milk drinks",
     "Sauces and Spreads",
     "Health and Pharma",
@@ -2998,96 +4115,6 @@
     "Sexual Wellness"
   ],
   "emptyCategoryDiagnostics": [
-    {
-      "category": "Chips and Namkeens",
-      "taxonomyType": "taxonomy 10",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Noodles, Pasta, Vermicelli",
-      "taxonomyType": "taxonomy 10",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Frozen Food",
-      "taxonomyType": "taxonomy 10",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Dry Fruits and Seeds Mix",
-      "taxonomyType": "taxonomy 10",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Cold Drinks and Juices",
-      "taxonomyType": "taxonomy 10",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
     {
       "category": "Tea, Coffee and Milk drinks",
       "taxonomyType": "taxonomy 10",
