@@ -1,4 +1,4 @@
-javascript:(async function(){'use strict';
+(async function(){'use strict';
 /* Instamart Deal Hunter V5. Independent rewrite; active browser session only.
    Sequential requests with conservative pacing. Stops on HTTP 403/429. */
   const CFG = {
