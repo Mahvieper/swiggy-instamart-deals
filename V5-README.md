@@ -13,7 +13,7 @@ The loader currently points to this development branch. It is not a production r
 
 ## Current implementation
 
-- Reuses the existing V4 aisle catalogue.
+- Uses store ID `1400978` as the default when the active store ID cannot be detected; a detected active store ID takes precedence.\n- Reuses the existing V4 aisle catalogue.
 - Scans selected categories or all configured categories.
 - Paginates through catalogue responses (up to 12 pages per aisle).
 - Deduplicates products by SKU/product identity.
