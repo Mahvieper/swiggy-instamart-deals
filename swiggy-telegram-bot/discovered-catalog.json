@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T01:17:40.001Z",
+  "updatedAt": "2026-11-14T00:57:44.792Z",
   "storeId": "1400978",
   "source": "Instamart category-listing/v2 navigationTabs",
   "stats": {
@@ -10,7 +10,7 @@
     "categoriesWithoutSubcategories": 0,
     "failedCategories": 0,
     "discoveredCategories": 32,
-    "discoveredSubcategories": 423,
+    "discoveredSubcategories": 424,
     "configuredSubcategories": 446
   },
   "categories": [
@@ -4016,6 +4016,15 @@
       "category": "Sexual Wellness",
       "name": "Condoms",
       "id": "6903b10bd2c61b000112bad4",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Sexual Wellness",
+      "name": "Lubricants",
+      "id": "6903b10bd2c61b000112bad5",
       "taxonomyType": "taxonomy 14",
       "campaigns": [
         "clearance"
@@ -8335,6 +8344,15 @@
       },
       {
         "category": "Sexual Wellness",
+        "name": "Lubricants",
+        "id": "6903b10bd2c61b000112bad5",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Sexual Wellness",
         "name": "Massagers",
         "id": "6903b10bd2c61b000112bad6",
         "taxonomyType": "taxonomy 14",
@@ -9070,7 +9088,7 @@
     },
     {
       "category": "Sexual Wellness",
-      "count": 4
+      "count": 5
     }
   ],
   "categoriesWithoutSubcategories": [],
