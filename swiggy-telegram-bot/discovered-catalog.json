@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-16T00:06:54.331Z",
+  "updatedAt": "2026-11-17T03:02:38.888Z",
   "storeId": "1400978",
   "source": "Instamart category-listing/v2 navigationTabs",
   "stats": {
@@ -10,7 +10,7 @@
     "categoriesWithoutSubcategories": 0,
     "failedCategories": 0,
     "discoveredCategories": 32,
-    "discoveredSubcategories": 424,
+    "discoveredSubcategories": 423,
     "configuredSubcategories": 446
   },
   "categories": [
@@ -2317,15 +2317,6 @@
       "category": "Health and Pharma",
       "name": "Protein & Sports Nutrition",
       "id": "6a574e8421b41f0001ef459a",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "beverages"
-      ]
-    },
-    {
-      "category": "Health and Pharma",
-      "name": "Skin & Hair Care",
-      "id": "6a5528b584303b00011edd80",
       "taxonomyType": "taxonomy 14",
       "campaigns": [
         "beverages"
@@ -6248,15 +6239,6 @@
       },
       {
         "category": "Health and Pharma",
-        "name": "Skin & Hair Care",
-        "id": "6a5528b584303b00011edd80",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "beverages"
-        ]
-      },
-      {
-        "category": "Health and Pharma",
         "name": "Infections & First Aid",
         "id": "6903b10bd2c61b000112badc",
         "taxonomyType": "taxonomy 14",
@@ -9040,7 +9022,7 @@
     },
     {
       "category": "Health and Pharma",
-      "count": 8
+      "count": 7
     },
     {
       "category": "Bath and Body",
