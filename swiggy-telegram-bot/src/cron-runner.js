@@ -190,15 +190,8 @@ async function main() {
   });
   const timeString = timeFormatter.format(new Date()) + ' IST';
 
-  // Active Operating Window for Scheduled Runs: 9:01 AM to 12:01 AM midnight IST
-  // (Hours 9 to 23, plus Hour 0 up to 12:15 AM)
-  const isWithinHours = (istHours >= 9 && istHours <= 23) || (istHours === 0 && istMinutes <= 15);
-  const isGitHubScheduled = process.env.GITHUB_EVENT_NAME === 'schedule';
-
-  if (isGitHubScheduled && !isWithinHours) {
-    console.log(`[CronRunner] Outside active operating window (9:01 AM - 12:01 AM IST). Current time: ${istHours}:${String(istMinutes).padStart(2, '0')} IST. Exiting.`);
-    process.exit(0);
-  }
+  // 24x7 operation: scheduled runs are allowed at every hour.
+  // Keep the schedule-level staleness guard above to avoid processing delayed runs.
 
   let runFresh = false;
   let runGrocery = false;
@@ -238,20 +231,17 @@ async function main() {
   } else if (mode === 'discovered') {
     runDiscovered = true;
   } else {
-    // Auto Mode:
-    // Scheduled window: 9:01 AM to 12:01 AM IST
-    if (isWithinHours) {
-      runFresh = true;
-      runGrocery = true;
-      runTreats = true;
-      runMunchies = true;
-      runBeverages = true;
-      runPersonal = true;
-      runLifestyle = true;
-      runHousehold = true;
-      runClearance = true;
-      runDiscovered = true;
-    }
+    // Auto Mode: run all configured campaigns 24x7.
+    runFresh = true;
+    runGrocery = true;
+    runTreats = true;
+    runMunchies = true;
+    runBeverages = true;
+    runPersonal = true;
+    runLifestyle = true;
+    runHousehold = true;
+    runClearance = true;
+    runDiscovered = true;
   }
 
   const campaigns = config.campaigns || {};
