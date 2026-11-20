@@ -5,6 +5,13 @@
     "secid": ""
   },
   "minDiscount": 70,
+  "discovery": {
+    "minSubcategoryRatio": 0.25,
+    "minSuccessfulRatio": 0.4,
+    "maxAttempts": 3,
+    "previousCatalogFallbackRatio": 0.6,
+    "usePreviousCatalogFallback": true
+  },
   "weeklyCategories": [
     "Electronics and Appliances"
   ],

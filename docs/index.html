@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swiggy Instamart Bot — Control Panel</title>
+<script src="https://cdn.jsdelivr.net/gh/jedisct1/libsodium.js@0.7.15/dist/browsers/sodium.js"></script>
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--panel2:#1c2230;--line:#30363d;--txt:#e6edf3;--muted:#8b949e;--acc:#fc8019;--acc2:#2f81f7;--ok:#3fb950;--err:#f85149}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{padding:14px 20px;background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+  h1{margin:0 0 4px;font-size:18px;color:var(--acc)}
+  .sub{color:var(--muted);font-size:12px}
+  .bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center}
+  input,select,textarea,button{font:inherit}
+  input[type=text],input[type=number],input[type=password],select,textarea{background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:6px;padding:7px 9px;outline:none}
+  input:focus,select:focus,textarea:focus{border-color:var(--acc2)}
+  input[type=checkbox]{accent-color:var(--acc);width:16px;height:16px}
+  button{background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:6px;padding:7px 12px;cursor:pointer}
+  button:hover{border-color:var(--acc)}
+  button.primary{background:var(--acc);border-color:var(--acc);color:#1b1206;font-weight:700}
+  button.danger{color:var(--err)}
+  button.small{padding:3px 8px;font-size:12px}
+  .tokenbox{flex:1;min-width:220px}
+  .tabs{display:flex;flex-wrap:wrap;gap:4px;padding:10px 20px 0;border-bottom:1px solid var(--line);background:var(--panel)}
+  .tab{padding:8px 13px;cursor:pointer;border:1px solid transparent;border-bottom:none;border-radius:6px 6px 0 0;color:var(--muted)}
+  .tab.active{background:var(--bg);color:var(--acc);border-color:var(--line)}
+  main{padding:20px;max-width:1220px;margin:0 auto}
+  section{display:none}
+  section.active{display:block}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;margin-bottom:16px}
+  .card h2{margin:0 0 12px;font-size:15px;color:var(--acc)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+  label.fld{display:block}
+  label.fld span{display:block;color:var(--muted);font-size:12px;margin-bottom:4px}
+  label.fld input,label.fld select{width:100%}
+  .checkline{display:flex;align-items:center;gap:8px;margin:8px 0}
+  .row{display:flex;gap:8px;align-items:center;margin:6px 0;flex-wrap:wrap}
+  .row input[type=text],.row input[type=number]{width:140px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+  th{color:var(--muted);font-size:12px;font-weight:600;position:sticky;top:0;background:var(--panel)}
+  td input[type=text],td input[type=number]{width:100%}
+  .scroll{max-height:520px;overflow:auto;border:1px solid var(--line);border-radius:6px}
+  .muted{color:var(--muted);font-size:12px}
+  .mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px}
+  textarea{width:100%;min-height:120px;resize:vertical}
+  pre{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:12px;overflow:auto;max-height:320px;font-size:12px;white-space:pre-wrap}
+  #status{margin-top:10px;font-size:13px;min-height:20px}
+  .ok{color:var(--ok)}.err{color:var(--err)}
+  .cronbox{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:10px;margin-top:10px}
+  .pill{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:2px 10px;font-size:12px;margin:2px}
+  a{color:var(--acc2)}
+  .warn{background:#2b1d0e;border:1px solid #6b4a1c;color:#e3b341;padding:10px;border-radius:6px;font-size:12px}
+  .stat{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:3px;font-size:12px}
+  .stat b{color:var(--acc);font-size:15px}
+  details{border:1px solid var(--line);border-radius:6px;margin:6px 0;background:var(--panel2)}
+  summary{cursor:pointer;padding:8px 12px;font-weight:600}
+  details>div{padding:8px 12px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🛒 Swiggy Instamart Bot — Control Panel</h1>
+  <div class="sub">Hosted from <span class="mono">docs/index.html</span> on GitHub Pages · edits commit straight to your fork</div>
+  <div class="bar">
+    <input class="tokenbox" id="token" type="password" placeholder="GitHub PAT (Contents + Secrets + Actions write)">
+    <input id="owner" type="text" value="Mahvieper" style="width:130px" title="GitHub username">
+    <input id="repo" type="text" value="swiggy-instamart-deals" style="width:205px" title="Repository name">
+    <button class="primary" onclick="loadAll()">Load Settings</button>
+    <button onclick="saveConfig()">Save Config</button>
+    <button onclick="testHunter()">▶ Test Hunt</button>
+    <button onclick="testDiscovery()">🔄 Test Discovery</button>
+  </div>
+  <div id="status"></div>
+</header>
+
+<div class="tabs">
+  <div class="tab active" data-t="general">General</div>
+  <div class="tab" data-t="campaigns">Campaigns</div>
+  <div class="tab" data-t="aisles">Aisles</div>
+  <div class="tab" data-t="schedule">Schedules</div>
+  <div class="tab" data-t="secrets">Secrets</div>
+  <div class="tab" data-t="catalog">Catalog / Diagnostics</div>
+  <div class="tab" data-t="runs">Runs</div>
+  <div class="tab" data-t="advanced">Advanced</div>
+</div>
+
+<main>
+<!-- GENERAL -->
+<section id="general" class="active">
+  <div class="card">
+    <h2>Core behaviour</h2>
+    <div class="grid">
+      <label class="fld"><span>Global minimum discount %</span><input id="g_min" type="number" min="0" max="99"></label>
+      <label class="fld"><span>Store ID (sid) — fallback only</span><input id="g_sid" type="text" class="mono" placeholder="from config.json"></label>
+      <label class="fld"><span>Primary store ID (pid) — fallback only</span><input id="g_pid" type="text" class="mono"></label>
+      <label class="fld"><span>Secondary store ID (secid) — fallback only</span><input id="g_secid" type="text" class="mono"></label>
+    </div>
+    <p class="muted">The GitHub Secrets <span class="mono">SWIGGY_STORE_ID</span> / <span class="mono">SWIGGY_PRIMARY_STORE_ID</span> / <span class="mono">SWIGGY_SECONDARY_STORE_ID</span> take priority in Actions. Values here are used only for local runs.</p>
+    <div class="card" style="margin-top:12px;background:var(--panel2)">
+      <h2>Weekly categories</h2>
+      <p class="muted">One per line. Used by weekly campaigns that rotate categories.</p>
+      <textarea id="g_weekly" spellcheck="false" style="min-height:70px"></textarea>
+    </div>
+    <button class="primary" onclick="saveConfig()" style="margin-top:12px">Save General</button>
+  </div>
+  <div class="card">
+    <h2>Discovery safety net</h2>
+    <p class="muted">These settings control how <span class="mono">catalog-discovery.js</span> decides a fresh catalog is complete. They fix the "86 vs 112 subcategories" false failure without lowering real detection standards.</p>
+    <div class="grid">
+      <label class="fld"><span>Min subcategory ratio (of configured aisles)</span><input id="d_subratio" type="number" min="0.05" max="1" step="0.05"></label>
+      <label class="fld"><span>Min successful category ratio</span><input id="d_sucratio" type="number" min="0.1" max="1" step="0.05"></label>
+      <label class="fld"><span>Attempts before fallback</span><input id="d_attempts" type="number" min="1" max="5"></label>
+      <label class="fld"><span>Previous-catalog fallback ratio</span><input id="d_fbratio" type="number" min="0" max="1" step="0.05"></label>
+    </div>
+    <div class="checkline"><input id="d_fallback" type="checkbox"><label for="d_fallback">Merge previous catalog when a run looks partial</label></div>
+    <button class="primary" onclick="saveConfig()">Save Discovery Settings</button>
+  </div>
+</section>
+
+<!-- CAMPAIGNS -->
+<section id="campaigns">
+  <div class="card">
+    <h2>Campaigns</h2>
+    <p class="muted">Each campaign is a separate Telegram alert stream with its own threshold and schedule cycle.</p>
+    <div id="campaign_rows"></div>
+    <button class="small" onclick="addCampaign()">+ Add campaign</button>
+    <button class="primary" onclick="saveConfig()" style="margin-left:8px">Save Campaigns</button>
+  </div>
+</section>
+
+<!-- AISLES -->
+<section id="aisles">
+  <div class="card">
+    <h2>Curated aisles (subcategories)</h2>
+    <div class="row">
+      <input id="aisle_search" type="text" placeholder="Search aisle / category / id..." style="width:280px" oninput="renderAisles()">
+      <select id="aisle_campaign" onchange="renderAisles()" style="width:180px"></select>
+      <button class="small" onclick="addAisle()">+ Add aisle to selected campaign</button>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th style="width:150px">Campaign</th><th style="width:180px">Category</th><th>Aisle name</th><th style="width:230px">Filter ID</th><th style="width:150px">Taxonomy</th><th style="width:40px"></th></tr></thead>
+        <tbody id="aisle_rows"></tbody>
+      </table>
+    </div>
+    <button class="primary" onclick="saveConfig()" style="margin-top:12px">Save Aisles</button>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+  <div class="card">
+    <h2>Scheduled workflows</h2>
+    <div class="warn">The <b>Keyword Deal Hunter</b> workflow uses <span class="mono">timezone: Asia/Kolkata</span>, so its cron is already in IST. The <b>Catalog Discovery</b> workflow has no timezone, so GitHub reads its cron in UTC — the panel converts it for you.</div>
+    <div class="grid" style="margin-top:14px">
+      <label class="fld"><span>Hunter cron (IST — 5 fields)</span><input id="s_hunter" type="text" class="mono" value="17 * * * *"></label>
+      <label class="fld"><span>Catalog cron (local IST)</span><input id="s_cat_local" type="text" class="mono" value="17 2 * * *" oninput="updateCron()"></label>
+    </div>
+    <div class="cronbox">
+      <div><span class="muted">Catalog cron written to workflow (UTC):</span> <span id="s_cat_utc" class="mono" style="color:var(--acc)"></span></div>
+      <div id="s_human" class="muted" style="margin-top:6px"></div>
+    </div>
+    <button class="primary" onclick="saveSchedule()" style="margin-top:14px">Save Schedules</button>
+    <p class="muted">Changes take effect on the next scheduled slot. Both workflows must stay enabled in the Actions tab.</p>
+  </div>
+</section>
+
+<!-- SECRETS -->
+<section id="secrets">
+  <div class="warn">Secrets are stored encrypted in GitHub Actions — never in config.json. Leave a field blank to keep its current value. The PAT above must have Secrets write access.</div>
+  <div class="card">
+    <h2>Credentials</h2>
+    <div class="grid">
+      <label class="fld"><span>Telegram bot token</span><input id="sec_bot" type="password" placeholder="leave blank to keep existing"></label>
+      <label class="fld"><span>Telegram chat ID</span><input id="sec_chat" type="text" placeholder="leave blank to keep existing"></label>
+      <label class="fld"><span>Store ID (sid)</span><input id="sec_sid" type="text" placeholder="leave blank to keep existing"></label>
+      <label class="fld"><span>Primary store ID (pid)</span><input id="sec_pid" type="text" placeholder="leave blank to keep existing"></label>
+      <label class="fld"><span>Secondary store ID (secid)</span><input id="sec_secid" type="text" placeholder="leave blank to keep existing"></label>
+    </div>
+    <label class="fld" style="margin-top:12px"><span>Swiggy cookie (optional — improves catalog completeness)</span>
+      <textarea id="sec_cookie" placeholder="leave blank to keep existing" spellcheck="false" style="min-height:80px"></textarea>
+    </label>
+    <h2 style="margin-top:18px">Per-campaign discount overrides</h2>
+    <div class="grid" id="sec_discounts"></div>
+    <div class="row" style="margin-top:14px">
+      <button class="primary" onclick="saveSecrets()">Save Secrets</button>
+      <button onclick="checkSecrets()">Check which secrets exist</button>
+    </div>
+    <div id="sec_status" class="muted" style="margin-top:10px"></div>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section id="catalog">
+  <div class="card">
+    <h2>Discovered catalog</h2>
+    <div id="catalog_stats" class="muted">Loading…</div>
+    <p class="muted" style="margin-top:10px">Source file: <span class="mono">swiggy-telegram-bot/discovered-catalog.json</span> — refreshed by the daily discovery workflow, not by the hunter.</p>
+  </div>
+  <div class="card">
+    <h2>Diagnose last discovery run</h2>
+    <div class="row">
+      <button class="primary" onclick="diagnoseDiscovery()">Fetch last run log</button>
+      <button onclick="window.open(actionsUrl()+'/workflows/daily-catalog-discovery.yml','_blank')">Open workflow ↗</button>
+    </div>
+    <p class="muted" style="margin-top:8px">Pulls the real log through the GitHub API using your PAT and shows only the catalog-discovery lines — no token values.</p>
+    <pre id="diag_out">Click the button above.</pre>
+  </div>
+</section>
+
+<!-- RUNS -->
+<section id="runs">
+  <div class="card">
+    <h2>Recent workflow runs</h2>
+    <div class="row"><button onclick="loadRuns()">Refresh runs</button><button onclick="window.open(actionsUrl(),'_blank')">Open Actions ↗</button></div>
+    <div class="scroll" style="margin-top:10px;max-height:420px"><table><thead><tr><th>Run</th><th>Workflow</th><th>Event</th><th>Result</th><th>Started (IST)</th></tr></thead><tbody id="run_rows"></tbody></table></div>
+  </div>
+</section>
+
+<!-- ADVANCED -->
+<section id="advanced">
+  <div class="card">
+    <h2>Backup &amp; restore</h2>
+    <div class="row">
+      <button onclick="exportConfig()">⬇ Export config.json</button>
+      <input id="import_file" type="file" accept="application/json" onchange="importConfig(this)">
+    </div>
+    <p class="muted">Import does not auto-save — review then click Save Config.</p>
+  </div>
+  <div class="card">
+    <h2>Links</h2>
+    <div class="row">
+      <a id="link_repo" href="#" target="_blank">Repository</a>
+      <a id="link_actions" href="#" target="_blank">Actions runs</a>
+      <a id="link_config" href="#" target="_blank">config.json in repo</a>
+      <a id="link_catalog" href="#" target="_blank">discovered-catalog.json</a>
+      <a href="bookmarklet.html" target="_blank">Bookmarklet setup portal ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+/* ---------- helpers ---------- */
+document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  document.querySelectorAll('section').forEach(x => x.classList.remove('active'));
+  t.classList.add('active');
+  document.getElementById(t.dataset.t).classList.add('active');
+});
+const $ = id => document.getElementById(id);
+function status(msg, isErr){ $('status').innerHTML = '<span class="'+(isErr?'err':'ok')+'">'+msg+'</span>'; }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function b64decode(s){ const bin=atob(s.replace(/\s/g,'')); return new TextDecoder().decode(Uint8Array.from(bin,c=>c.charCodeAt(0))); }
+function b64encode(s){ const bytes=new TextEncoder().encode(s); return btoa(String.fromCharCode(...bytes)); }
+function lines(v){ return String(v||'').split('\n').map(x=>x.trim()).filter(Boolean); }
+
+const CFG='swiggy-telegram-bot/config.json';
+const CAT='swiggy-telegram-bot/discovered-catalog.json';
+const WF_HUNTER='.github/workflows/keyword-hunter.yml';
+const WF_CATALOG='.github/workflows/daily-catalog-discovery.yml';
+
+let config=null, configSha=null, catalogStats=null;
+
+function repoPath(file){ return '/repos/'+$('owner').value.trim()+'/'+ $('repo').value.trim(); }
+function token(){ return $('token').value.trim(); }
+function actionsUrl(){ return 'https://github.com/'+$('owner').value.trim()+'/'+ $('repo').value.trim()+'/actions'; }
+
+async function gh(path, opts){
+  opts=opts||{};
+  const r=await fetch('https://api.github.com'+path,{
+    method:opts.method||'GET',
+    headers:{'Authorization':'Bearer '+token(),'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28',...(opts.headers||{})},
+    body:opts.body?JSON.stringify(opts.body):undefined
+  });
+  const txt=await r.text();
+  if(!r.ok) throw new Error('HTTP '+r.status+' '+txt.slice(0,220));
+  try{ return JSON.parse(txt); }catch(e){ return txt; }
+}
+async function getText(file){
+  const d=await gh(repoPath()+'/contents/'+file);
+  return {text:b64decode(d.content), sha:d.sha};
+}
+async function putFile(file, text, sha, message){
+  const body={message,content:b64encode(text),branch:'main'};
+  if(sha) body.sha=sha;
+  const res=await gh(repoPath()+'/contents/'+file,{method:'PUT',body});
+  return res.content.sha;
+}
+
+/* ---------- load / save ---------- */
+async function loadAll(){
+  try{
+    localStorage.setItem('sw_gh_token',token());
+    localStorage.setItem('sw_owner',$('owner').value.trim());
+    localStorage.setItem('sw_repo',$('repo').value.trim());
+    status('Loading config and catalog…');
+    const c=await gh(repoPath()+'/contents/'+CFG);
+    configSha=c.sha; config=JSON.parse(b64decode(c.content));
+    fillConfig();
+    updateLinks();
+    try{
+      const cat=await gh(repoPath()+'/contents/'+CAT);
+      catalogStats=JSON.parse(b64decode(cat.content));
+      renderCatalogStats();
+    }catch(e){ $('catalog_stats').textContent='Catalog file not readable: '+e.message; }
+    await loadWorkflowCrons();
+    status('✅ Config loaded — '+Object.keys(config.campaigns||{}).length+' campaigns, '+totalAisles()+' aisles');
+  }catch(e){ status('❌ '+e.message,true); }
+}
+function totalAisles(){ return Object.values(config.campaigns||{}).reduce((n,c)=>n+((c.subcategories||[]).length),0); }
+
+function fillConfig(){
+  config.discovery=config.discovery||{};
+  const d=config.discovery, st=config.store||{};
+  $('g_min').value=config.minDiscount??70;
+  $('g_sid').value=st.sid||''; $('g_pid').value=st.pid||''; $('g_secid').value=st.secid||'';
+  $('g_weekly').value=(config.weeklyCategories||[]).join('\n');
+  $('d_subratio').value=d.minSubcategoryRatio??0.25;
+  $('d_sucratio').value=d.minSuccessfulRatio??0.4;
+  $('d_attempts').value=d.maxAttempts??3;
+  $('d_fbratio').value=d.previousCatalogFallbackRatio??0.6;
+  $('d_fallback').checked=d.usePreviousCatalogFallback!==false;
+  renderCampaigns();
+  renderSecDiscounts();
+  const sel=$('aisle_campaign');
+  sel.innerHTML=Object.keys(config.campaigns||{}).map(k=>'<option value="'+esc(k)+'">'+esc(k)+'</option>').join('');
+  renderAisles();
+}
+
+function collectConfig(){
+  config.store=config.store||{};
+  config.store.sid=$('g_sid').value.trim();
+  config.store.pid=$('g_pid').value.trim();
+  config.store.secid=$('g_secid').value.trim();
+  config.minDiscount=+$('g_min').value;
+  config.weeklyCategories=lines($('g_weekly').value);
+  config.discovery={
+    minSubcategoryRatio:+$('d_subratio').value,
+    minSuccessfulRatio:+$('d_sucratio').value,
+    maxAttempts:+$('d_attempts').value,
+    previousCatalogFallbackRatio:+$('d_fbratio').value,
+    usePreviousCatalogFallback:$('d_fallback').checked
+  };
+}
+
+async function saveConfig(){
+  try{
+    if(!config) throw new Error('Click Load Settings first');
+    collectConfig(); collectCampaigns(); collectAisles();
+    status('Saving config.json…');
+    configSha=await putFile(CFG,JSON.stringify(config,null,2)+'\n',configSha,'Update bot settings from control panel');
+    status('✅ Config saved — next scheduled run will use it');
+  }catch(e){ status('❌ '+e.message,true); }
+}
+
+/* ---------- campaigns ---------- */
+const DISCOUNT_SECRETS=['ESSENTIALS_MIN_DISCOUNT','FRESH_MIN_DISCOUNT','GROCERY_MIN_DISCOUNT','TREATS_MIN_DISCOUNT','MUNCHIES_MIN_DISCOUNT','LIFESTYLE_MIN_DISCOUNT','BEVERAGES_MIN_DISCOUNT','PERSONAL_MIN_DISCOUNT','HOUSEHOLD_MIN_DISCOUNT','CLEARANCE_MIN_DISCOUNT'];
+
+function renderCampaigns(){
+  const rows=Object.entries(config.campaigns||{}).map(([key,c])=>{
+    return '<details open data-camp="'+esc(key)+'"><summary>'+esc(c.name||key)+' <span class="muted mono">('+esc(key)+')</span></summary><div>'+
+      '<div class="grid">'+
+        '<label class="fld"><span>Display name</span><input type="text" data-cf="'+esc(key)+'-name" value="'+esc(c.name||'')+'"></label>'+
+        '<label class="fld"><span>Telegram tag / emoji</span><input type="text" data-cf="'+esc(key)+'-tag" value="'+esc(c.tag||'')+'"></label>'+
+        '<label class="fld"><span>Type</span><select data-cf="'+esc(key)+'-type">'+['subcategory','aisles','collection'].map(t=>'<option '+(c.type===t?'selected':'')+'>'+t+'</option>').join('')+'</select></label>'+
+        '<label class="fld"><span>Min discount %</span><input type="number" data-cf="'+esc(key)+'-min" value="'+(c.minDiscount??70)+'" min="0" max="99"></label>'+
+        '<label class="fld"><span>Refresh cycle</span><select data-cf="'+esc(key)+'-cycle">'+['daily','weekly'].map(t=>'<option '+(c.refreshCycle===t?'selected':'')+'>'+t+'</option>').join('')+'</select></label>'+
+        '<label class="fld"><span>Weekly reset day (0=Sun)</span><input type="number" data-cf="'+esc(key)+'-day" value="'+(c.weeklyResetDay??1)+'" min="0" max="6"></label>'+
+      '</div>'+
+      '<div class="checkline"><input type="checkbox" data-cf="'+esc(key)+'-enabled" '+(c.enabled!==false?'checked':'')+'><label>Enabled</label></div>'+
+      '<label class="fld" style="margin-top:8px"><span>Search keywords (one per line)</span><textarea data-cf="'+esc(key)+'-kw" spellcheck="false" style="min-height:60px">'+esc((c.searchKeywords||[]).join('\n'))+'</textarea></label>'+
+      '<button class="small danger" onclick="removeCampaign(\''+esc(key)+'\')">Delete campaign</button>'+
+      '</div></details>';
+  }).join('');
+  $('campaign_rows').innerHTML=rows||'<p class="muted">No campaigns.</p>';
+}
+function collectCampaigns(){
+  if(!config.campaigns) return;
+  Object.keys(config.campaigns).forEach(k=>{
+    const c=config.campaigns[k], v=(f)=>document.querySelector('[data-cf="'+CSS.escape(k+'-'+f)+'"]');
+    if(v('name')) c.name=v('name').value.trim();
+    if(v('tag')) c.tag=v('tag').value.trim();
+    if(v('type')) c.type=v('type').value;
+    if(v('min')) c.minDiscount=+v('min').value;
+    if(v('cycle')) c.refreshCycle=v('cycle').value;
+    if(v('day')) c.weeklyResetDay=+v('day').value;
+    if(v('enabled')) c.enabled=v('enabled').checked;
+    if(v('kw')) c.searchKeywords=lines(v('kw').value);
+  });
+}
+function addCampaign(){
+  collectCampaigns();
+  const k=prompt('Campaign key (lowercase, no spaces):');
+  if(!k) return;
+  config.campaigns[k]={name:k,tag:'🔔',type:'subcategory',enabled:true,minDiscount:70,refreshCycle:'daily',subcategories:[],searchKeywords:[]};
+  fillConfig();
+}
+function removeCampaign(k){
+  if(!confirm('Delete campaign "'+k+'"? This also removes its aisles.')) return;
+  collectCampaigns(); delete config.campaigns[k]; fillConfig();
+}
+
+/* ---------- aisles ---------- */
+let aisleEdits={};
+function renderAisles(){
+  if(!config) return;
+  const q=($('aisle_search').value||'').toLowerCase();
+  const sel=$('aisle_campaign').value;
+  let html='', shown=0;
+  for(const [key,c] of Object.entries(config.campaigns||{})){
+    if(sel && key!==sel) continue;
+    (c.subcategories||[]).forEach((s,i)=>{
+      const hay=(String(s.name||'')+' '+String(s.category||'')+' '+String(s.id||'')).toLowerCase();
+      if(q && !hay.includes(q)) return;
+      shown++;
+      const tag=key+'::'+i;
+      html+='<tr><td><span class="pill">'+esc(key)+'</span></td>'+
+        '<td><input type="text" data-a="'+tag+'-cat" value="'+esc(s.category||'')+'"></td>'+
+        '<td><input type="text" data-a="'+tag+'-name" value="'+esc(s.name||'')+'"></td>'+
+        '<td><input type="text" class="mono" data-a="'+tag+'-id" value="'+esc(s.id||'')+'"></td>'+
+        '<td><input type="text" data-a="'+tag+'-tax" value="'+esc(s.taxonomyType||'')+'"></td>'+
+        '<td><button class="small danger" onclick="deleteAisle(\''+esc(key)+'\','+i+')">✕</button></td></tr>';
+    });
+  }
+  $('aisle_rows').innerHTML=html||'<tr><td colspan="6" class="muted">No aisles match.</td></tr>';
+  $('aisle_search').setAttribute('data-shown',shown);
+}
+function collectAisles(){
+  document.querySelectorAll('[data-a]').forEach(el=>{
+    const parts=el.dataset.a.split('-');
+    const i=parts[1];
+    const key=parts[0];
+    const field=parts[2];
+    const sep=key.lastIndexOf('::');
+    const camp=key.slice(0,sep), idx=+key.slice(sep+2);
+    const s=(config.campaigns[camp].subcategories||[])[idx];
+    if(s) s[field==='cat'?'category':field==='name'?'name':field==='id'?'id':'taxonomyType']=el.value.trim();
+  });
+}
+function deleteAisle(camp,i){ collectAisles(); config.campaigns[camp].subcategories.splice(i,1); renderAisles(); }
+function addAisle(){
+  collectAisles();
+  const camp=$('aisle_campaign').value;
+  if(!camp||!config.campaigns[camp]) return;
+  config.campaigns[camp].subcategories=config.campaigns[camp].subcategories||[];
+  config.campaigns[camp].subcategories.push({category:'',name:'',id:'',taxonomyType:'Speciality taxonomy 1'});
+  renderAisles();
+}
+
+/* ---------- schedules ---------- */
+let wfHunterText=null,wfHunterSha=null,wfCatText=null,wfCatSha=null;
+async function loadWorkflowCrons(){
+  const h=await getText(WF_HUNTER); wfHunterText=h.text; wfHunterSha=h.sha;
+  const cm=wfHunterText.match(/(- cron:\s*)'([^']*)'/); if(cm) $('s_hunter').value=cm[2];
+  const c=await getText(WF_CATALOG); wfCatText=c.text; wfCatSha=c.sha;
+  const cc=wfCatText.match(/(- cron:\s*)'([^']*)'/); if(cc) $('s_cat_local').value=utcToIstCron(cc[2]);
+  updateCron();
+}
+function cronParts(cron){ const p=String(cron||'').trim().split(/\s+/); return p.length===5?p:['17','*','*','*','*']; }
+function istToUtcCron(cron){
+  const [m,h,dom,mon,dow]=cronParts(cron);
+  if(!/^\d+$/.test(h)||!/^\d+$/.test(m)) return cron;
+  const total=(((+h*60 + +m) - 330)%1440+1440)%1440;
+  return (total%60)+' '+Math.floor(total/60)+' '+dom+' '+mon+' '+dow;
+}
+function utcToIstCron(cron){
+  const [m,h,dom,mon,dow]=cronParts(cron);
+  if(!/^\d+$/.test(h)||!/^\d+$/.test(m)) return cron;
+  const total=(((+h*60 + +m) + 330)%1440+1440)%1440;
+  return (total%60)+' '+Math.floor(total/60)+' '+dom+' '+mon+' '+dow;
+}
+function updateCron(){
+  const utc=istToUtcCron($('s_cat_local').value);
+  $('s_cat_utc').textContent=utc;
+  $('s_human').textContent='Hunter: '+$('s_hunter').value+' (IST, workflow has Asia/Kolkata) · Catalog: '+$('s_cat_local').value+' IST → '+utc+' UTC';
+}
+async function saveSchedule(){
+  try{
+    if(!wfHunterText||!wfCatText) throw new Error('Click Load Settings first');
+    const hcron=$('s_hunter').value.trim();
+    const ccron=$('s_cat_utc').textContent.trim();
+    const hUpdated=wfHunterText.replace(/(- cron:\s*)'[^']*'/,"$1'"+hcron+"'");
+    const cUpdated=wfCatText.replace(/(- cron:\s*)'[^']*'/,"$1'"+ccron+"'");
+    status('Saving workflow crons…');
+    if(hUpdated!==wfHunterText) wfHunterSha=await putFile(WF_HUNTER,hUpdated,wfHunterSha,'Set hunter schedule from control panel: '+hcron+' IST');
+    if(cUpdated!==wfCatText) wfCatSha=await putFile(WF_CATALOG,cUpdated,wfCatSha,'Set catalog schedule from control panel: '+ccron+' UTC');
+    status('✅ Schedules saved — hunter '+hcron+' IST, catalog '+ccron+' UTC');
+  }catch(e){ status('❌ '+e.message,true); }
+}
+
+/* ---------- secrets ---------- */
+function renderSecDiscounts(){
+  $('sec_discounts').innerHTML=DISCOUNT_SECRETS.map(n=>'<label class="fld"><span>'+n+'</span><input type="number" min="0" max="99" data-sec="'+n+'" placeholder="leave blank to keep existing"></label>').join('');
+}
+async function encryptSecret(pubB64,value){
+  await sodium.ready;
+  const pub=sodium.from_base64(pubB64,sodium.base64_variants.ORIGINAL);
+  const sealed=sodium.crypto_box_seal(sodium.from_string(value),pub);
+  return sodium.to_base64(sealed,sodium.base64_variants.ORIGINAL);
+}
+async function checkSecrets(){
+  try{
+    const d=await gh(repoPath()+'/actions/secrets');
+    const names=(d.secrets||[]).map(x=>x.name).filter(n=>n!=='GITHUB_TOKEN');
+    $('sec_status').innerHTML=names.length?('Configured: '+names.map(n=>'<span class="pill">'+esc(n)+'</span>').join(' ')):'No secrets found.';
+  }catch(e){ $('sec_status').textContent='❌ '+e.message; }
+}
+async function saveSecrets(){
+  try{
+    const p=await gh(repoPath()+'/actions/secrets/public-key');
+    const values={
+      TELEGRAM_BOT_TOKEN:$('sec_bot').value.trim(),
+      TELEGRAM_CHAT_ID:$('sec_chat').value.trim(),
+      SWIGGY_STORE_ID:$('sec_sid').value.trim(),
+      SWIGGY_PRIMARY_STORE_ID:$('sec_pid').value.trim(),
+      SWIGGY_SECONDARY_STORE_ID:$('sec_secid').value.trim(),
+      SWIGGY_COOKIE:$('sec_cookie').value.trim()
+    };
+    document.querySelectorAll('[data-sec]').forEach(el=>{ if(el.value.trim()) values[el.dataset.sec]=el.value.trim(); });
+    let n=0;
+    for(const [name,val] of Object.entries(values)){
+      if(!val) continue;
+      await gh(repoPath()+'/actions/secrets/'+name,{method:'PUT',body:{encrypted_value:await encryptSecret(p.key,val),key_id:p.key_id}});
+      n++;
+    }
+    $('sec_bot').value='';$('sec_cookie').value='';
+    document.querySelectorAll('[data-sec]').forEach(el=>el.value='');
+    $('sec_status').textContent=n?('✅ Updated '+n+' secret(s)'):'Nothing entered — no changes made.';
+  }catch(e){ $('sec_status').textContent='❌ '+e.message; }
+}
+
+/* ---------- catalog / diagnostics ---------- */
+function renderCatalogStats(){
+  const c=catalogStats, s=c.stats||{}, d=new Date(c.updatedAt);
+  $('catalog_stats').innerHTML=
+    '<span class="stat">Updated<br><b>'+d.toLocaleString('en-IN',{timeZone:'Asia/Kolkata'})+'</b></span>'+
+    '<span class="stat">Subcategories<br><b>'+(s.discoveredSubcategories??'?')+'</b></span>'+
+    '<span class="stat">Categories<br><b>'+(s.discoveredCategories??'?')+'</b></span>'+
+    '<span class="stat">Failed categories<br><b>'+(s.failedCategories??0)+'</b></span>'+
+    '<span class="stat">Store ID<br><b>'+esc(c.storeId||'?')+'</b></span>';
+}
+async function diagnoseDiscovery(){
+  try{
+    $('diag_out').textContent='Fetching last discovery run…';
+    const runs=await gh(repoPath()+'/actions/workflows/daily-catalog-discovery.yml/runs?per_page=3');
+    const run=(runs.workflow_runs||[])[0];
+    if(!run) throw new Error('No discovery runs found');
+    const ist=new Date(run.run_started_at).toLocaleString('en-IN',{timeZone:'Asia/Kolkata'});
+    let head='Run '+run.id+' · '+run.status+'/'+run.conclusion+' · '+ist+' IST\n';
+    head+='URL: https://github.com/'+$('owner').value.trim()+'/'+$('repo').value.trim()+'/actions/runs/'+run.id+'\n\n';
+    const jobs=await gh(repoPath()+'/actions/runs/'+run.id+'/jobs');
+    const job=(jobs.jobs||[])[0];
+    if(!job) throw new Error('No jobs in run');
+    const lr=await fetch('https://api.github.com'+repoPath()+'/actions/jobs/'+job.id+'/logs',{
+      headers:{'Authorization':'Bearer '+token(),'Accept':'application/vnd.github+json'}
+    });
+    if(!lr.ok) throw new Error('Log fetch HTTP '+lr.status+' — check PAT Actions read permission');
+    const log=await lr.text();
+    const keep=log.split('\n').filter(l=>/\[CatalogDiscovery\]|SWIGGY_COOKIE:|SWIGGY_STORE_ID:|##\[error\]/.test(l))
+      .map(l=>l.replace(/^\d{4}-\d\d-\d\dT[\d:.]+Z\s*/,'').replace(/\x1b\[[0-9;]*m/g,''));
+    $('diag_out').textContent=head+(keep.length?keep.join('\n'):'(no catalog lines found in log)');
+  }catch(e){ $('diag_out').textContent='❌ '+e.message; }
+}
+
+/* ---------- runs ---------- */
+async function loadRuns(){
+  try{
+    $('run_rows').innerHTML='<tr><td colspan="5" class="muted">Loading…</td></tr>';
+    const d=await gh(repoPath()+'/actions/runs?per_page=25');
+    $('run_rows').innerHTML=(d.workflow_runs||[]).map(r=>{
+      const ist=new Date(r.run_started_at).toLocaleString('en-IN',{timeZone:'Asia/Kolkata'});
+      const col=r.conclusion==='success'?'ok':(r.conclusion==='failure'?'err':'muted');
+      return '<tr><td><a href="'+r.html_url+'" target="_blank" class="mono">'+r.id+'</a></td>'+
+        '<td>'+esc(r.display_title)+'</td><td>'+esc(r.event)+'</td>'+
+        '<td class="'+col+'">'+esc(r.conclusion)+'</td><td>'+ist+'</td></tr>';
+    }).join('');
+  }catch(e){ status('❌ Runs: '+e.message,true); }
+}
+
+/* ---------- test runs ---------- */
+async function testHunter(){
+  try{
+    status('Dispatching hunter…');
+    await gh(repoPath()+'/actions/workflows/'+WF_HUNTER.split('/').pop()+'/dispatches',{method:'POST',body:{ref:'main',inputs:{skip_sync:true}}});
+    status('✅ Hunter test dispatched — <a href="'+actionsUrl()+'" target="_blank">watch it</a>');
+  }catch(e){ status('❌ '+e.message,true); }
+}
+async function testDiscovery(){
+  try{
+    status('Dispatching catalog discovery…');
+    await gh(repoPath()+'/actions/workflows/'+WF_CATALOG.split('/').pop()+'/dispatches',{method:'POST',body:{ref:'main'}});
+    status('✅ Discovery test dispatched — <a href="'+actionsUrl()+'" target="_blank">watch it</a>');
+  }catch(e){ status('❌ '+e.message,true); }
+}
+
+/* ---------- backup / links ---------- */
+function exportConfig(){
+  const blob=new Blob([JSON.stringify(config,null,2)+'\n'],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='swiggy-config-backup.json';a.click();
+}
+function importConfig(input){
+  const f=input.files[0]; if(!f) return;
+  const r=new FileReader();
+  r.onload=()=>{ try{ config=JSON.parse(r.result); fillConfig(); status('✅ Imported — review then click Save Config'); }catch(e){ status('❌ Invalid JSON',true); } };
+  r.readAsText(f);
+}
+function updateLinks(){
+  const base='https://github.com/'+$('owner').value.trim()+'/'+ $('repo').value.trim();
+  $('link_repo').href=base; $('link_actions').href=base+'/actions';
+  $('link_config').href=base+'/blob/main/'+CFG; $('link_catalog').href=base+'/blob/main/'+CAT;
+  $('s_hunter').addEventListener('input',updateCron);
+}
+$('s_cat_local').addEventListener('input',updateCron);
+
+/* boot */
+(function(){
+  const t=localStorage.getItem('sw_gh_token'); if(t) $('token').value=t;
+  const o=localStorage.getItem('sw_owner'); if(o) $('owner').value=o;
+  const r=localStorage.getItem('sw_repo'); if(r) $('repo').value=r;
+  updateLinks();
+  renderSecDiscounts();
+  updateCron();
+})();
+</script>
+</body>
+</html>

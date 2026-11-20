@@ -306,3 +306,35 @@ The Telegram bot now includes a separate daily catalog-discovery workflow:
 - The workflow commits the catalog only when its contents change.
 
 The workflow uses the existing `SWIGGY_STORE_ID`, `SWIGGY_PRIMARY_STORE_ID`, and optional `SWIGGY_SECONDARY_STORE_ID` repository secrets. Ensure Actions are enabled for the fork and the workflow has permission to write repository contents.
+
+### Catalog completeness retries
+
+Instamart sometimes serves a partial catalog from GitHub's datacenter IPs (HTTP 200, but far fewer `navigationTabs` than usual). That used to fail the daily job with `Catalog response looks incomplete` even though the store was fine. Discovery now:
+
+1. Retries up to `discovery.maxAttempts` times (default 3) when a run looks partial.
+2. Merges aisles from the previous `discovered-catalog.json` when every attempt is partial (controlled by `discovery.usePreviousCatalogFallback`).
+3. Records `stats.usedFallback` in the catalog so you can see when this happened.
+
+Thresholds are adjustable in `swiggy-telegram-bot/config.json` under `discovery` (`minSubcategoryRatio`, `minSuccessfulRatio`, `maxAttempts`, `previousCatalogFallbackRatio`, `usePreviousCatalogFallback`).
+
+---
+
+## Web Control Panel
+
+A browser-based control panel is published from [`docs/index.html`](docs/index.html) via GitHub Pages. It commits changes straight to this fork.
+
+**Setup (one time):** enable Pages for this repo from `main` / `/docs` under **Settings → Pages**, then open `https://mahvieper.github.io/swiggy-instamart-deals/`. Paste a GitHub PAT with **Contents**, **Secrets** and **Actions** write access into the field at the top and click **Load Settings**. The token is kept only in your browser's `localStorage`.
+
+The panel lets you:
+
+- Edit global discount, store IDs and weekly categories.
+- Tune the catalog-discovery safety-net settings above.
+- Enable/disable campaigns and edit their names, tags, thresholds and refresh cycles.
+- Search and edit all curated aisles (filter IDs and taxonomy types).
+- Change both workflow crons. The hunter cron is written in IST (the workflow declares `timezone: Asia/Kolkata`); the catalog cron is converted from IST to UTC automatically.
+- Add/update Telegram, store and per-campaign discount **secrets** (encrypted by GitHub; values are never committed).
+- Dispatch a test hunt or a test catalog run.
+- Inspect the **real** log of the last catalog run through the **Catalog / Diagnostics** tab — this is the quickest way to see exactly why a scheduled run failed.
+- Browse recent workflow runs and back up/restore `config.json`.
+
+The original bookmarklet setup portal remains available at [`docs/bookmarklet.html`](docs/bookmarklet.html).

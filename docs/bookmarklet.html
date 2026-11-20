@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instamart Deal Scout — Bookmarklet &amp; Bot</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --border-hover: #cbd5e1;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --orange: #fc8019;
+      --orange-hover: #ea580c;
+      --green: #16a34a;
+      --green-hover: #15803d;
+      --dark-btn: #0f172a;
+      --dark-btn-hover: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .badge-pill {
+      display: inline-block;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: #fff7ed;
+      color: #c2410c;
+      border: 1px solid #ffedd5;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 660px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Drag Target / Button Hero */
+    .drag-target {
+      background: var(--card-bg);
+      border: 2px dashed var(--border-hover);
+      border-radius: 14px;
+      padding: 26px 22px;
+      text-align: center;
+      margin-top: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .drag-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .bookmarklet-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      padding: 14px 34px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: grab;
+      user-select: none;
+      background: var(--orange);
+      color: #ffffff !important;
+      box-shadow: 0 4px 16px rgba(252, 128, 25, 0.38);
+      transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+    }
+
+    .bookmarklet-btn:hover {
+      background: var(--orange-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(252, 128, 25, 0.48);
+    }
+
+    .bookmarklet-btn:active {
+      cursor: grabbing;
+      transform: scale(0.98);
+    }
+
+    .action-btn-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 9px;
+      padding: 9px 18px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .btn-secondary:hover {
+      background: #f8fafc;
+      border-color: var(--border-hover);
+      color: var(--orange);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary svg {
+      flex-shrink: 0;
+    }
+
+    .drag-hint {
+      margin-top: 14px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+
+    /* Copy Drawer */
+    details {
+      border-top: 1px solid #f1f5f9;
+      padding-top: 14px;
+      margin-top: 16px;
+      text-align: left;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      outline: none;
+      user-select: none;
+      transition: color 0.12s;
+    }
+
+    details summary:hover {
+      color: var(--text);
+    }
+
+    .copy-panel {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      font-family: monospace;
+      font-size: 11.5px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      color: #334155;
+      resize: vertical;
+      outline: none;
+      word-break: break-all;
+    }
+
+    .btn-copy {
+      align-self: flex-start;
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 18px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+
+    .btn-copy:hover {
+      background: #f8fafc;
+      border-color: var(--border-hover);
+    }
+
+    /* Quick Setup Steps */
+    .steps-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 26px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    }
+
+    .steps-title {
+      font-size: 12.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .step-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #0f172a;
+      color: #ffffff;
+      font-size: 12.5px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-text {
+      font-size: 13.5px;
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    .step-text kbd {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 11.5px;
+      font-family: monospace;
+      color: #334155;
+    }
+
+    .note-box {
+      margin-top: 16px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 12.5px;
+      color: #166534;
+      line-height: 1.45;
+    }
+
+    /* Tool Card (Information Section) */
+    .tool-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .tool-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tool-tag {
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #dbeafe;
+    }
+
+    .speed-tag {
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: #f0fdf4;
+      color: #15803d;
+      border: 1px solid #dcfce7;
+    }
+
+    .tool-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+
+    .tool-desc {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 12px 20px;
+    }
+
+    .feature-list li {
+      font-size: 13px;
+      color: #334155;
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      line-height: 1.45;
+    }
+
+    .bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--orange);
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px 28px;
+    }
+
+    .faq-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .faq-item h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .faq-item p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 36px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <span class="badge-pill">Client-Side &bull; Zero Setup &bull; Instant Deal Scout</span>
+      <h1>Instamart Deal Scout</h1>
+      <p>Lightweight browser bookmarklet to scout top deals directly on Swiggy Instamart using your local dark store catalog.</p>
+
+      <!-- Bookmarklet Drag / Action Target directly under the header text -->
+      <div class="drag-target">
+        <div class="drag-label">👇 Drag this button directly to your browser's Bookmarks bar:</div>
+        
+        <a class="bookmarklet-btn" href="javascript:(function(){const s=document.createElement('script');s.src='https://jairaj26.github.io/swiggy-instamart-deals/swiggy-hunter-v4.min.js?t='+Date.now();document.body.appendChild(s);})();" title="Drag this button to your bookmarks bar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          🛒 Swiggy Deal Scout
+        </a>
+
+        <!-- Quick Action Buttons for Mobile & File Import -->
+        <div class="action-btn-row">
+          <button type="button" class="btn-secondary" onclick="copyMobileCode(this)" title="Copy lightweight 167-char code for mobile bookmarks">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>📋 Copy Mobile Code (167 chars)</span>
+          </button>
+
+          <button type="button" class="btn-secondary" onclick="downloadBookmarks()" title="Download Netscape HTML file to import into desktop browser and sync to phone">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>📥 Download Bookmarks (.html)</span>
+          </button>
+        </div>
+
+        <div class="drag-hint">Can't drag or on Mobile? Use the buttons above or expand the code drawers below.</div>
+
+        <!-- Mobile & Manual Script Drawer -->
+        <details>
+          <summary>📋 View / Copy Lightweight Loader Script (167 chars)</summary>
+          <div class="copy-panel">
+            <textarea readonly rows="3" onclick="this.select()">javascript:(function(){const s=document.createElement('script');s.src='https://jairaj26.github.io/swiggy-instamart-deals/swiggy-hunter-v4.min.js?t='+Date.now();document.body.appendChild(s);})();</textarea>
+            <button type="button" class="btn-copy" onclick="copySnippet(this)">Copy Loader Code</button>
+          </div>
+        </details>
+
+        <!-- Offline Standalone File Link -->
+        <details style="margin-top: 10px; border-top: 1px dashed #e2e8f0;">
+          <summary style="font-size: 11.5px; color: #94a3b8;">📦 Want 100% Offline Standalone Script? (Without external CDN)</summary>
+          <div style="margin-top: 10px; font-size: 13px; color: var(--text-muted); line-height: 1.6;">
+            <p>If you prefer running the complete 69KB bundle locally with no external script loading from GitHub Pages, you can view or download the offline file directly:</p>
+            <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+              <a href="swiggy-hunter-v4.bookmarklet.txt" class="btn-secondary" download="swiggy-hunter-v4.bookmarklet.txt">📥 Download Standalone Bundle (.txt)</a>
+              <a href="swiggy-hunter-v4.bookmarklet.txt" class="btn-secondary" target="_blank" rel="noopener">👁️ View Offline Code</a>
+            </div>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <!-- Installation Steps -->
+    <div class="steps-card">
+      <div class="steps-title">💻 Desktop Setup (Chrome, Edge, Brave, Safari, Firefox)</div>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-text">Show bookmarks bar by pressing <kbd>Ctrl+Shift+B</kbd> (or <kbd>Cmd+Shift+B</kbd> on Mac).</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-text">Drag the orange <b>"🛒 Swiggy Deal Scout"</b> button above directly onto your bookmarks bar.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-text">Open <b>swiggy.com/instamart</b> and click the bookmark anytime you want to shop.</div>
+        </div>
+      </div>
+      <div class="note-box" style="margin-top: 14px; background: #f8fafc; border-color: #e2e8f0; color: #475569;">
+        💡 <b>Alternative (Browser Sync):</b> Click <b>"📥 Download Bookmarks (.html)"</b> &rarr; In your browser go to <i>Bookmarks &rarr; Import Bookmarks</i> &rarr; Select the downloaded file. If you use Chrome/iCloud sync, it automatically appears in your phone's bookmarks too!
+      </div>
+    </div>
+
+    <div class="steps-card" style="border-left: 4px solid var(--orange);">
+      <div class="steps-title">📱 Mobile Setup &amp; How to Run (Chrome, Safari, Brave on Android &amp; iOS)</div>
+      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.5;">
+        Mobile browsers don't have an "Import HTML" menu, but this mobile script is <b>ultra-lightweight (only 167 characters)</b>. It takes just 10 seconds to set up without freezing your browser!
+      </p>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-text">Tap <b>📋 Copy Mobile Code</b> above (copies the short 167-char script).</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-text">Bookmark this page in your mobile browser (<kbd>⋮</kbd> menu &rarr; tap ⭐ / Bookmark).</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-text">Open Bookmarks (<kbd>⋮</kbd> &rarr; <b>Bookmarks</b>), tap <kbd>⋮</kbd> next to it &rarr; <b>Edit</b>: Name it <b>Swiggy Deal Scout</b>, clear the URL, and <b>Paste</b> the code.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-text"><b>To run anytime:</b> Open <b>swiggy.com/instamart</b>, type <i>Swiggy Deal Scout</i> in your address bar, and tap the bookmark suggestion!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instamart Aisle & Deal Scout Information Card (Below Install Steps) -->
+    <div class="tool-card">
+      <div class="tool-header-row">
+        <span class="tool-tag">Category &amp; Subcategory Scout</span>
+        <span class="speed-tag">⚡ ~1–3s Execution</span>
+      </div>
+      <h2 class="tool-title">Instamart Aisle &amp; Deal Scout</h2>
+      <p class="tool-desc">
+        Scout Page 1 top deals sorted by highest discount across any store category or cherry-pick specific aisles (e.g. Atta, Rice, Ghee, Shampoos). Selecting specific aisles takes just 1–3 seconds with zero rate limit risk.
+      </p>
+
+      <ul class="feature-list">
+        <li>
+          <span class="bullet"></span>
+          <div><b>Automatic Store Pod Detection:</b> Automatically captures both Primary and Secondary dark store IDs as soon as the sidebar loads, confirming your local store pod.</div>
+        </li>
+        <li>
+          <span class="bullet"></span>
+          <div><b>Direct Product Search &amp; View:</b> Clicking any product in the results opens Swiggy Instamart pre-searched with the exact item name for instant 1-click cart addition.</div>
+        </li>
+        <li>
+          <span class="bullet"></span>
+          <div><b>36 Store Departments Pre-Mapped:</b> Atta, Rice &amp; Dal, Oils &amp; Ghee, Masalas, Cleaning, Dairy, Bath &amp; Body, Skincare, and more.</div>
+        </li>
+        <li>
+          <span class="bullet"></span>
+          <div><b>Collapsed Subcategories with Accordion:</b> Clean overview of all categories; click any department to expand and cherry-pick aisles.</div>
+        </li>
+        <li>
+          <span class="bullet"></span>
+          <div><b>Zepto-Style 5-Column Grid:</b> Browse deals in a modern card layout featuring green discount tags, centered images, brand, and savings.</div>
+        </li>
+        <li>
+          <span class="bullet"></span>
+          <div><b>Brand &amp; Subcategory Filtering:</b> Instant multi-filter dropdowns and live search across all scouted dark store inventory.</div>
+        </li>
+        <li>
+          <span class="bullet"></span>
+          <div><b>Zero Rate Limit Risk:</b> Cherry-picked subcategories finish in ~1–2 seconds without triggering 429 WAF blocks.</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <div class="faq-title">Frequently Asked Questions &amp; Tips</div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>How does the bookmarklet detect my store pod?</h4>
+          <p>The moment you click the bookmarklet, it auto-detects both your Primary and Secondary dark store IDs directly from Swiggy's active page session and recent network calls, displaying your Store Pod ID right at the top of the sidebar.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How do I open deals directly in the Swiggy mobile app?</h4>
+          <p>Product links open Swiggy Instamart with the exact product pre-searched. On mobile, if Telegram's or browser's web view opens, tap the menu (<kbd>⋮</kbd>) &rarr; "Open in Chrome/Browser" (or enable app deep-links) to launch the native Swiggy app immediately!</p>
+        </div>
+        <div class="faq-item">
+          <h4>How do I choose specific subcategories?</h4>
+          <p>Click on any category card to expand its subcategories. Click individual subcategory pills to toggle them on or off, or use the "Select All" / "Clear" buttons.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Why choose fewer subcategories?</h4>
+          <p>Scanning 2 to 4 aisles completes in only 1–2 seconds and completely eliminates 429 WAF rate limit challenges from Swiggy.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How does the brand filter work?</h4>
+          <p>In the results tab, use the "All Brands" dropdown to instantly narrow down items to your favorite brands (e.g. Aashirvaad, Fortune, Amul).</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Instamart Deal Scout &bull; Runs 100% locally in your browser &bull; No credentials or external servers required.</p>
+    </footer>
+  </div>
+
+  <script>
+    var LOADER_SCRIPT = "javascript:(function(){const s=document.createElement('script');s.src='https://jairaj26.github.io/swiggy-instamart-deals/swiggy-hunter-v4.min.js?t='+Date.now();document.body.appendChild(s);})();";
+
+    function copyMobileCode(btn) {
+      navigator.clipboard.writeText(LOADER_SCRIPT).then(function() {
+        var orig = btn.innerHTML;
+        btn.innerHTML = '<span style="color:#16a34a;font-weight:800;">✓ Copied Mobile Code!</span>';
+        btn.style.borderColor = '#16a34a';
+        setTimeout(function() {
+          btn.innerHTML = orig;
+          btn.style.borderColor = '';
+        }, 2500);
+      });
+    }
+
+    function copySnippet(btn) {
+      var textarea = btn.previousElementSibling;
+      textarea.select();
+      navigator.clipboard.writeText(textarea.value).then(function() {
+        var orig = btn.innerText;
+        btn.innerText = '✓ Copied to Clipboard!';
+        btn.style.borderColor = '#16a34a';
+        btn.style.color = '#16a34a';
+        setTimeout(function() {
+          btn.innerText = orig;
+          btn.style.borderColor = '';
+          btn.style.color = '';
+        }, 2000);
+      });
+    }
+
+    function downloadBookmarks() {
+      var bookmarkHtml = '<!DOCTYPE NETSCAPE-Bookmark-file-1>\n' +
+        '<!-- This is an automatically generated file.\n' +
+        '     It will be read and overwritten.\n' +
+        '     DO NOT EDIT! -->\n' +
+        '<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">\n' +
+        '<TITLE>Bookmarks</TITLE>\n' +
+        '<H1>Bookmarks</H1>\n' +
+        '<DL><p>\n' +
+        '    <DT><A HREF="' + LOADER_SCRIPT.replace(/"/g, '&quot;') + '">🛒 Swiggy Deal Scout</A>\n' +
+        '</DL><p>';
+
+      var blob = new Blob([bookmarkHtml], { type: 'text/html;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'swiggy-deal-scout-bookmarks.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

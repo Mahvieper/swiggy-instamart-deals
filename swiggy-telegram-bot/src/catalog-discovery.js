@@ -433,12 +433,52 @@ async function main() {
   const curatedCount = Object.values(config.campaigns || {}).reduce(function (total, campaign) {
     return total + (campaign.subcategories || []).length;
   }, 0);
+  const discovery = config.discovery || {};
+  const minimumSuccessful = Math.max(3, Math.ceil(seeds.length *
+    (discovery.minSuccessfulRatio != null ? discovery.minSuccessfulRatio : 0.4)));
+  const minimumSubcategories = Math.max(40, Math.ceil(curatedCount *
+    (discovery.minSubcategoryRatio != null ? discovery.minSubcategoryRatio : 0.25)));
+  const maxAttempts = Math.max(1, Math.min(5, discovery.maxAttempts || 3));
+  const useFallback = discovery.usePreviousCatalogFallback !== false;
 
   console.log('[CatalogDiscovery] Starting store-specific discovery with ' + seeds.length + ' known category/taxonomy pairs.');
-  const result = await discoverInBrowser(storeConfig, seeds);
 
-  const minimumSuccessful = Math.max(3, Math.ceil(seeds.length * 0.4));
-  const minimumSubcategories = Math.max(40, Math.ceil(curatedCount * 0.25));
+  // Instamart occasionally serves a partial catalog (HTTP 200 but very few
+  // navigationTabs) from datacenter IPs. Retry before declaring the run bad.
+  let result = null;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    result = await discoverInBrowser(storeConfig, seeds);
+    console.log('[CatalogDiscovery] Attempt ' + attempt + '/' + maxAttempts + ': ' +
+      result.successfulCategories + '/' + result.attemptedCategories + ' categories OK, ' +
+      result.subcategories.length + ' subcategories (minimum ' + minimumSubcategories + ').');
+    if (result.successfulCategories >= minimumSuccessful &&
+        result.subcategories.length >= minimumSubcategories) break;
+    if (attempt < maxAttempts) await sleep(2000);
+  }
+
+  // If every attempt was partial, carry forward aisles from the last good
+  // catalog rather than failing the whole job and leaving a stale file.
+  let usedFallback = false;
+  if (result.successfulCategories < minimumSuccessful ||
+      result.subcategories.length < minimumSubcategories) {
+    if (useFallback && fs.existsSync(OUTPUT_FILE)) {
+      try {
+        const previous = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf8'));
+        const previousSubs = previous.subcategories || [];
+        const byId = new Map();
+        for (const sub of result.subcategories) byId.set(sub.id, sub);
+        for (const sub of previousSubs) if (sub && sub.id && !byId.has(sub.id)) byId.set(sub.id, sub);
+        const merged = Array.from(byId.values());
+        console.log('[CatalogDiscovery] Partial response — merged previous catalog: ' +
+          result.subcategories.length + ' fresh + ' + previousSubs.length + ' previous = ' + merged.length + ' aisles.');
+        result.subcategories = merged;
+        usedFallback = true;
+      } catch (error) {
+        console.error('[CatalogDiscovery] Previous-catalog fallback failed: ' + error.message);
+      }
+    }
+  }
+
   if (result.successfulCategories < minimumSuccessful || result.subcategories.length < minimumSubcategories) {
     throw new Error(
       'Catalog response looks incomplete; keeping the previous catalog. Successful categories: ' +
@@ -462,7 +502,8 @@ async function main() {
       failedCategories: result.failedCategories.length,
       discoveredCategories: result.categories.length,
       discoveredSubcategories: result.subcategories.length,
-      configuredSubcategories: curatedCount
+      configuredSubcategories: curatedCount,
+      usedFallback: usedFallback
     },
     categories: result.categories,
     subcategories: result.subcategories,
