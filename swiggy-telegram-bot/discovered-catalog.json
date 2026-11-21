@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20T03:49:44.217Z",
+  "updatedAt": "2026-11-21T01:39:03.395Z",
   "storeId": "1400978",
   "source": "Instamart category-listing/v2 navigationTabs",
   "stats": {
     "attemptedCategories": 32,
     "successfulCategories": 32,
-    "categoriesWithSubcategories": 15,
-    "categoriesWithoutSubcategories": 17,
+    "categoriesWithSubcategories": 14,
+    "categoriesWithoutSubcategories": 18,
     "failedCategories": 0,
     "discoveredCategories": 32,
-    "discoveredSubcategories": 217,
+    "discoveredSubcategories": 180,
     "configuredSubcategories": 446,
     "usedFallback": false
   },
@@ -147,6 +147,15 @@
   "subcategories": [
     {
       "category": "Fresh Vegetables",
+      "name": "Top deals",
+      "id": "6b004321e3eeaf000184ebcb",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
       "name": "Fresh Vegetables",
       "id": "6822eeeded32000001e25aa2",
       "taxonomyType": "Speciality taxonomy 1",
@@ -230,6 +239,15 @@
       "category": "Fresh Vegetables",
       "name": "Fresh Fruits",
       "id": "6822eeeded32000001e25aad",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Top deals",
+      "id": "6b004321e3eeaf000184ebcc",
       "taxonomyType": "Speciality taxonomy 1",
       "campaigns": [
         "fresh"
@@ -498,8 +516,8 @@
     },
     {
       "category": "Meat and Seafood",
-      "name": "Meat Combos",
-      "id": "6948edde195bc000019a3b03",
+      "name": "Eggs",
+      "id": "6822eeeded32000001e25b44",
       "taxonomyType": "Speciality taxonomy 1",
       "campaigns": [
         "fresh"
@@ -507,8 +525,8 @@
     },
     {
       "category": "Meat and Seafood",
-      "name": "Eggs",
-      "id": "6822eeeded32000001e25b44",
+      "name": "Meat Combos",
+      "id": "6948edde195bc000019a3b03",
       "taxonomyType": "Speciality taxonomy 1",
       "campaigns": [
         "fresh"
@@ -1460,670 +1478,305 @@
       ]
     },
     {
-      "category": "Biscuits and Cakes",
-      "name": "Cakes & Pies",
-      "id": "693c23bd4df316000117b882",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Cream Biscuits",
-      "id": "693c23bd4df316000117b885",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Cookies",
-      "id": "693c23bd4df316000117b884",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Marie & Digestive",
-      "id": "693c23bd4df316000117b88b",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Regular & Glucose",
-      "id": "6ab22eea5aa7b80001720e62",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Gift Boxes",
-      "id": "693c23bd4df316000117b888",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Salted & Plain",
-      "id": "693c23bd4df316000117b890",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Wafers, rusk & crackers",
-      "id": "6ab22eea5aa7b80001720e64",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Regional Favourites",
-      "id": "693c23bd4df316000117b88e",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Healthy Snacking",
-      "id": "693c23bd4df316000117b88a",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Baking ingredients",
-      "id": "6ab22eea5aa7b80001720e63",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Gourmet collection",
-      "id": "693c23bd4df316000117b889",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Biscuits and Cakes",
-      "name": "Pancake Mixes",
-      "id": "693c23bd4df316000117b88d",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "treats"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Veg Frozen Snacks",
-      "id": "693d82725485ff0001d3ec2e",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Non Veg Frozen Snacks",
-      "id": "693d82725485ff0001d3ec29",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Cold Cuts",
-      "id": "693d82725485ff0001d3ec23",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Frozen Vegetables",
-      "id": "693d82725485ff0001d3ec24",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Momos & Baos",
-      "id": "693d82725485ff0001d3ec27",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Kebabs",
-      "id": "693d82725485ff0001d3ec26",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Roti, Paranthas & Sheets",
-      "id": "693d82725485ff0001d3ec2c",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Seafood",
-      "id": "693d82725485ff0001d3ec2d",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Raw Frozen",
-      "id": "693d82725485ff0001d3ec2a",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Frozen Food",
-      "name": "Regional Favourites",
-      "id": "693d82725485ff0001d3ec2b",
-      "taxonomyType": "taxonomy 10",
-      "campaigns": [
-        "munchies"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Moisturizing Creams",
-      "id": "6aabb3142c4bff0001cd84cd",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Soaps",
-      "id": "6903b10bd2c61b000112ba93",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Shower gel",
-      "id": "6903b10bd2c61b000112baa4",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Body Lotion & Oils",
-      "id": "6903b10bd2c61b000112ba9b",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Shampoo",
-      "id": "6903b10bd2c61b000112ba96",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Oral Care",
-      "id": "6aba135aa6fa090001aaa4dd",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Conditioner",
-      "id": "6903b10bd2c61b000112ba97",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Face Care",
-      "id": "6903b10bd2c61b000112ba95",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Sunscreen",
-      "id": "6aabb3142c4bff0001cd84cc",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Hand wash",
-      "id": "6aba135aa6fa090001aaa4de",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Fragrance & Talc",
-      "id": "6903b10bd2c61b000112ba9c",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Value Pack",
-      "id": "6aa954d1114a1800015f6063",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Mens Perfume",
-      "id": "6903b10bd2c61b000112ba9e",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Womens Perfume",
-      "id": "6903b10bd2c61b000112baa7",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Shaving brush and Kit",
-      "id": "6903b10bd2c61b000112baa2",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Shaving Foam and Cartridges",
-      "id": "6903b10bd2c61b000112baa3",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Bath Accessories",
-      "id": "6903b10bd2c61b000112ba98",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Bath & Beauty gifts",
-      "id": "6903b10bd2c61b000112ba9a",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Men Trimmers & Razors",
-      "id": "6903b10bd2c61b000112baa9",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Womens Deos",
-      "id": "6903b10bd2c61b000112baa6",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Mens Deos",
-      "id": "6903b10bd2c61b000112ba9d",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Women Trimmers & Razors",
-      "id": "6903b10bd2c61b000112baa8",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Multi groomers",
-      "id": "6903b10bd2c61b000112ba9f",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "After Shave",
-      "id": "6903b10bd2c61b000112ba99",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Bath and Body",
-      "name": "Women Hair Removal cream",
-      "id": "6903b10bd2c61b000112baa5",
-      "taxonomyType": "taxonomy 14",
-      "campaigns": [
-        "personalCare"
-      ]
-    },
-    {
-      "category": "Home and Kitchen",
-      "name": "Non Toxic Cookware",
-      "id": "69a6853c8ec23b0001d51dcb",
+      "category": "Cleaners and Repellents",
+      "name": "Liquid Detergents",
+      "id": "6903b179fe6d7500013a0d33",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Premium Storage Brands",
-      "id": "6a107175f653f400014e56af",
+      "category": "Cleaners and Repellents",
+      "name": "Repellent",
+      "id": "6903b179fe6d7500013a0d42",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Home decor",
-      "id": "6903b179fe6d7500013a0d13",
+      "category": "Cleaners and Repellents",
+      "name": "Mosquito Refills",
+      "id": "6903b179fe6d7500013a0d3e",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "304 Stainless Steel",
-      "id": "6a107175f653f400014e56ae",
+      "category": "Cleaners and Repellents",
+      "name": "Detergent Powders",
+      "id": "6903b179fe6d7500013a0d32",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Linen & Furnishing",
-      "id": "6903b179fe6d7500013a0d14",
+      "category": "Cleaners and Repellents",
+      "name": "Racquets",
+      "id": "6903b179fe6d7500013a0d3f",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Kitchen Tools",
-      "id": "6903b179fe6d7500013a0d0c",
+      "category": "Cleaners and Repellents",
+      "name": "Laundry Additives",
+      "id": "6903b179fe6d7500013a0d3d",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Jars & Containers",
-      "id": "6903b179fe6d7500013a0d09",
+      "category": "Cleaners and Repellents",
+      "name": "Cockroach & Crawling insect killer",
+      "id": "6903b179fe6d7500013a0d3b",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Bottles, Flask and Tumblers",
-      "id": "6903b179fe6d7500013a0d0a",
-      "taxonomyType": "IM Meatsy",
-      "campaigns": [
-        "lifestyle",
-        "household"
-      ]
-    },
-    {
-      "category": "Home and Kitchen",
-      "name": "Tiffins & Lunch Bag",
-      "id": "6a27ff73600211000131660a",
-      "taxonomyType": "IM Meatsy",
-      "campaigns": [
-        "lifestyle",
-        "household"
-      ]
-    },
-    {
-      "category": "Home and Kitchen",
-      "name": "Bath and laundry",
-      "id": "6903b179fe6d7500013a0d0e",
-      "taxonomyType": "IM Meatsy",
-      "campaigns": [
-        "lifestyle",
-        "household"
-      ]
-    },
-    {
-      "category": "Home and Kitchen",
-      "name": "Serveware & Crockery",
-      "id": "6903b179fe6d7500013a0d16",
-      "taxonomyType": "IM Meatsy",
-      "campaigns": [
-        "lifestyle",
-        "household"
-      ]
-    },
-    {
-      "category": "Home and Kitchen",
-      "name": "Cookware",
-      "id": "6903b179fe6d7500013a0d07",
-      "taxonomyType": "IM Meatsy",
-      "campaigns": [
-        "lifestyle",
-        "household"
-      ]
-    },
-    {
-      "category": "Home and Kitchen",
+      "category": "Cleaners and Repellents",
       "name": "Tissues & Disposables",
-      "id": "6903b179fe6d7500013a0d18",
+      "id": "6a3a643a60f2a90001f51437",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Home Utility",
-      "id": "6a27ff73600211000131660b",
+      "category": "Cleaners and Repellents",
+      "name": "Garbage Bags",
+      "id": "6adb3d3ceebc06000158ca19",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Storage Organizers & Utility",
-      "id": "6903b179fe6d7500013a0d17",
+      "category": "Cleaners and Repellents",
+      "name": "Dishwash Gel",
+      "id": "6903b179fe6d7500013a0d3c",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "cups and mugs",
-      "id": "6903b179fe6d7500013a0d10",
+      "category": "Cleaners and Repellents",
+      "name": "Toilet Cleaners",
+      "id": "6903b179fe6d7500013a0d38",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Gardening",
-      "id": "6903b179fe6d7500013a0d11",
+      "category": "Cleaners and Repellents",
+      "name": "Mosquito Repellent",
+      "id": "6903b179fe6d7500013a0d43",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Glasses & Barware",
-      "id": "6903b179fe6d7500013a0d12",
+      "category": "Cleaners and Repellents",
+      "name": "Surface Disinfectants",
+      "id": "6903b179fe6d7500013a0d41",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Air Freshners",
-      "id": "6903b179fe6d7500013a0d0d",
+      "category": "Cleaners and Repellents",
+      "name": "Top Deals",
+      "id": "69706f26a176a40001054615",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Bakeware & BBQ",
-      "id": "6903b179fe6d7500013a0d0b",
+      "category": "Cleaners and Repellents",
+      "name": "Rat Repellent",
+      "id": "6903b179fe6d7500013a0d40",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Vehicale care & Accessories",
-      "id": "6903b179fe6d7500013a0d19",
+      "category": "Cleaners and Repellents",
+      "name": "Brooms & Mops",
+      "id": "6903b179fe6d7500013a0d34",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Party Planning",
-      "id": "6903b179fe6d7500013a0d15",
+      "category": "Cleaners and Repellents",
+      "name": "Dustbins & Pans",
+      "id": "6903b179fe6d7500013a0d36",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
       ]
     },
     {
-      "category": "Home and Kitchen",
-      "name": "Cleaning tools",
-      "id": "6903b179fe6d7500013a0d0f",
+      "category": "Cleaners and Repellents",
+      "name": "Wipes & Scrubs",
+      "id": "6903b179fe6d7500013a0d3a",
       "taxonomyType": "IM Meatsy",
       "campaigns": [
-        "lifestyle",
         "household"
+      ]
+    },
+    {
+      "category": "Cleaners and Repellents",
+      "name": "Kitchen Cleaning",
+      "id": "6903b179fe6d7500013a0d37",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "household"
+      ]
+    },
+    {
+      "category": "Cleaners and Repellents",
+      "name": "Bathroom Cleaning",
+      "id": "6903b179fe6d7500013a0d39",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "household"
+      ]
+    },
+    {
+      "category": "Cleaners and Repellents",
+      "name": "Floor Cleaners",
+      "id": "6903b179fe6d7500013a0d35",
+      "taxonomyType": "IM Meatsy",
+      "campaigns": [
+        "household"
+      ]
+    },
+    {
+      "category": "Makeup",
+      "name": "Lips",
+      "id": "6903b10bd2c61b000112bac2",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Makeup",
+      "name": "Eyes",
+      "id": "6903b10bd2c61b000112bac3",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Makeup",
+      "name": "Face",
+      "id": "6903b10bd2c61b000112bac5",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Makeup",
+      "name": "Nails",
+      "id": "6903b10bd2c61b000112bac7",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Makeup",
+      "name": "Tools & Brushes",
+      "id": "6903b10bd2c61b000112bac8",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Makeup",
+      "name": "Beauty Supplements",
+      "id": "6903b10bd2c61b000112bac9",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Sexual Wellness",
+      "name": "Condoms",
+      "id": "6903b10bd2c61b000112bad4",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Sexual Wellness",
+      "name": "Lubricants",
+      "id": "6903b10bd2c61b000112bad5",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Sexual Wellness",
+      "name": "Massagers",
+      "id": "6903b10bd2c61b000112bad6",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Sexual Wellness",
+      "name": "Enhancers",
+      "id": "6903b10bd2c61b000112bad7",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
+      ]
+    },
+    {
+      "category": "Sexual Wellness",
+      "name": "Gift Kits",
+      "id": "6903b10bd2c61b000112bad8",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "clearance"
       ]
     }
   ],
   "campaigns": {
     "fresh": [
+      {
+        "category": "Fresh Vegetables",
+        "name": "Top deals",
+        "id": "6b004321e3eeaf000184ebcb",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
       {
         "category": "Fresh Vegetables",
         "name": "Fresh Vegetables",
@@ -2209,6 +1862,15 @@
         "category": "Fresh Vegetables",
         "name": "Fresh Fruits",
         "id": "6822eeeded32000001e25aad",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Top deals",
+        "id": "6b004321e3eeaf000184ebcc",
         "taxonomyType": "Speciality taxonomy 1",
         "campaigns": [
           "fresh"
@@ -2477,8 +2139,8 @@
       },
       {
         "category": "Meat and Seafood",
-        "name": "Meat Combos",
-        "id": "6948edde195bc000019a3b03",
+        "name": "Eggs",
+        "id": "6822eeeded32000001e25b44",
         "taxonomyType": "Speciality taxonomy 1",
         "campaigns": [
           "fresh"
@@ -2486,8 +2148,8 @@
       },
       {
         "category": "Meat and Seafood",
-        "name": "Eggs",
-        "id": "6822eeeded32000001e25b44",
+        "name": "Meat Combos",
+        "id": "6948edde195bc000019a3b03",
         "taxonomyType": "Speciality taxonomy 1",
         "campaigns": [
           "fresh"
@@ -3441,905 +3103,297 @@
         "campaigns": [
           "treats"
         ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Cakes & Pies",
-        "id": "693c23bd4df316000117b882",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Cream Biscuits",
-        "id": "693c23bd4df316000117b885",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Cookies",
-        "id": "693c23bd4df316000117b884",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Marie & Digestive",
-        "id": "693c23bd4df316000117b88b",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Regular & Glucose",
-        "id": "6ab22eea5aa7b80001720e62",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Gift Boxes",
-        "id": "693c23bd4df316000117b888",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Salted & Plain",
-        "id": "693c23bd4df316000117b890",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Wafers, rusk & crackers",
-        "id": "6ab22eea5aa7b80001720e64",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Regional Favourites",
-        "id": "693c23bd4df316000117b88e",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Healthy Snacking",
-        "id": "693c23bd4df316000117b88a",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Baking ingredients",
-        "id": "6ab22eea5aa7b80001720e63",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Gourmet collection",
-        "id": "693c23bd4df316000117b889",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      },
-      {
-        "category": "Biscuits and Cakes",
-        "name": "Pancake Mixes",
-        "id": "693c23bd4df316000117b88d",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "treats"
-        ]
-      }
-    ],
-    "munchies": [
-      {
-        "category": "Frozen Food",
-        "name": "Veg Frozen Snacks",
-        "id": "693d82725485ff0001d3ec2e",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Frozen Food",
-        "name": "Non Veg Frozen Snacks",
-        "id": "693d82725485ff0001d3ec29",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Frozen Food",
-        "name": "Cold Cuts",
-        "id": "693d82725485ff0001d3ec23",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Frozen Food",
-        "name": "Frozen Vegetables",
-        "id": "693d82725485ff0001d3ec24",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Frozen Food",
-        "name": "Momos & Baos",
-        "id": "693d82725485ff0001d3ec27",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Frozen Food",
-        "name": "Kebabs",
-        "id": "693d82725485ff0001d3ec26",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Frozen Food",
-        "name": "Roti, Paranthas & Sheets",
-        "id": "693d82725485ff0001d3ec2c",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Frozen Food",
-        "name": "Seafood",
-        "id": "693d82725485ff0001d3ec2d",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Frozen Food",
-        "name": "Raw Frozen",
-        "id": "693d82725485ff0001d3ec2a",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      },
-      {
-        "category": "Frozen Food",
-        "name": "Regional Favourites",
-        "id": "693d82725485ff0001d3ec2b",
-        "taxonomyType": "taxonomy 10",
-        "campaigns": [
-          "munchies"
-        ]
-      }
-    ],
-    "personalCare": [
-      {
-        "category": "Bath and Body",
-        "name": "Moisturizing Creams",
-        "id": "6aabb3142c4bff0001cd84cd",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Soaps",
-        "id": "6903b10bd2c61b000112ba93",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Shower gel",
-        "id": "6903b10bd2c61b000112baa4",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Body Lotion & Oils",
-        "id": "6903b10bd2c61b000112ba9b",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Shampoo",
-        "id": "6903b10bd2c61b000112ba96",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Oral Care",
-        "id": "6aba135aa6fa090001aaa4dd",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Conditioner",
-        "id": "6903b10bd2c61b000112ba97",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Face Care",
-        "id": "6903b10bd2c61b000112ba95",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Sunscreen",
-        "id": "6aabb3142c4bff0001cd84cc",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Hand wash",
-        "id": "6aba135aa6fa090001aaa4de",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Fragrance & Talc",
-        "id": "6903b10bd2c61b000112ba9c",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Value Pack",
-        "id": "6aa954d1114a1800015f6063",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Mens Perfume",
-        "id": "6903b10bd2c61b000112ba9e",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Womens Perfume",
-        "id": "6903b10bd2c61b000112baa7",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Shaving brush and Kit",
-        "id": "6903b10bd2c61b000112baa2",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Shaving Foam and Cartridges",
-        "id": "6903b10bd2c61b000112baa3",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Bath Accessories",
-        "id": "6903b10bd2c61b000112ba98",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Bath & Beauty gifts",
-        "id": "6903b10bd2c61b000112ba9a",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Men Trimmers & Razors",
-        "id": "6903b10bd2c61b000112baa9",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Womens Deos",
-        "id": "6903b10bd2c61b000112baa6",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Mens Deos",
-        "id": "6903b10bd2c61b000112ba9d",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Women Trimmers & Razors",
-        "id": "6903b10bd2c61b000112baa8",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Multi groomers",
-        "id": "6903b10bd2c61b000112ba9f",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "After Shave",
-        "id": "6903b10bd2c61b000112ba99",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      },
-      {
-        "category": "Bath and Body",
-        "name": "Women Hair Removal cream",
-        "id": "6903b10bd2c61b000112baa5",
-        "taxonomyType": "taxonomy 14",
-        "campaigns": [
-          "personalCare"
-        ]
-      }
-    ],
-    "lifestyle": [
-      {
-        "category": "Home and Kitchen",
-        "name": "Non Toxic Cookware",
-        "id": "69a6853c8ec23b0001d51dcb",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Premium Storage Brands",
-        "id": "6a107175f653f400014e56af",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Home decor",
-        "id": "6903b179fe6d7500013a0d13",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "304 Stainless Steel",
-        "id": "6a107175f653f400014e56ae",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Linen & Furnishing",
-        "id": "6903b179fe6d7500013a0d14",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Kitchen Tools",
-        "id": "6903b179fe6d7500013a0d0c",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Jars & Containers",
-        "id": "6903b179fe6d7500013a0d09",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Bottles, Flask and Tumblers",
-        "id": "6903b179fe6d7500013a0d0a",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Tiffins & Lunch Bag",
-        "id": "6a27ff73600211000131660a",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Bath and laundry",
-        "id": "6903b179fe6d7500013a0d0e",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Serveware & Crockery",
-        "id": "6903b179fe6d7500013a0d16",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Cookware",
-        "id": "6903b179fe6d7500013a0d07",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Tissues & Disposables",
-        "id": "6903b179fe6d7500013a0d18",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Home Utility",
-        "id": "6a27ff73600211000131660b",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Storage Organizers & Utility",
-        "id": "6903b179fe6d7500013a0d17",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "cups and mugs",
-        "id": "6903b179fe6d7500013a0d10",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Gardening",
-        "id": "6903b179fe6d7500013a0d11",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Glasses & Barware",
-        "id": "6903b179fe6d7500013a0d12",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Air Freshners",
-        "id": "6903b179fe6d7500013a0d0d",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Bakeware & BBQ",
-        "id": "6903b179fe6d7500013a0d0b",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Vehicale care & Accessories",
-        "id": "6903b179fe6d7500013a0d19",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Party Planning",
-        "id": "6903b179fe6d7500013a0d15",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Cleaning tools",
-        "id": "6903b179fe6d7500013a0d0f",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
       }
     ],
     "household": [
       {
-        "category": "Home and Kitchen",
-        "name": "Non Toxic Cookware",
-        "id": "69a6853c8ec23b0001d51dcb",
+        "category": "Cleaners and Repellents",
+        "name": "Liquid Detergents",
+        "id": "6903b179fe6d7500013a0d33",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Premium Storage Brands",
-        "id": "6a107175f653f400014e56af",
+        "category": "Cleaners and Repellents",
+        "name": "Repellent",
+        "id": "6903b179fe6d7500013a0d42",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Home decor",
-        "id": "6903b179fe6d7500013a0d13",
+        "category": "Cleaners and Repellents",
+        "name": "Mosquito Refills",
+        "id": "6903b179fe6d7500013a0d3e",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "304 Stainless Steel",
-        "id": "6a107175f653f400014e56ae",
+        "category": "Cleaners and Repellents",
+        "name": "Detergent Powders",
+        "id": "6903b179fe6d7500013a0d32",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Linen & Furnishing",
-        "id": "6903b179fe6d7500013a0d14",
+        "category": "Cleaners and Repellents",
+        "name": "Racquets",
+        "id": "6903b179fe6d7500013a0d3f",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Kitchen Tools",
-        "id": "6903b179fe6d7500013a0d0c",
+        "category": "Cleaners and Repellents",
+        "name": "Laundry Additives",
+        "id": "6903b179fe6d7500013a0d3d",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Jars & Containers",
-        "id": "6903b179fe6d7500013a0d09",
+        "category": "Cleaners and Repellents",
+        "name": "Cockroach & Crawling insect killer",
+        "id": "6903b179fe6d7500013a0d3b",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Bottles, Flask and Tumblers",
-        "id": "6903b179fe6d7500013a0d0a",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Tiffins & Lunch Bag",
-        "id": "6a27ff73600211000131660a",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Bath and laundry",
-        "id": "6903b179fe6d7500013a0d0e",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Serveware & Crockery",
-        "id": "6903b179fe6d7500013a0d16",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
-        "name": "Cookware",
-        "id": "6903b179fe6d7500013a0d07",
-        "taxonomyType": "IM Meatsy",
-        "campaigns": [
-          "lifestyle",
-          "household"
-        ]
-      },
-      {
-        "category": "Home and Kitchen",
+        "category": "Cleaners and Repellents",
         "name": "Tissues & Disposables",
-        "id": "6903b179fe6d7500013a0d18",
+        "id": "6a3a643a60f2a90001f51437",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Home Utility",
-        "id": "6a27ff73600211000131660b",
+        "category": "Cleaners and Repellents",
+        "name": "Garbage Bags",
+        "id": "6adb3d3ceebc06000158ca19",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Storage Organizers & Utility",
-        "id": "6903b179fe6d7500013a0d17",
+        "category": "Cleaners and Repellents",
+        "name": "Dishwash Gel",
+        "id": "6903b179fe6d7500013a0d3c",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "cups and mugs",
-        "id": "6903b179fe6d7500013a0d10",
+        "category": "Cleaners and Repellents",
+        "name": "Toilet Cleaners",
+        "id": "6903b179fe6d7500013a0d38",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Gardening",
-        "id": "6903b179fe6d7500013a0d11",
+        "category": "Cleaners and Repellents",
+        "name": "Mosquito Repellent",
+        "id": "6903b179fe6d7500013a0d43",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Glasses & Barware",
-        "id": "6903b179fe6d7500013a0d12",
+        "category": "Cleaners and Repellents",
+        "name": "Surface Disinfectants",
+        "id": "6903b179fe6d7500013a0d41",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Air Freshners",
-        "id": "6903b179fe6d7500013a0d0d",
+        "category": "Cleaners and Repellents",
+        "name": "Top Deals",
+        "id": "69706f26a176a40001054615",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Bakeware & BBQ",
-        "id": "6903b179fe6d7500013a0d0b",
+        "category": "Cleaners and Repellents",
+        "name": "Rat Repellent",
+        "id": "6903b179fe6d7500013a0d40",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Vehicale care & Accessories",
-        "id": "6903b179fe6d7500013a0d19",
+        "category": "Cleaners and Repellents",
+        "name": "Brooms & Mops",
+        "id": "6903b179fe6d7500013a0d34",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Party Planning",
-        "id": "6903b179fe6d7500013a0d15",
+        "category": "Cleaners and Repellents",
+        "name": "Dustbins & Pans",
+        "id": "6903b179fe6d7500013a0d36",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
         ]
       },
       {
-        "category": "Home and Kitchen",
-        "name": "Cleaning tools",
-        "id": "6903b179fe6d7500013a0d0f",
+        "category": "Cleaners and Repellents",
+        "name": "Wipes & Scrubs",
+        "id": "6903b179fe6d7500013a0d3a",
         "taxonomyType": "IM Meatsy",
         "campaigns": [
-          "lifestyle",
           "household"
+        ]
+      },
+      {
+        "category": "Cleaners and Repellents",
+        "name": "Kitchen Cleaning",
+        "id": "6903b179fe6d7500013a0d37",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "household"
+        ]
+      },
+      {
+        "category": "Cleaners and Repellents",
+        "name": "Bathroom Cleaning",
+        "id": "6903b179fe6d7500013a0d39",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "household"
+        ]
+      },
+      {
+        "category": "Cleaners and Repellents",
+        "name": "Floor Cleaners",
+        "id": "6903b179fe6d7500013a0d35",
+        "taxonomyType": "IM Meatsy",
+        "campaigns": [
+          "household"
+        ]
+      }
+    ],
+    "clearance": [
+      {
+        "category": "Makeup",
+        "name": "Lips",
+        "id": "6903b10bd2c61b000112bac2",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Makeup",
+        "name": "Eyes",
+        "id": "6903b10bd2c61b000112bac3",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Makeup",
+        "name": "Face",
+        "id": "6903b10bd2c61b000112bac5",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Makeup",
+        "name": "Nails",
+        "id": "6903b10bd2c61b000112bac7",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Makeup",
+        "name": "Tools & Brushes",
+        "id": "6903b10bd2c61b000112bac8",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Makeup",
+        "name": "Beauty Supplements",
+        "id": "6903b10bd2c61b000112bac9",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Sexual Wellness",
+        "name": "Condoms",
+        "id": "6903b10bd2c61b000112bad4",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Sexual Wellness",
+        "name": "Lubricants",
+        "id": "6903b10bd2c61b000112bad5",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Sexual Wellness",
+        "name": "Massagers",
+        "id": "6903b10bd2c61b000112bad6",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Sexual Wellness",
+        "name": "Enhancers",
+        "id": "6903b10bd2c61b000112bad7",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
+        ]
+      },
+      {
+        "category": "Sexual Wellness",
+        "name": "Gift Kits",
+        "id": "6903b10bd2c61b000112bad8",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "clearance"
         ]
       }
     ]
@@ -4347,11 +3401,11 @@
   "categoriesWithSubcategories": [
     {
       "category": "Fresh Vegetables",
-      "count": 10
+      "count": 11
     },
     {
       "category": "Fresh Fruits",
-      "count": 11
+      "count": 12
     },
     {
       "category": "Dairy, Bread and Eggs",
@@ -4390,42 +3444,57 @@
       "count": 15
     },
     {
-      "category": "Biscuits and Cakes",
-      "count": 13
+      "category": "Cleaners and Repellents",
+      "count": 21
     },
     {
-      "category": "Frozen Food",
-      "count": 10
+      "category": "Makeup",
+      "count": 6
     },
     {
-      "category": "Bath and Body",
-      "count": 25
-    },
-    {
-      "category": "Home and Kitchen",
-      "count": 23
+      "category": "Sexual Wellness",
+      "count": 5
     }
   ],
   "categoriesWithoutSubcategories": [
+    "Biscuits and Cakes",
     "Chips and Namkeens",
     "Noodles, Pasta, Vermicelli",
+    "Frozen Food",
     "Dry Fruits and Seeds Mix",
     "Cold Drinks and Juices",
     "Tea, Coffee and Milk drinks",
     "Sauces and Spreads",
     "Health and Pharma",
+    "Bath and Body",
     "Hair Care",
     "Skincare",
     "Feminine Hygiene",
     "Baby Care",
+    "Home and Kitchen",
     "Electronics and Appliances",
     "Toys and Stationery",
-    "Fashion",
-    "Cleaners and Repellents",
-    "Makeup",
-    "Sexual Wellness"
+    "Fashion"
   ],
   "emptyCategoryDiagnostics": [
+    {
+      "category": "Biscuits and Cakes",
+      "taxonomyType": "taxonomy 10",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseType": "object",
+      "responseShape": {
+        "topLevelKeys": [
+          "stack",
+          "statusCode"
+        ],
+        "arrays": []
+      },
+      "dataShape": {
+        "topLevelKeys": [],
+        "arrays": []
+      }
+    },
     {
       "category": "Chips and Namkeens",
       "taxonomyType": "taxonomy 10",
@@ -4446,6 +3515,24 @@
     },
     {
       "category": "Noodles, Pasta, Vermicelli",
+      "taxonomyType": "taxonomy 10",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseType": "object",
+      "responseShape": {
+        "topLevelKeys": [
+          "stack",
+          "statusCode"
+        ],
+        "arrays": []
+      },
+      "dataShape": {
+        "topLevelKeys": [],
+        "arrays": []
+      }
+    },
+    {
+      "category": "Frozen Food",
       "taxonomyType": "taxonomy 10",
       "httpStatus": 200,
       "contentType": "application/json; charset=utf-8",
@@ -4553,6 +3640,24 @@
       }
     },
     {
+      "category": "Bath and Body",
+      "taxonomyType": "taxonomy 14",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseType": "object",
+      "responseShape": {
+        "topLevelKeys": [
+          "stack",
+          "statusCode"
+        ],
+        "arrays": []
+      },
+      "dataShape": {
+        "topLevelKeys": [],
+        "arrays": []
+      }
+    },
+    {
       "category": "Hair Care",
       "taxonomyType": "taxonomy 14",
       "httpStatus": 200,
@@ -4625,6 +3730,24 @@
       }
     },
     {
+      "category": "Home and Kitchen",
+      "taxonomyType": "IM Meatsy",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseType": "object",
+      "responseShape": {
+        "topLevelKeys": [
+          "stack",
+          "statusCode"
+        ],
+        "arrays": []
+      },
+      "dataShape": {
+        "topLevelKeys": [],
+        "arrays": []
+      }
+    },
+    {
       "category": "Electronics and Appliances",
       "taxonomyType": "IM Meatsy",
       "httpStatus": 200,
@@ -4663,60 +3786,6 @@
     {
       "category": "Fashion",
       "taxonomyType": "IM Meatsy",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Cleaners and Repellents",
-      "taxonomyType": "IM Meatsy",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Makeup",
-      "taxonomyType": "taxonomy 14",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Sexual Wellness",
-      "taxonomyType": "taxonomy 14",
       "httpStatus": 200,
       "contentType": "application/json; charset=utf-8",
       "responseType": "object",
