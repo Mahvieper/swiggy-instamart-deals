@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T04:54:28.037Z",
+  "updatedAt": "2026-11-25T03:38:54.807Z",
   "storeId": "1400978",
   "source": "Instamart category-listing/v2 navigationTabs",
   "stats": {
     "attemptedCategories": 32,
     "successfulCategories": 32,
-    "categoriesWithSubcategories": 17,
-    "categoriesWithoutSubcategories": 15,
+    "categoriesWithSubcategories": 21,
+    "categoriesWithoutSubcategories": 11,
     "failedCategories": 0,
     "discoveredCategories": 32,
-    "discoveredSubcategories": 225,
+    "discoveredSubcategories": 279,
     "configuredSubcategories": 446,
     "usedFallback": false
   },
@@ -145,6 +145,195 @@
     }
   ],
   "subcategories": [
+    {
+      "category": "Fresh Vegetables",
+      "name": "Fresh Vegetables",
+      "id": "6822eeeded32000001e25aa2",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Leafy and Seasonings",
+      "id": "6822eeeded32000001e25aa3",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Exotic Vegetables",
+      "id": "6822eeeded32000001e25aa4",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Premium Produce",
+      "id": "6a950ffd114a1800015f6042",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Pooja & Festive",
+      "id": "6822eeeded32000001e25aa7",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Certified Organics",
+      "id": "6822eeeded32000001e25aa8",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Frozen Vegetables",
+      "id": "68243edc0c0f930001b2188d",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Bouquet & Plants",
+      "id": "6822eeeded32000001e25aaa",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Cuts and sprouts",
+      "id": "6822eeeded32000001e25aa6",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Vegetables",
+      "name": "Fresh Fruits",
+      "id": "6822eeeded32000001e25aad",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Fresh Fruits",
+      "id": "6822eeeded32000001e25aaf",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Seasonal Fruits",
+      "id": "6822eeeded32000001e25ab0",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Premium Produce",
+      "id": "6a950ffd114a1800015f6043",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Exotic Fruits",
+      "id": "6822eeeded32000001e25ab1",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Cut Fruits and Juices",
+      "id": "6822eeeded32000001e25ab2",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Pooja & Festive",
+      "id": "6822eeeded32000001e25ab3",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Certified Organics",
+      "id": "6822eeeded32000001e25ab6",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Frozen Fruits",
+      "id": "68b689ee4dd82b0001d869d1",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Fresh Vegetables",
+      "id": "6822eeeded32000001e25ab8",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Bouquet & Plants",
+      "id": "6822eeeded32000001e25ab4",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
+    {
+      "category": "Fresh Fruits",
+      "name": "Cuts and sprouts",
+      "id": "6822eeeded32000001e25aba",
+      "taxonomyType": "Speciality taxonomy 1",
+      "campaigns": [
+        "fresh"
+      ]
+    },
     {
       "category": "Dairy, Bread and Eggs",
       "name": "Top Deals",
@@ -2169,10 +2358,496 @@
       "campaigns": [
         "beverages"
       ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Masks & Sanitizers",
+      "id": "6a57570521b41f0001ef459d",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Protein & Sports Nutrition",
+      "id": "6a574e8421b41f0001ef459a",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Infections & First Aid",
+      "id": "6903b10bd2c61b000112badc",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Immunity & Energy Boosters",
+      "id": "6a57570521b41f0001ef459c",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Gummies",
+      "id": "6a57570521b41f0001ef459e",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Weight Management",
+      "id": "6a57570521b41f0001ef459b",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Superfoods",
+      "id": "6a57570521b41f0001ef459f",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Health and Pharma",
+      "name": "Allergy, Cough & Cold",
+      "id": "6a5528b584303b00011edd83",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "beverages"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Moisturizing Creams",
+      "id": "6aabb3142c4bff0001cd84cd",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Soaps",
+      "id": "6903b10bd2c61b000112ba93",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Shower gel",
+      "id": "6903b10bd2c61b000112baa4",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Body Lotion & Oils",
+      "id": "6903b10bd2c61b000112ba9b",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Shampoo",
+      "id": "6903b10bd2c61b000112ba96",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Oral Care",
+      "id": "6aba135aa6fa090001aaa4dd",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Conditioner",
+      "id": "6903b10bd2c61b000112ba97",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Face Care",
+      "id": "6903b10bd2c61b000112ba95",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Sunscreen",
+      "id": "6aabb3142c4bff0001cd84cc",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Hand wash",
+      "id": "6aba135aa6fa090001aaa4de",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Fragrance & Talc",
+      "id": "6903b10bd2c61b000112ba9c",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Value Pack",
+      "id": "6aa954d1114a1800015f6063",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Mens Perfume",
+      "id": "6903b10bd2c61b000112ba9e",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Womens Perfume",
+      "id": "6903b10bd2c61b000112baa7",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Shaving brush and Kit",
+      "id": "6903b10bd2c61b000112baa2",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Shaving Foam and Cartridges",
+      "id": "6903b10bd2c61b000112baa3",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Bath Accessories",
+      "id": "6903b10bd2c61b000112ba98",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Bath & Beauty gifts",
+      "id": "6903b10bd2c61b000112ba9a",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Men Trimmers & Razors",
+      "id": "6903b10bd2c61b000112baa9",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Womens Deos",
+      "id": "6903b10bd2c61b000112baa6",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Mens Deos",
+      "id": "6903b10bd2c61b000112ba9d",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Women Trimmers & Razors",
+      "id": "6903b10bd2c61b000112baa8",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Multi groomers",
+      "id": "6903b10bd2c61b000112ba9f",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "After Shave",
+      "id": "6903b10bd2c61b000112ba99",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
+    },
+    {
+      "category": "Bath and Body",
+      "name": "Women Hair Removal cream",
+      "id": "6903b10bd2c61b000112baa5",
+      "taxonomyType": "taxonomy 14",
+      "campaigns": [
+        "personalCare"
+      ]
     }
   ],
   "campaigns": {
     "fresh": [
+      {
+        "category": "Fresh Vegetables",
+        "name": "Fresh Vegetables",
+        "id": "6822eeeded32000001e25aa2",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Leafy and Seasonings",
+        "id": "6822eeeded32000001e25aa3",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Exotic Vegetables",
+        "id": "6822eeeded32000001e25aa4",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Premium Produce",
+        "id": "6a950ffd114a1800015f6042",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Pooja & Festive",
+        "id": "6822eeeded32000001e25aa7",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Certified Organics",
+        "id": "6822eeeded32000001e25aa8",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Frozen Vegetables",
+        "id": "68243edc0c0f930001b2188d",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Bouquet & Plants",
+        "id": "6822eeeded32000001e25aaa",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Cuts and sprouts",
+        "id": "6822eeeded32000001e25aa6",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Vegetables",
+        "name": "Fresh Fruits",
+        "id": "6822eeeded32000001e25aad",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Fresh Fruits",
+        "id": "6822eeeded32000001e25aaf",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Seasonal Fruits",
+        "id": "6822eeeded32000001e25ab0",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Premium Produce",
+        "id": "6a950ffd114a1800015f6043",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Exotic Fruits",
+        "id": "6822eeeded32000001e25ab1",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Cut Fruits and Juices",
+        "id": "6822eeeded32000001e25ab2",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Pooja & Festive",
+        "id": "6822eeeded32000001e25ab3",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Certified Organics",
+        "id": "6822eeeded32000001e25ab6",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Frozen Fruits",
+        "id": "68b689ee4dd82b0001d869d1",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Fresh Vegetables",
+        "id": "6822eeeded32000001e25ab8",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Bouquet & Plants",
+        "id": "6822eeeded32000001e25ab4",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
+      {
+        "category": "Fresh Fruits",
+        "name": "Cuts and sprouts",
+        "id": "6822eeeded32000001e25aba",
+        "taxonomyType": "Speciality taxonomy 1",
+        "campaigns": [
+          "fresh"
+        ]
+      },
       {
         "category": "Dairy, Bread and Eggs",
         "name": "Top Deals",
@@ -4205,10 +4880,317 @@
         "campaigns": [
           "beverages"
         ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Masks & Sanitizers",
+        "id": "6a57570521b41f0001ef459d",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Protein & Sports Nutrition",
+        "id": "6a574e8421b41f0001ef459a",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Infections & First Aid",
+        "id": "6903b10bd2c61b000112badc",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Immunity & Energy Boosters",
+        "id": "6a57570521b41f0001ef459c",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Gummies",
+        "id": "6a57570521b41f0001ef459e",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Weight Management",
+        "id": "6a57570521b41f0001ef459b",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Superfoods",
+        "id": "6a57570521b41f0001ef459f",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      },
+      {
+        "category": "Health and Pharma",
+        "name": "Allergy, Cough & Cold",
+        "id": "6a5528b584303b00011edd83",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "beverages"
+        ]
+      }
+    ],
+    "personalCare": [
+      {
+        "category": "Bath and Body",
+        "name": "Moisturizing Creams",
+        "id": "6aabb3142c4bff0001cd84cd",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Soaps",
+        "id": "6903b10bd2c61b000112ba93",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Shower gel",
+        "id": "6903b10bd2c61b000112baa4",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Body Lotion & Oils",
+        "id": "6903b10bd2c61b000112ba9b",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Shampoo",
+        "id": "6903b10bd2c61b000112ba96",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Oral Care",
+        "id": "6aba135aa6fa090001aaa4dd",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Conditioner",
+        "id": "6903b10bd2c61b000112ba97",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Face Care",
+        "id": "6903b10bd2c61b000112ba95",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Sunscreen",
+        "id": "6aabb3142c4bff0001cd84cc",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Hand wash",
+        "id": "6aba135aa6fa090001aaa4de",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Fragrance & Talc",
+        "id": "6903b10bd2c61b000112ba9c",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Value Pack",
+        "id": "6aa954d1114a1800015f6063",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Mens Perfume",
+        "id": "6903b10bd2c61b000112ba9e",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Womens Perfume",
+        "id": "6903b10bd2c61b000112baa7",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Shaving brush and Kit",
+        "id": "6903b10bd2c61b000112baa2",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Shaving Foam and Cartridges",
+        "id": "6903b10bd2c61b000112baa3",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Bath Accessories",
+        "id": "6903b10bd2c61b000112ba98",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Bath & Beauty gifts",
+        "id": "6903b10bd2c61b000112ba9a",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Men Trimmers & Razors",
+        "id": "6903b10bd2c61b000112baa9",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Womens Deos",
+        "id": "6903b10bd2c61b000112baa6",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Mens Deos",
+        "id": "6903b10bd2c61b000112ba9d",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Women Trimmers & Razors",
+        "id": "6903b10bd2c61b000112baa8",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Multi groomers",
+        "id": "6903b10bd2c61b000112ba9f",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "After Shave",
+        "id": "6903b10bd2c61b000112ba99",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
+      },
+      {
+        "category": "Bath and Body",
+        "name": "Women Hair Removal cream",
+        "id": "6903b10bd2c61b000112baa5",
+        "taxonomyType": "taxonomy 14",
+        "campaigns": [
+          "personalCare"
+        ]
       }
     ]
   },
   "categoriesWithSubcategories": [
+    {
+      "category": "Fresh Vegetables",
+      "count": 10
+    },
+    {
+      "category": "Fresh Fruits",
+      "count": 11
+    },
     {
       "category": "Dairy, Bread and Eggs",
       "count": 14
@@ -4276,13 +5258,17 @@
     {
       "category": "Sauces and Spreads",
       "count": 10
+    },
+    {
+      "category": "Health and Pharma",
+      "count": 8
+    },
+    {
+      "category": "Bath and Body",
+      "count": 25
     }
   ],
   "categoriesWithoutSubcategories": [
-    "Fresh Vegetables",
-    "Fresh Fruits",
-    "Health and Pharma",
-    "Bath and Body",
     "Hair Care",
     "Skincare",
     "Feminine Hygiene",
@@ -4296,78 +5282,6 @@
     "Sexual Wellness"
   ],
   "emptyCategoryDiagnostics": [
-    {
-      "category": "Fresh Vegetables",
-      "taxonomyType": "Speciality taxonomy 1",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Fresh Fruits",
-      "taxonomyType": "Speciality taxonomy 1",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Health and Pharma",
-      "taxonomyType": "taxonomy 14",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
-    {
-      "category": "Bath and Body",
-      "taxonomyType": "taxonomy 14",
-      "httpStatus": 200,
-      "contentType": "application/json; charset=utf-8",
-      "responseType": "object",
-      "responseShape": {
-        "topLevelKeys": [
-          "stack",
-          "statusCode"
-        ],
-        "arrays": []
-      },
-      "dataShape": {
-        "topLevelKeys": [],
-        "arrays": []
-      }
-    },
     {
       "category": "Hair Care",
       "taxonomyType": "taxonomy 14",
